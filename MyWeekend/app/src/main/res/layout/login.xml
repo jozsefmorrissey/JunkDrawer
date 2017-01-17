@@ -1,0 +1,58 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fractal22">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="\n\n"
+        android:textSize="20pt"/>
+
+    <EditText android:id="@+id/loginId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:textSize="20pt"
+        android:gravity="center_vertical"
+        android:autoText="false"
+        android:background="#ffffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="\n"
+        android:textSize="2pt"/>
+
+    <EditText android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textSize="20pt"
+        android:gravity="center_vertical"
+        android:password="true"
+        android:background="#fff2ffd7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="\n"
+        android:textSize="2pt"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_gravity="center"
+        android:onClick="loginSub"
+        android:background="#fc676f8e"
+        android:longClickable="false"
+        android:textColor="#ff020202"
+        android:textSize="10pt">
+        </Button>
+
+</LinearLayout>
