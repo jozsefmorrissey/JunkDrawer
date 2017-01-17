@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{4D52E75F-0B8D-48AD-BD51-C2897C70C5B5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ContraCloneImproved</RootNamespace>
+    <AssemblyName>ContraCloneImproved</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sprites\Sprite.cs" />
+    <Compile Include="Sprites\Character\Character.cs" />
+    <Compile Include="Sprites\NonAnimated\Still.cs" />
+    <Compile Include="Sprites\NonAnimated\replicated.cs" />
+    <Compile Include="Utilities\Enum\Enum.cs" />
+    <Compile Include="Utilities\Physics.cs" />
+    <Compile Include="Objects\Obstacles\Platform.cs" />
+    <Compile Include="Objects\Obstacles\Wall.cs" />
+    <Compile Include="Objects\Weapons\Weapon.cs" />
+    <Compile Include="Utilities\Structs\View.cs" />
+    <Compile Include="Utilities\Utilities.cs" />
+    <Compile Include="Control\Automated\AnimationControl.cs" />
+    <Compile Include="Application\Window.cs" />
+    <Compile Include="Application\Scene.cs" />
+    <Compile Include="Control\Scene\Scene.cs" />
+    <Compile Include="Levels\Level.cs" />
+    <Compile Include="Objects\Background.cs" />
+    <Compile Include="Objects\Obstacles\Barrier.cs" />
+    <Compile Include="Objects\Animation.cs" />
+    <Compile Include="Levels\Levels\Level1.cs" />
+    <Compile Include="Levels\Levels\Level2.cs" />
+    <Compile Include="Sprites\Character\Hero.cs" />
+    <Compile Include="Sprites\Character\Enemy.cs" />
+    <Compile Include="Control\keyBoardControlers\Game\GameControl.cs" />
+    <Compile Include="Control\keyBoardControlers\Game\GameTestControl.cs" />
+    <Compile Include="Control\keyBoardControlers\Builder\BuilderControl.cs" />
+    <Compile Include="Control\keyBoardControlers\KeyBoardControl.cs" />
+    <Compile Include="Control\keyBoardControlers\Builder\BuilderControlers\EnemyBuilderContol.cs" />
+    <Compile Include="Control\keyBoardControlers\Builder\BuilderControlers\BarrierBuilderControl.cs" />
+    <Compile Include="Levels\Levels\Builder.cs" />
+    <Compile Include="Utilities\Structs\Dimentions.cs" />
+    <Compile Include="Utilities\Structs\pair.cs" />
+    <Compile Include="Objects\Physics.cs" />
+    <Compile Include="Control\keyBoardControlers\KeyBoardControlEnum.cs" />
+    <Compile Include="Objects\Weapons\Armory\Shotgun.cs" />
+    <Compile Include="Objects\Weapons\Armory\Rifle.cs" />
+    <Compile Include="Control\Automated\TimedEventControl.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Control\" />
+    <Folder Include="Sprites\" />
+    <Folder Include="Application\" />
+    <Folder Include="Objects\" />
+    <Folder Include="Sprites\Character\" />
+    <Folder Include="Sprites\Character\hero\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Utilities\Enum\" />
+    <Folder Include="Sprites\NonAnimated\" />
+    <Folder Include="Sprites\Character\enemy\" />
+    <Folder Include="Control\Automated\" />
+    <Folder Include="Control\Scene\" />
+    <Folder Include="Objects\Obstacles\" />
+    <Folder Include="Objects\Weapons\" />
+    <Folder Include="Utilities\Structs\" />
+    <Folder Include="Levels\" />
+    <Folder Include="Levels\Levels\" />
+    <Folder Include="Control\keyBoardControlers\" />
+    <Folder Include="Control\keyBoardControlers\Game\" />
+    <Folder Include="Control\keyBoardControlers\Builder\" />
+    <Folder Include="Control\keyBoardControlers\Builder\BuilderControlers\" />
+    <Folder Include="Objects\Weapons\Armory\" />
+  </ItemGroup>
+</Project>

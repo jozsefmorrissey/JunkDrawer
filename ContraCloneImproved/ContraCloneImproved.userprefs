@@ -1,0 +1,20 @@
+﻿<Properties StartupItem="ContraCloneImproved/ContraCloneImproved.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ContraCloneImproved/Utilities/Enum/Enum.cs">
+    <Files>
+      <File FileName="ContraCloneImproved/Control/Automated/SimpleEventControl.cs" Line="6" Column="3" />
+      <File FileName="ContraCloneImproved/Control/keyBoardControlers/KeyBoardControl.cs" Line="33" Column="1" />
+      <File FileName="ContraCloneImproved/Objects/Weapons/Weapon.cs" Line="17" Column="32" />
+      <File FileName="ContraCloneImproved/Sprites/Sprite.cs" Line="63" Column="4" />
+      <File FileName="ContraCloneImproved/Sprites/Character/Character.cs" Line="28" Column="48" />
+      <File FileName="ContraCloneImproved/Objects/Physics.cs" Line="24" Column="3" />
+      <File FileName="ContraCloneImproved/Sprites/Character/Enemy.cs" Line="1" Column="1" />
+      <File FileName="ContraCloneImproved/Sprites/Character/Hero.cs" Line="8" Column="1" />
+      <File FileName="ContraCloneImproved/Utilities/Enum/Enum.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

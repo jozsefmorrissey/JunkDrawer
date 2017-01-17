@@ -1,0 +1,5 @@
+/home/jozsef/Projects/ContraCloneImproved/ContraCloneImproved/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/jozsef/Projects/ContraCloneImproved/ContraCloneImproved/bin/Debug/ContraCloneImproved.exe.mdb
+/home/jozsef/Projects/ContraCloneImproved/ContraCloneImproved/bin/Debug/ContraCloneImproved.exe
+/home/jozsef/Projects/ContraCloneImproved/ContraCloneImproved/obj/x86/Debug/ContraCloneImproved.exe
+/home/jozsef/Projects/ContraCloneImproved/ContraCloneImproved/obj/x86/Debug/ContraCloneImproved.exe.mdb

@@ -1,0 +1,32 @@
+//First Line: Terminal Location
+
+//Second Line: Number trailer doors on the dock
+
+//Location within bay: T or Top, M or Middle, B or Bottom
+//Orientation: U or Up, D or Down
+
+//Third Line: Island locations within dock and bay aswell as its orientation
+//Format (baynumber)/(location within bay)/(orientation of island intrance),
+
+//Fourth Line: Scale location within dock and bay
+//Format (baynumber)/(location within bay),
+Default: IND
+
+
+IND:
+Doors: 32
+Islands: 4/Middle/Down, 5/Middle/Up,
+Scales: 20/Top, 4/Top, 4/Bottom, 5/Top, 5/Bottom,
+
+
+DAN:
+Doors: 32  
+Islands: 4/Middle/Down, 5/Middle/Up,
+Scales: 20/Top, 4/Top, 4/Bottom, 5/Top, 5/Bottom,
+
+
+ORD:
+Doors: 44
+     Islands: 4/Middle/Up, 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Scales: 4/Top, 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

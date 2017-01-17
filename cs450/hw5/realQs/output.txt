@@ -1,0 +1,34 @@
+Initial Values:
+x:  -1 	 y: 1
+Final Values:
+x:  1.00000000000000 	 y:  1.00000000000000
+Number of Iterations:
+1
+Residual:
+[0]
+[ ]
+[0]
+
+Initial Values:
+x:  0 	 y: 1
+Final Values:
+x:  1.00000000000000 	 y:  1.00000000000000
+Number of Iterations:
+5
+Residual:
+[-2.54185956738055e-28]
+[                     ]
+[-1.01671827677395e-23]
+
+Initial Values:
+x:  2 	 y: 1
+Final Values:
+x:  1.00000000000000 	 y:  1.00000000000000
+Number of Iterations:
+5
+Residual:
+[7.11236556627378e-39 ]
+[                     ]
+[-2.56490711024473e-33]
+
+Round:  0
