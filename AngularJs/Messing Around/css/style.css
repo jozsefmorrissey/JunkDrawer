@@ -1,0 +1,18 @@
+.side-by-side {
+  display: flex;
+  display: contents;
+  margin-right: 5pt;
+  margin-left: 5pt;
+}
+
+.side-by-side-outer {
+  display: flex;
+  margin: 5pt;
+}
+
+.remove-button {
+  border-radius: 100%;
+  background-color: red;
+  font-weight: bold;
+  border-color: darkred;
+}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="UTF-8">
+
+    <!-- SCRIPTS -->
+    <script src="lib/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <!-- k<script src="index.js"></script> -->
+    <!-- <script src="factories/factories.js"></script>
+    <script src="directives/directives.js"></script>
+    <script src="controllers/text.js"></script>
+    <script src="filters/filter.js"></script> -->
+
+    <!-- STYLE SHEETS -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <div ng-controller="textCtrl">
+      <label>Name:</label>
+      <form ng-submit='addName(yourName)'>
+        <input type="text" ng-model="yourName" ng-value="yourName" placeholder="Enter a name here">
+        <button type='submit' ng-click='changeGreeting()'>Attend</button>
+      </form>
+      <hr>
+      <div><!-- <div ng-controller='filterCtrl'> -->
+        <h1>{{greeting}} {{yourName|reverseUp}}!</h1>
+        <div inline-template info="naomi"></div>
+        <file-template info="igor"></file-template>
+      </div>
+      <li class="side-by-side-outer" ng-repeat="i in names">
+        <h4 class="side-by-side">welcome: {{i}}</h4>
+        <button class="side-by-side remove-button" ng-click="removeName(i)">X</button>
+      </li>
+    </div>
+  </body>
+</html>
+
+<script>
+var app = angular.module('myApp', []);
+
+let scope;
+
+app.service('changeGreetingService', [function() {
+  let greetings = ['Welcome', 'Salutations', 'Hello'];
+  let count = 0;
+
+  this.modify = function(){
+    console.log("in the service: ");
+    count++;
+    if(count > 2){
+      count = 0;
+      return greetings[Math.floor(Math.random()*greetings.length)];
+    }
+    return null;
+  }
+}]);
+
+app.service('UtilsService',function(){
+
+    this.myFunction = function(){ console.log ('you called myFunction()')};
+
+});
+
+app.controller('textCtrl', ['$scope', '$filter', 'UtilsService', 'changeGreetingService',
+                  function($scope, $filter, UtilsService, changeGreetingService) {
+  $scope.names = ['andrew','andrewbarnie','barnie','bill','fred','princess','ted','warrior','zina'];
+  $scope.greeting = 'hello';
+
+  $scope.addName = function(name){
+    $scope.popsicle = $scope.names;
+    if($scope.names.indexOf(name) == -1) {
+      $scope.names.push(name);
+
+    UtilsService.myFunction();
+    let newGreeting = changeGreetingService.modify();
+    $scope.greeting = (newGreeting ? newGreeting : $scope.greeting);
+    $filter('sortAlpha')($scope.names);
+  }
+};
+
+  $scope.removeName = function(name) {
+    index = $scope.names.indexOf(name);
+    $scope.names.splice(index, 1);
+  };
+
+  $scope.naomi = {
+    name: 'Naomi',
+    address: '1600 Amphitheatre'
+  };
+  $scope.igor = {
+    name: 'igor',
+    address: 'Haunted house or evil lab'
+  }
+}]);
+
+app.filter('reverseUp', function() {
+    return function(input, uppercase) {
+      input = input || '';
+      var out = '';
+      for (var i = 0; i < input.length; i++) {
+        out = input.charAt(i) + out;
+      }
+      // conditional based on optional argument
+      if (uppercase) {
+        out = out.toUpperCase();
+      }
+      return out;
+    };
+  });
+
+  app.filter('sortAlpha', function(){
+    return function (input) {
+      for(let i = 1; i < input.length - 1; i++){
+        if(input[i] < input[i -1]){
+          let temp = input[i];
+          input[i] = input[i-1];
+          input[i-1] = temp;
+          i -= 2;
+        }
+        else if(input[i] > input[i+1]) {
+          let temp = input[i];
+          input[i] = input[i+1];
+          input[i+1] = temp;
+          i -= 1;
+        }
+      }
+      return input;
+    }
+  });
+
+  app.directive('inlineTemplate', function() {
+    return {
+      scope: {
+        customerInfo: '=info'
+      },
+      template: 'Name: {{customerInfo.name}} Address: {{customerInfo.address}}'
+    };
+  });
+
+  app.directive('fileTemplate', function() {
+    return {
+      scope: {
+        customerInfo: '=info'
+      },
+      templateUrl: 'my-customer.html'
+    };
+  });
+
+
+
+
+</script>

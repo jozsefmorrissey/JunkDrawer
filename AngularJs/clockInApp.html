@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+
+<body ng-app="mainModule">
+  <div ng-controller="mainController"
+    <div class="homeScreen" tabindex="0"
+           style="position: absolute; top: 0px; bottom: 0px; width: 100%; margin 0;"
+           ng-keydown="onKeyDown($event)"
+           ng-keyup="onKeyUp($event)"
+           ng-keypress="onKeyPress($event)" >
+
+      <lu>
+        <li ng-repeat="t in times">
+          {{t.date}} {{t.activity}} {{t.inOut}}
+        </li>
+      </lu>
+
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+angular.module('mainModule', []);
+let state = {
+  inOut: undefined,
+  taskIndex: undefined,
+  activity: undefined,
+  times: undefined,
+  commands: undefined,
+  downKeys: undefined
+}
+
+
+function initialSetup() {
+  state.inOut = true;
+  state.taskIndex = 0;
+  state.activity = ['work', 'lunch', 'task3', 'task4', 'task5'];
+  state.downKeys = [];
+  state.times = [];
+  state.commands = [
+    getCommandObj("Clock In/Out", [['T']], toggleClock(), -1, undefined),
+    getCommandObj("Clock In", [['I']], clockIn(), -1, true),
+    getCommandObj("Clock Out", [['O']], clockOut(), -1, false),
+    getCommandObj("Switch Task", [['S']], switchTask(), -1, undefined),
+    getCommandObj("Select Task", [['S'], ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']], selectTaskCmd(), -1, undefined)
+  ]
+}
+
+
+
+function ProcessInput(){
+
+    determinCommand();
+
+    function determinCommand() {
+        let cmd = undefined;
+        for(let index = 0; index < state.commands.length; index += 1) {
+          if(compareKeysWrapper(state.commands[index].keys)) {
+            cmd = state.commands[index];
+          }
+        }
+        if(cmd) {
+          exicuteCommand(cmd);
+          state.downKeys = [];
+        }
+    }
+
+    function exicuteCommand(cmd) {
+      let savedState = {};
+      angular.copy(state, savedState);
+      changeState(cmd);
+      let taskIndex = cmd.func();
+      changeState(savedState);
+      if(taskIndex >= 0)
+        state.taskIndex = selectTask(taskIndex);
+    }
+
+    function compareKeysWrapper(commandKeys) {
+      let cmdKeys = [];
+      let pressedKeys = [];
+      angular.copy(commandKeys, cmdKeys);
+      angular.copy(state.downKeys, pressedKeys);
+      if(cmdKeys.length == state.downKeys.length)
+        return compareKeys(cmdKeys, pressedKeys);
+      else
+        return false;
+    }
+
+    function compareKeys(commandKeys, pressedKeys) {
+      if(commandKeys.length == 0)
+        return true;
+
+      if (commandKeys.length > 0) {
+        for(let index = 0; index < pressedKeys.length; index++) {
+          if(commandKeys[0].indexOf(String.fromCharCode(pressedKeys[index])) >= 0) {
+            commandKeys.splice(0, 1);
+            return compareKeys(commandKeys, pressedKeys);
+          }
+        }
+      }
+      return false;
+    }
+};
+
+  angular.module('mainModule', []).controller("mainController", ['$scope', function ($scope)
+    {
+
+      // Initialization
+      $scope.onKeyDownResult = "";
+      $scope.onKeyUpResult = "";
+      $scope.onKeyPressResult = "";
+      initialSetup();
+
+      // Utility functions
+
+      var getKeyboardEventResult = function (keyEvent, keyEventDesc)
+      {
+        return keyEventDesc + " (keyCode: " + (window.event ? keyEvent.keyCode : keyEvent.which) + ")";
+      };
+
+      // Event handlers
+      $scope.onKeyDown = function ($event) {
+        if(state.downKeys.indexOf($event.keyCode) != -1)
+          return;
+        state.downKeys.push($event.keyCode);
+      };
+
+      $scope.onKeyUp = function ($event) {
+
+        ProcessInput();
+        let rIndex = state.downKeys.indexOf($event.keyCode);
+        state.downKeys.splice(rIndex, 1);
+
+        $scope.task = state.activity[state.taskIndex];
+        $scope.times = state.times;
+      };
+
+      $scope.onKeyPress = function ($event) {
+      };
+    }]);
+{
+  function getClockOject(date, taskIndex, inOut){
+    clockObj = {
+      date: date,
+      activity: state.activity[taskIndex],
+      inOut: inOut
+    }
+    return clockObj;
+  }
+
+  function getSnapshotClockObject(inOut) {
+    return getClockOject(new Date(), state.taskIndex, inOut);
+  }
+
+  function getCommandObj(name, keys, func, taskIndex,inOut){
+    commandObj = {
+      name: name,
+      keys: keys,
+      func: func,
+      taskIndex: taskIndex,
+      inOut: inOut
+    }
+    return commandObj;
+  }
+
+  function changeState(newState) {
+    return selectTask(newState.taskIndex);
+  }
+
+  function toggleClock() {
+    return function() {
+      state.inOut = !state.inOut;
+      state.times.push(getSnapshotClockObject(state.inOut));
+    }
+  }
+
+  function clockIn() {
+    return function() {
+      state.times.push(getSnapshotClockObject(true));
+      state.inOut = true;
+    }
+  }
+
+  function clockOut() {
+    return function() {
+      state.times.push(getSnapshotClockObject(false));
+      state.inOut = false;
+    }
+  }
+
+  function switchTask() {
+    return function() {
+      return selectTask(state.taskIndex += 1);
+    }
+  }
+
+  function selectTaskCmd() {
+    return function() {
+      index = -1;
+      keys = state.downKeys;
+      for(let j = 0; j < keys.length; j++) {
+        for(let i = 0; i < 10; i++) {
+          if(String.fromCharCode(keys[j]) == "" + i)
+            index = i;
+        }
+      }
+      return selectTask(index - 1);
+    }
+
+  }
+
+
+  function selectTask(index) {
+      if(index >= 0)
+        return index % state.activity.length;
+      else
+        return -1;
+  }
+
+}
+
+</script>

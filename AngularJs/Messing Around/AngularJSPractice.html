@@ -1,0 +1,40 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="UTF-8">
+
+    <!-- SCRIPTS -->
+    <script src="lib/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="index.js"></script>
+    <script src="services/service.js"></script>
+    <script src="factories/factory.js"></script>
+    <script src="controllers/controller.js"></script>
+    <script src="filters/filter.js"></script>
+    <script src="directives/directives.js"></script>
+
+    <!-- STYLE SHEETS -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <div ng-controller="textCtrl">
+      <label>Name:</label>
+      <form ng-submit='addName(yourName)'>
+        <input type="text" ng-model="yourName" ng-value="yourName" placeholder="Enter a name here">
+        <button type='submit' ng-click='changeGreeting()'>Attend</button>
+      </form>
+      <hr>
+      <div><!-- <div ng-controller='filterCtrl'> -->
+        <h1>{{greeting}} {{yourName|reverseUp}}!</h1>
+        <h3>The factory says, "{{hiFromTheFac()}}"</h3>
+        <div inline-template info="naomi"></div>
+        <file-template info="igor"></file-template>
+      </div>
+      <li class="side-by-side-outer" ng-repeat="i in names">
+        <h4 class="side-by-side">welcome: {{i}}</h4>
+        <button class="side-by-side remove-button" ng-click="removeName(i)">X</button>
+      </li>
+    </div>
+  </body>
+</html>
