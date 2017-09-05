@@ -1,0 +1,17 @@
+<div>
+	<div ng-controller="dirFormCtrl" ng-submit="initialize(directory)">
+		<input ng-model="directory" 
+			name="name"
+			ng-value="directory"
+			type="text"
+			placeHolder="Directory Location"/>
+<!-- 		<input type="file" ng-model="file.data" 
+	       file-select="data" 
+	       file-loaded="myLoaded()"
+	       file-error="myError($error)" 
+	       file-progress="myProgress($total,$loaded)">
+ -->		
+		<button type="submit" ng-click="initialize()" dirFormCtrl>Search</button>
+	</div>
+	<p>(if left blank the relative path ../ will by used)</p>
+</div>

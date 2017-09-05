@@ -26,20 +26,15 @@ public class PropertyOrganizer {
 	 * @param name
 	 * @param filePath
 	 * @return - 1) The Property corresponding to the file path if it exists
-	 * 			 2) The default value, if property exists in other files.
-	 * 			 3) Null if property can not be found.
+	 * 			 2) Null if property can not be found.
 	 */
 	public static String getProperty(String name, String filePath) {
 		String value = getProperty(name);
 		PropertyOrganizer pO = getPO(name);
 		ValueFilePair v = getVFP(pO, filePath);
-		if(value == null || pO == null)
+		if(v == null || value == null || pO == null)
 			return null;
 
-		if(v == null){
-			pO.addValueFilePair(value, filePath, Integer.MAX_VALUE, false);
-			return value;
-		}
 		else {
 			return v.getValue();
 		}

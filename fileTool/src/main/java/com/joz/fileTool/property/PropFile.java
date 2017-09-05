@@ -10,6 +10,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
+import java.io.Serializable;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
@@ -29,15 +30,17 @@ import lombok.Data;
 @ManagedBean
 @ApplicationScope
 @Data
-public class PropFile {
+public class PropFile implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6313434005286996755L;
 	private int maxCharCount = 5000;
 
 	public static void main(String...Args) throws FileNotFoundException {
 		PropFile pf = new PropFile("C:\\Users\\jozse\\workspace1\\fileTool\\src\\main\\resources\\application.properties");
 		
-		
-		System.out.println(pf.getProperty("stuff"));
 
 		OutputStream os = new FileOutputStream("garb.properties");
 		pf.save(os);
@@ -231,19 +234,9 @@ public class PropFile {
 		
 		int lineCounter = -1;
 		try {		
-			for(PropInstInfo key : properties) {
-				String line;
-				if(key.getValue() != null)
-					line =  key.getName() + seperator + key.getValue(); 
-				else
-					line = key.getName();
-				o.write(line);
-
-				while(lineCounter < key.getLineNumber()) {
-					o.newLine();
-					lineCounter++;
-				}
-			}
+			String fileStr = this.toString();
+			String rmvSerId = fileStr.substring(fileStr.indexOf("\n") + 1);
+			o.write(rmvSerId);
 
 			o.close();
 			out.close();
@@ -254,6 +247,8 @@ public class PropFile {
 		}
 
 	}
+	
+	
 
 	@Override
 	public boolean equals(Object obj) {
@@ -280,5 +275,26 @@ public class PropFile {
 		result = prime * result + maxCharCount;
 		result = prime * result + ((seperator == null) ? 0 : seperator.hashCode());
 		return result;
+	}
+
+	@Override
+	public String toString() {
+		List<PropInstInfo> properties = PropertyOrganizer.getVFPByFileName(filePath);
+		String file = "FileToolObjSerialId" + seperator + serialVersionUID + "\n";
+		int lineCounter = -1;
+		for(PropInstInfo key : properties) {
+			String line;
+			if(key.getValue() != null)
+				file +=  key.getName() + seperator + key.getValue(); 
+			else
+				file += key.getName();
+
+			while(lineCounter < key.getLineNumber()) {
+				file+= "\n";
+				lineCounter++;
+			}
+		}
+		
+		return file;
 	}
 }

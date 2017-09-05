@@ -22,11 +22,12 @@ public class PropFileInterperter {
 
 		pfi.propertyFiles.get(0).setProperty("YOF4LL", "NOLO");
 		pfi.propertyFiles.get(0).setProperty("YOF4LL", "hello");
-		pfi.setProperty(fileName, "YOF4LL", "YOLO");
+		pfi.setProperty(fileName, "YOF4LL", "holo");
 
-		System.out.println(PropertyOrganizer.getProperty("YOF4LL"));
 		pfi.overWrite(fileName);
 		System.out.println(ValidateProperties.findBadPaths());
+		System.out.println(PropertyOrganizer.getProperty("YOF4LL"));
+		System.out.println(pfi.propertyFiles.get(0));
 
 	}
 	

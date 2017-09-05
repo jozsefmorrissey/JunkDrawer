@@ -1,5 +1,8 @@
 package com.joz.fileTool.property;
 
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,7 +26,6 @@ public class ValidateProperties {
 					&& !value.startsWith("http")) {
 				if(!PathFileValidation.isFileOrDir(value)) {
 					badPaths.add(pii);
-					System.out.println("value: " + value);
 				}
 			}
 		}
@@ -38,11 +40,8 @@ public class ValidateProperties {
 			if(value == null)
 				continue;
 			
-			int index = value.indexOf("${");
-			while(index >= 0) {
-				value = replaceVar(pii, value, index);
-				index = value.indexOf("${");
-			}
+			value = replaceVars(value, pii);
+
 			ValueFilePair vfp = new ValueFilePair(value, pii.getFile(), pii.getLineNumber(), pii.isDef());
 			variabless.add(new PropInstInfo(pii.getName(), vfp));
 		}
@@ -52,7 +51,6 @@ public class ValidateProperties {
 	private static String replaceVar(PropInstInfo pii, String value, int index) {
 		String prefix = value.substring(0, index);
 		String var = value.substring(index + 2);
-		System.out.println("var: " + var);
 
 		index = var.indexOf("}");
 		String suffix;
@@ -62,13 +60,61 @@ public class ValidateProperties {
 			suffix = var.substring(index + 1);
 	
 		if(index >= 0) {
-		var = var.substring(0, index);
-		System.out.println("var: " + var);
-		var = PropertyOrganizer.getProperty(var, pii.getFile());
-		System.out.println("var: " + var);
+			var = var.substring(0, index);
+			var = PropertyOrganizer.getProperty(var, pii.getFile());
 		}
 		else
 			var = "";
 		return prefix + var + suffix;
+	}
+	
+	public List<PropInstInfo> getVariablePaths() {
+		List<PropInstInfo> varPaths = new ArrayList<PropInstInfo>();
+		
+		List<PropInstInfo> allFiles = PropertyOrganizer.getAllPII();
+		HttpURLConnection connection;
+		for(PropInstInfo pii : allFiles) {
+			if(pii.getValue().contains("${"))
+				varPaths.add(pii);
+		}
+		return varPaths;
+	}
+	
+	public static List<PropInstInfo> invalidUrls() {
+		List<PropInstInfo> badUrls = new ArrayList<PropInstInfo>();
+		
+		List<PropInstInfo> allFiles = PropertyOrganizer.getAllPII();
+		HttpURLConnection connection;
+		for(PropInstInfo pii : allFiles) {
+			String value = pii.getValue();
+			if(value == null)
+				continue;
+			
+			value = replaceVars(value, pii);
+			
+			if(!value.startsWith("http"))
+				continue;
+			
+			try {
+				connection = (HttpURLConnection) new URL("http://www.google.com").openConnection();
+				connection.setRequestMethod("HEAD");
+				int responseCode = connection.getResponseCode();
+				if (responseCode != 200) {
+				    badUrls.add(pii);
+				}
+			} catch (IOException e) {
+				badUrls.add(pii);
+			}
+		}
+		return badUrls;
+	}
+	
+	private static String replaceVars(String value, PropInstInfo pii) {
+		int index = value.indexOf("${");
+		while(index >= 0) {
+			value = replaceVar(pii, value, index);
+			index = value.indexOf("${");
+		}
+		return value;
 	}
 }
