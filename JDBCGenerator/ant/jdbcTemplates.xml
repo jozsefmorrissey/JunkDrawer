@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<jdbcTemplates>
+	<properties>
+		<classAnnotations>
+			<annotation>Override</annotation>
+		</classAnnotations>
+		<superpckg>com/characterBuilder/aerase</superpckg>
+		<superclassname>JdbcSuperClass</superclassname>
+		
+		<superclass>com.characterBuilder.aerase.JdbcSuperClass</superclass>
+		<queryFunctionName></queryFunctionName>		
+		<constructor>
+			<parameters>
+				<param>
+					<paramName>sasquatchanonomous</paramName>
+					<type>hairy</type>
+					<paramAnnotations>
+						<paramAnnotation>OutOfThisWorld</paramAnnotation>
+					</paramAnnotations>
+				</param>
+			</parameters>
+		</constructor>
+	</properties>
+
+
+	<jdbcClasses>
+		<jdbcClass name="Book">
+			<query name="getAllBooks">
+				<format>
+					Select isbn_13, title, author 
+						from books
+				</format>
+				<columns>
+					<column>isbn_13</column>
+					<column>title</column>
+					<column>author</column>
+				</columns>
+				<substitutions>
+				</substitutions>
+			</query>
+			<query name="getBooksByRussell">
+				<format>
+					Select publish_date, price, isbn_13 
+						from books 
+						where $$author$$ = author 
+				</format>
+				<columns>
+					<column>isbn_13</column>
+					<column>title</column>
+					<column>publish_date</column>
+					<column>price</column>
+				</columns>
+				<substitutions>
+					<substitute>author</substitute>
+				</substitutions>
+			</query>
+		</jdbcClass>
+		<jdbcClass name="user_info">
+			<query name="getUserByEmail">
+				<format>
+					Select email, password, name 
+						from user_info 
+						where $$email$$ = email 
+				</format>
+				<columns>
+					<column>name</column>
+					<column>password</column>
+					<column>email</column>
+				</columns>
+				<substitutions>
+					<substitute>email</substitute>
+				</substitutions>
+			</query>
+		</jdbcClass>
+	</jdbcClasses>
+</jdbcTemplates>

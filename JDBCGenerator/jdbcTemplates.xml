@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<jdbcTemplates>
+	<properties>
+		<classAnnotations>
+			<annotation>Override</annotation>
+		</classAnnotations>
+		<superpckg>com/garbage/fill</superpckg>
+		<superclassname>FakeSuper</superclassname>
+		
+		<superclass>com.garbage.fill.FakeSuper</superclass>
+		<queryFunctionName></queryFunctionName>		
+		<constructor>
+			<parameters>
+				<param>
+					<paramName>sasquatchanonomous</paramName>
+					<type>hairy</type>
+					<paramAnnotations>
+						<paramAnnotation>OutOfThisWorld</paramAnnotation>
+					</paramAnnotations>
+				</param>
+			</parameters>
+		</constructor>
+	</properties>
+
+
+	<jdbcClasses>
+		<jdbcClass name="ProviderServiceLocation">
+			<query name="getNonSense">
+				<format>
+					Select HELP_WANTED, PARTY_POOPER, BILL_VERMIN 
+						from diningRoom 
+						where $$BILL_VERMIN$$ = BILL_VERMIN 
+						AND $$PARTY_POOPER$$ = PARTY_POOPER
+				</format>
+				<columns>
+					<column>HELP_Not_WANTED</column>
+					<column>PARTY_POOPER</column>
+					<column>BILL_VERMIN</column>
+				</columns>
+				<substitutions>
+					<substitute>BILL_VERMIN</substitute>
+					<substitute type='java.lang.Long'>PARTY_POOPER</substitute>
+				</substitutions>
+			</query>
+			<query name="getEverything">
+				<format>
+					Select HELP_WANTED, PARTY_POOPER, BILL_VERMIN 
+						from diningRoom 
+						where $$BREAD_BUTTER$$ = BREAD_BUTTER 
+				</format>
+				<columns>
+					<column>HELP_WANTED</column>
+					<column>BILL_VERMIN</column>
+				</columns>
+				<substitutions>
+					<substitute>BREAD_BUTTER</substitute>
+				</substitutions>
+			</query>
+		</jdbcClass>
+			<jdbcClass name="AccreditationAproximation">
+			<query name="getGarbTastic">
+				<format>
+					Select HELICOPTER, DOWN_HAWK_BLACK, BRUCE_WILLIS, SPAGGETIOS 
+						from darkDungion 
+						where $$BILL_VERMIN$$ = BILL_VERMIN 
+						AND $$PARTY_POOPER$$ = PARTY_POOPER
+				</format>
+				<columns>
+					<column>HELICOPTER</column>
+					<column>DOWN_HAWK_BLACK</column>
+					<column>BRUCE_WILLIS</column>
+					<column>SPAGGETIOS</column>
+				</columns>
+				<substitutions>
+					<substitute>BILL_VERMIN</substitute>
+					<substitute type='java.lang.Long'>PARTY_POOPER</substitute>
+				</substitutions>
+			</query>
+				<query name="getStuffedBunnies">
+				<format>
+					Select HELICOPTER, DOWN_HAWK_BLACK, BRUCE_WILLIS, SPAGGETIOS 
+						from darkDungion 
+						where $$DOWN_HAWK_BLACK$$ = DOWN_HAWK_BLACK 
+						AND $$SKITTLES$$ = SKITTLES
+				</format>
+				<columns>
+					<column type='java.lang.long'>DOWN_HAWK_BLACK</column>
+					<column>SKITTLES</column>
+				</columns>
+				<substitutions>
+					<substitute>BREAD_BUTTER</substitute>
+				</substitutions>
+			</query>
+		</jdbcClass>
+	</jdbcClasses>
+</jdbcTemplates>
