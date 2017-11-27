@@ -22,11 +22,11 @@ public abstract class QueryParcerAbs extends TagParcerAbs<Query>
 		if(format.isEmpty())
 			throw new XmlParceException((Element) elem, "Sql string must be found inside of query tag");
 		
-		List<Field> columns = colParcer.parceAll(elem);
+		List<Field> fields = colParcer.parceAll(elem);
 		
 		List<Parameter> params = paramParcer.parceAll(elem);
 		
-		return new Query(name, format, columns, params);
+		return new Query(name, format, fields, params);
 	}
 
 	protected TagParcerAbs<Field> getColParcer()

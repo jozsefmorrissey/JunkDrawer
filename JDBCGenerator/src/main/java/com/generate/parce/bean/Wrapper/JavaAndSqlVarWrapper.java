@@ -4,13 +4,17 @@ import com.generate.Util.StringUtil;
 import com.generate.enums.JAVA_TYPE;
 import com.generate.parce.bean.JavaAndSqlVar;
 
-public class JavaAndSqlVarWrapper<T extends JavaAndSqlVar>
+public class JavaAndSqlVarWrapper<T extends JavaAndSqlVar<T>>
 {
 	T jasVar;
 	
 	protected T getJasVar()
 	{
 		return jasVar;
+	}
+	
+	public String getSqlVarName() {
+		return jasVar.getSqlVarName();
 	}
 
 	public JavaAndSqlVarWrapper(T jasVar)

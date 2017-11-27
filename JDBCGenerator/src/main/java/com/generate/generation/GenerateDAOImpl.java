@@ -1,10 +1,10 @@
 package com.generate.generation;
 
 import java.io.IOException;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 import javax.lang.model.element.Modifier;
 import javax.sql.DataSource;
@@ -23,7 +23,6 @@ import com.squareup.javapoet.MethodSpec;
 import com.squareup.javapoet.MethodSpec.Builder;
 import com.squareup.javapoet.TypeSpec;
 
-@SuppressWarnings("restriction")
 public class GenerateDAOImpl
 {
 	private JdbcTypeWrapper jdbcType;
@@ -36,7 +35,7 @@ public class GenerateDAOImpl
 	
 	public void buildDAO() throws IOException {
 		
-		String s = jdbcType.getAbstractNameFQ();
+		Type t = StringUtil.getType(jdbcType.getAbstractNameFQ());
 		TypeSpec.Builder typeImplBuilder = TypeSpec.classBuilder(jdbcType.getJdbcName())
 				.addModifiers(Modifier.PUBLIC)
 			    .superclass(StringUtil.getType(jdbcType.getAbstractNameFQ()))	
@@ -55,7 +54,7 @@ public class GenerateDAOImpl
 		typeImplBuilder.addSuperinterface(StringUtil.getType(jdbcType.getDaoNameFQ()));
 
 				
-		GenUtil.buildAndSave(jdbcType.getPackage("jdbc"), typeImplBuilder);
+		GenUtil.buildAndSave(jdbcType.getPackage(jdbcType.getJdbcPkg()), typeImplBuilder);
 	}
 
 	private void addBuildMethod(TypeSpec.Builder typeBuilder)
@@ -101,48 +100,12 @@ public class GenerateDAOImpl
 		typeBuilder.addMethod(methodBuilder.build());
 	}
 
-	private void addMapMethod(TypeSpec.Builder typeImplBuilder)
-	{
-		MethodSpec.Builder methodBuilder = MethodSpec.methodBuilder("map")
-			    .addModifiers(Modifier.PUBLIC)
-			    .addParameter(List.class, "results")
-			    .addStatement("List<$T> list = new $T<$T>()", StringUtil.getClass(jdbcType.getBeanNameFQ()), ArrayList.class, StringUtil.getClass(jdbcType.getBeanNameFQ()))
-			    .addStatement("")
-			    .addStatement("for(Map<String, Object> row : ((List<$T<String, Object>>)results))\n"
-			    		+ "list.add(mapRow(row))", Map.class)
-			    .addStatement("return list")
-				.returns(GenUtil.getListType(StringUtil.getClass(jdbcType.getBeanNameFQ())));
-		
-		typeImplBuilder.addMethod(methodBuilder.build());
-	}
-	
-	//TODO: Create map class
-	private void addMapRowMethod(TypeSpec.Builder typeImplBuilder) {
-		MethodSpec.Builder methodBuilder = MethodSpec.methodBuilder("mapRow")
-			    .addModifiers(Modifier.PRIVATE)
-			    .addParameter(Map.class, "row")
-			    .addStatement("$T bean = new $T()", StringUtil.getClass(jdbcType.getBeanNameFQ()), StringUtil.getClass(jdbcType.getBeanNameFQ()))
-			    .addStatement("String resultStr");
-
-		Set<Field> columns = jdbcType.getFields();
-		String format1 = "resultStr = extractResult(row, $S)";
-		String format2 = "bean.set$L(resultStr)";
-		for(Field col : columns) {
-			methodBuilder.addStatement(format1, col);
-			methodBuilder.addStatement(format2, StringUtil.convertUpperToPascal(col.getSqlVarName()));			
-		}
-		
-		methodBuilder.addStatement("return bean")
-			.returns(StringUtil.getClass(jdbcType.getBeanNameFQ()));
-		
-		typeImplBuilder.addMethod(methodBuilder.build());
-	}
-
 	private void addQueryMethod(TypeSpec.Builder typeImplBuilder, Query q)
 	{
+		Class<?> c = StringUtil.getClass(jdbcType.getMapNameFQ());
 		MethodSpec.Builder methodImplBuilder = addParameters(q)
 				.addStatement("List<$T<String, Object>> results = (List)$L($S, parameters)", Map.class, "exicuteQuery", q.getName())
-			    .addStatement("return new $T().map(results)", StringUtil.getClass(jdbcType.getMapNameFQ()))
+			    .addStatement("return new $T().$L(results, \"TODO: add field\")", StringUtil.getClass(jdbcType.getMapNameFQ()), jdbcType.getMapMethod(new ArrayList<Long>()))
 				.returns(GenUtil.getListType(StringUtil.getClass(jdbcType.getBeanNameFQ())));
 		
 		for(Parameter param : q.getParameters()) {

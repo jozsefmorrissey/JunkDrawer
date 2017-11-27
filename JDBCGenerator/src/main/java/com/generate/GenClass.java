@@ -4,11 +4,9 @@ import java.util.List;
 
 import com.generate.Util.ParceJdbcXML;
 import com.generate.generation.GenerateDAO;
-import com.generate.generation.GenerateDAOBean;
 import com.generate.generation.GenerateDAOImpl;
 import com.generate.generation.GenerateDAOMap;
-import com.generate.generation.GenerateDaoImplAbs;
-import com.generate.parce.bean.XmlProps;
+import com.generate.generation.GenerateDAOSetup1;
 import com.generate.parce.bean.Wrapper.JdbcTypeWrapper;
 
 public class GenClass
@@ -28,7 +26,7 @@ public class GenClass
 //		int process = null == args || args.length > 0 ? Integer.parseInt(args[0]): 3;
 			for (JdbcTypeWrapper jT : jdbcTypes)
 			{
-					determineOperation(3, jT);
+					determineOperation(0, jT);
 			}
 //		new GenerateDaoImplAbs(jdbcTypes.get(0), props);
 //		new GenerateDAOBean(jdbcTypes.get(0));
@@ -44,17 +42,20 @@ public class GenClass
 			switch (i)
 			{
 			case 0:
-
-				new GenerateDAOBean(jT);
-				new GenerateDaoImplAbs(jT);
+//				new GenerateDAOSetup0(jT);
+				new GenerateDAOSetup1(jT);
+//				new GenerateDAOSetup2(jT);
+//				new GenerateDAOBean(jT);
+//				new GenerateDaoImplAbs(jT);
+//				new GenerateDAOMapFactory(jT);
 				break;
 			case 1:
 				new GenerateDAO(jT);
 				break;
-			case 2:
+			case 3:
 				new GenerateDAOMap(jT);
 				break;
-			case 3:
+			case 4:
 				new GenerateDAOImpl(jT);
 				break;
 			}

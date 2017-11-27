@@ -3,13 +3,13 @@ package com.example;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.List;
+import java.util.Set;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.reflections.Reflections;
 
-import com.generate.Util.ParceJdbcXML;
-import com.generate.Util.StringUtil;
+import com.dataAccess.map.DAOMap;
 import com.generate.parce.bean.JdbcType;
 
 public class InternalTest
@@ -100,11 +100,16 @@ public class InternalTest
 	
 	@Test
 	public void testParser() {
-		List<JdbcType> jdbcTypes = new ParceJdbcXML().xmlParser();
+//		List<JdbcType> jdbcTypes = new ParceJdbcXML().xmlParser();
 		
 		//System.out.println(jdbcTypes.get(0));
-		System.out.println(StringUtil.arrayPretty(jdbcTypes, 0));
+//		System.out.println(StringUtil.arrayPretty(jdbcTypes, 0));
 
+
+		Reflections r = new Reflections();
+		Set<Class<? extends DAOMap>> maps = r.getSubTypesOf(DAOMap.class);
+		for(Class<?> m : maps)
+			System.out.println(m.getSimpleName());
 		//assert(jdbcT.equals(jdbcTypes.get(0)));
 	}
 	

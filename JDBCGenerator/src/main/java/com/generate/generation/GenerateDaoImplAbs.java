@@ -27,7 +27,6 @@ import com.squareup.javapoet.FieldSpec;
 import com.squareup.javapoet.MethodSpec;
 import com.squareup.javapoet.TypeSpec;
 
-@SuppressWarnings("restriction")
 public class GenerateDaoImplAbs
 {
 	private JdbcTypeWrapper jdbcType;
@@ -54,7 +53,7 @@ public class GenerateDaoImplAbs
 		
 		buildMethods(typeBuilder);
 		
-		GenUtil.buildAndSave(jdbcType.getPackage("bean"), typeBuilder);
+		GenUtil.buildAndSave(jdbcType.getPackage(jdbcType.getDaoPkg()), typeBuilder);
 	
 
 	}
@@ -91,7 +90,7 @@ public class GenerateDaoImplAbs
 	private void buildFieldsAndGetSet(TypeSpec.Builder typeBuilder)
 	{
 		FieldSpec.Builder logFieldBuilder = FieldSpec.builder(Log.class, logName, Modifier.PRIVATE)
-				.initializer("$T.getLog($L)", LogFactory.class, "BaseJdbcDAOGen.class");
+				.initializer("$T.getLog($L.class)", LogFactory.class, jdbcType.getAbstractName());
 		
 		FieldSpec.Builder msgFieldBuilder = FieldSpec.builder(AbstractMessageSource.class, msgName, Modifier.PRIVATE)
 				.addAnnotation(Autowired.class);
@@ -191,7 +190,7 @@ public class GenerateDaoImplAbs
 			    .addParameter(Parameter[].class, "parameters")
 			    .addStatement("long startJavaLogTime = $T.getInstance().getTimeInMillis()", Calendar.class)
 			    .addStatement("$T query = buildQuery(queryName, parameters)", String.class)
-			    .addStatement("List<$T> rows = (List) jdbcTemplate.queryForList(query)", Map.class)
+			    .addStatement("$T rows = (List) jdbcTemplate.queryForList(query)", GenUtil.getResultType())
 			    .addStatement("logRequestTimer(startJavaLogTime, query)")
 			    .addStatement("return rows")
 			    .returns(GenUtil.getResultType());
@@ -291,7 +290,7 @@ public class GenerateDaoImplAbs
 			    .addModifiers(Modifier.PRIVATE)
 			    .addParameter(String.class, "name")
 			    .addStatement("Query q = (Query) $L.get(name)", queryMapName)
-			    .addStatement("$T<$T> results = new $T<Map>()", List.class, Map.class, ArrayList.class)
+			    .addStatement("$T results = new $T<$T>()", GenUtil.getResultType(), ArrayList.class, GenUtil.getRowType())
 			    .addStatement("StringBuilder[] words = new StringBuilder[]{new StringBuilder(\"First\"), new StringBuilder(\"Second\"), new StringBuilder(\"Third\")}")
 			    .addStatement("for(int i = 0; i < 3; i++)\nmockDataRowBuilder(results, q, words[i])")
 			    .addStatement("return results")

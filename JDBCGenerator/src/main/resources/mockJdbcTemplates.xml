@@ -24,24 +24,26 @@
 
 
 	<jdbcClasss>
-		<jdbcClass name="ProviderServiceLocation">
+		<jdbcClass name="ProviderServiceLocation"
+			abstractName="GenerateDaoImplAbs"
+			package="com.dataAccess">
 			<querys>
 				<query name="getNonSense">Hello world!
 					Select HELP_WANTED, PARTY_POOPER, BILL_VERMIN 
 						from diningRoom 
 						where $$BILL_VERMIN$$ = BILL_VERMIN 
 						AND $$PARTY_POOPER$$ = PARTY_POOPER
-					<columns>
-						<column javaVarName="hello" 
+					<fields>
+						<field javaVarName="hello" 
 							javaType="world" 
 							javaInitialValue="0" 
 							sqlVarName="HELP_WANTED"/>
-					</columns>
+					</fields>
 					<parameters>
 						<parameter sqlVarName="PARTY_POOPER"
-							isSqlLiteral="true" 
+							sqlType="Literal" 
 							javaVarName="Hello" 
-							javaType='java.lang.Long'/>
+							javaType='Long'/>
 					</parameters>
 				</query>
 				<query name="getEverything">
@@ -59,7 +61,7 @@
 						where $$BILL_VERMIN$$ = BILL_VERMIN 
 						AND $$PARTY_POOPER$$ = PARTY_POOPER
 					<parameters>
-						<parameter javaType='java.lang.Long' sqlVarName="PARTY_POOPER"/>
+						<parameter javaType='long' sqlVarName="PARTY_POOPER"/>
 					</parameters>
 				</query>
 					<query name="getStuffedBunnies">
@@ -67,9 +69,9 @@
 							from darkDungion 
 							where $$DOWN_HAWK_BLACK$$ = DOWN_HAWK_BLACK 
 							AND $$SKITTLES$$ = SKITTLES
-					<columns>
-						<column javaType='java.lang.long' sqlVarName="DOWN_HAWK_BLACK"/>
-					</columns>
+					<fields>
+						<field javaType='long' sqlVarName="DOWN_HAWK_BLACK"/>
+					</fields>
 				</query>
 			</querys>
 		</jdbcClass>

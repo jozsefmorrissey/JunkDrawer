@@ -5,7 +5,8 @@ import com.generate.marker.Validator;
 
 public enum JAVA_TYPE
 {
-	LONG("long", long.class), INTEGER("int", int.class), STRING("string", String.class);
+	LONG("long", Long.class), INTEGER("int", Integer.class), STRING("string", String.class),
+	DOUBLE("double", Double.class);
 	
 	private String identifier;
 	private Class<?> clazz;
@@ -18,9 +19,12 @@ public enum JAVA_TYPE
 	
 	public static JAVA_TYPE getEnum(String indicator)
 	{
+		if(indicator == null)
+			return null;
+		
 		for(JAVA_TYPE sqlT : JAVA_TYPE.values())
 		{
-			if(sqlT.identifier.toLowerCase().equals(indicator))
+			if(sqlT.identifier.toLowerCase().equals(indicator.toLowerCase()))
 				return sqlT;
 		}
 		
@@ -60,15 +64,8 @@ public enum JAVA_TYPE
 	
 	public static Class<?> getClass(String classStr)
 	{
-		try
-		{
-			return Class.forName(classStr);
-		} catch (ClassNotFoundException | NullPointerException e)
-		{
-			//TODO: implement Logger
-		}
-
-		return null;
+		JAVA_TYPE jt = getEnum(classStr);
+		return jt == null ? null : jt.getClazz();
 	}
 	
 	protected String getIdentifier()

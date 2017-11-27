@@ -1,16 +1,16 @@
-package com.generate.parce.column;
+package com.generate.parce.field;
 
 import org.w3c.dom.Element;
 
 import com.generate.parce.TagParcerAbs;
 import com.generate.parce.bean.Field;
 
-public class TagColumnParcer extends TagParcerAbs<Field>
+public class TagFieldParcer extends TagParcerAbs<Field>
 {
 
-	public TagColumnParcer()
+	public TagFieldParcer()
 	{
-		setTagName("column");
+		setTagName("field");
 	}
 	
 	@Override

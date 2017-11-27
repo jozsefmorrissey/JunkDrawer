@@ -29,7 +29,7 @@ public enum SQL_TYPE
 	
 	public static String prepValue(String string2, Object object)
 	{
-		if(string2.equals(LITERAL))
+		if(string2.toLowerCase().equals(LITERAL.identifier))
 			return object.toString();
 		
 		return "'" + object.toString() + "'";

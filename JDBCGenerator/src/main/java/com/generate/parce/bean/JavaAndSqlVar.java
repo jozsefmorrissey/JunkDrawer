@@ -47,7 +47,14 @@ public class JavaAndSqlVar<T extends JavaAndSqlVar<T>> extends MergeBean<T>
 	
 	public boolean shouldMerge(JavaAndSqlVar obj)
 	{
-		return this.sqlVarName.equals(obj.sqlVarName);
+		boolean sqlVarEq = this.sqlVarName.equals(obj.sqlVarName);
+		boolean thisJVarNull = this.javaVarName == null;
+		boolean aJVarNull = thisJVarNull && obj.javaVarName == null;
+
+		boolean sqlEqAJVarNotSet = sqlVarEq;
+		boolean jVarSetEq = this.javaVarName != null && this.javaVarName.equals(obj.javaVarName);
+
+		return sqlEqAJVarNotSet || jVarSetEq;
 	}
 	
 	@Override

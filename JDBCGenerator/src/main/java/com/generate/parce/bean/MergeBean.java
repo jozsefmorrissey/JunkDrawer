@@ -28,24 +28,25 @@ public abstract class MergeBean<T extends MergeBean<T>> implements Merge<T>, Com
 		boolean subtract = false;
 		for(int i = 0; indexInBounds(i, copy1); i++)
 		{
-			for(int j = 0; indexInBounds(j, copy2, i, copy1); j++)
+			subtract = false;
+			for(int j = 0; !subtract && indexInBounds(j, copy2, i, copy1); j++)
 			{
-				if(subtract)
+				if(indexInBounds(j, copy2, i, copy1))
 				{
-					i--;
-					j--;
-					subtract = false;
-				}
-				
-				T one = copy1.get(i);
-				T two = copy2.get(j);
-				
-				if(one.shouldMerge(two))
-				{
-					mergedList.add(one.merge(two));
-					copy1.remove(one);
-					copy2.remove(two);
-					subtract = true;
+					T one = copy1.get(i);
+					T two = copy2.get(j);
+					
+					if(one.shouldMerge(two))
+					{
+						mergedList.add(one.merge(two));
+						copy1.remove(one);
+						copy2.remove(two);
+						
+						subtract = true;
+						
+						i--;
+						j--;
+					}
 				}
 			}
 		}
@@ -65,7 +66,7 @@ public abstract class MergeBean<T extends MergeBean<T>> implements Merge<T>, Com
 	}
 	
 	private <U> boolean indexInBounds(int index, Collection<U> collection) {
-		return index < collection.size() && index >= 0;
+		return index < collection.size() && index >= -1;
 	}
 	
 	private void addRemaining(List<T> mergedList, List<T> remaining)
@@ -115,6 +116,9 @@ public abstract class MergeBean<T extends MergeBean<T>> implements Merge<T>, Com
 	
 	private <U> U getReturnValue(U field1)
 	{
+		if(field1 == null)
+			return null;
+		
 		if(field1.getClass().equals(String.class))
 			return stringGetValue((String)field1);
 		

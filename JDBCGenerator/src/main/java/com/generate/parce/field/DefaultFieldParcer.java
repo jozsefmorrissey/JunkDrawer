@@ -1,4 +1,4 @@
-package com.generate.parce.column;
+package com.generate.parce.field;
 
 import java.util.List;
 
@@ -8,18 +8,18 @@ import com.generate.exception.XmlParceException;
 import com.generate.parce.TagParcerAbs;
 import com.generate.parce.bean.Field;
 
-public class DefaultColumnParcer extends TagParcerAbs<Field>
+public class DefaultFieldParcer extends TagParcerAbs<Field>
 {
-	TagColumnParcer tcp = new TagColumnParcer();
-	SqlStringColumnParcer sscp = new SqlStringColumnParcer();
+	TagFieldParcer tcp = new TagFieldParcer();
+	SqlStringFieldParcer sscp = new SqlStringFieldParcer();
 	
-	List<Field> columns;
+	List<Field> fields;
 	int index = 0;
 	
 	@Override
 	public Field parce(Element node) throws XmlParceException
 	{
-		if(columns == null)
+		if(fields == null)
 		{
 			while(!node.getTagName().equals("query"))
 				node = (Element) node.getParentNode();
@@ -27,13 +27,13 @@ public class DefaultColumnParcer extends TagParcerAbs<Field>
 			parceAll(node);
 		}
 		
-		if(index == columns.size())
+		if(index == fields.size())
 		{
 			index = 0;
 			return null;
 		}
 		
-		return columns.get(index++);
+		return fields.get(index++);
 	}
 
 	@Override
@@ -42,7 +42,7 @@ public class DefaultColumnParcer extends TagParcerAbs<Field>
 		List<Field> tagList = tcp.parceAll(node);
 		List<Field> sqlList = sscp.parceAll(node);
 		
-		columns = new Field().merge(tagList, sqlList);
-		return columns;
+		fields = new Field().merge(tagList, sqlList);
+		return fields;
 	}
 }

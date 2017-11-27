@@ -8,6 +8,4 @@ public class FieldWrapper extends JavaAndSqlVarWrapper<Field>
 	{
 		super(jasVar);
 	}
-
-
 }

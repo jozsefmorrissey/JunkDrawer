@@ -29,7 +29,7 @@ public class ParcePropertiesXML
 		Node properties = doc.getElementsByTagName("properties").item(0);
 		Element classAnnNode = GenUtil.getByTagName(properties, "classAnnotations", 0);
 		
-		List<String> classAnnotations = GenUtil.parseColumns(classAnnNode, "annotation");
+		List<String> classAnnotations = GenUtil.parseFields(classAnnNode, "annotation");
 		String superClassName = GenUtil.getByTagName(properties, "superclass", 0).getTextContent();
 		String queryFunctionName = GenUtil.getByTagName(properties, "queryFunctionName", 0).getTextContent();
 
@@ -50,7 +50,7 @@ public class ParcePropertiesXML
 			String paramName = GenUtil.getByTagName(elem, "paramName", 0).getTextContent();
 			String type = GenUtil.getByTagName(elem, "type", 0).getTextContent();
 			Node annoElem = GenUtil.getByTagName(elem, "paramAnnotations", 0);
-			List<String> annotations = GenUtil.parseColumns(annoElem, "paramAnnotation");
+			List<String> annotations = GenUtil.parseFields(annoElem, "paramAnnotation");
 			
 			Parameter param = null;//new Parameter(paramName, type, annotations);
 			paramList.add(param);

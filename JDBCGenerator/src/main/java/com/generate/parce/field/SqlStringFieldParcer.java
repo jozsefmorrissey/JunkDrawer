@@ -1,4 +1,4 @@
-package com.generate.parce.column;
+package com.generate.parce.field;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 import com.generate.parce.TextContentParcerAbs;
 import com.generate.parce.bean.Field;
 
-public class SqlStringColumnParcer extends TextContentParcerAbs<Field>
+public class SqlStringFieldParcer extends TextContentParcerAbs<Field>
 {
 
 	@Override
@@ -18,13 +18,13 @@ public class SqlStringColumnParcer extends TextContentParcerAbs<Field>
 	    int afterSelect = query.indexOf("SELECT") + 6;
 	    int startFrom = query.indexOf("FROM");
 	    
-	    String commaSepColumns = query.substring(afterSelect, startFrom);
-	    String[] columArr = commaSepColumns.split(",");
+	    String commaSepFields = query.substring(afterSelect, startFrom);
+	    String[] fieldArr = commaSepFields.split(",");
 	    
 	    List<Field> retMap = new ArrayList<Field>();
-	    for(String columnName : columArr) {
-	      if(!columnName.isEmpty())
-	        retMap.add(new Field(columnName.trim()));
+	    for(String fieldName : fieldArr) {
+	      if(!fieldName.isEmpty())
+	        retMap.add(new Field(fieldName.trim()));
 	    }
 	    
 	    return retMap;
