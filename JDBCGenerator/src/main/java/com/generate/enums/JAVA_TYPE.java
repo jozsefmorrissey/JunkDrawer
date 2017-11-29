@@ -40,7 +40,7 @@ public enum JAVA_TYPE
 	public boolean validateInitVal(JAVA_TYPE javaT, String str)
 	{
 		Validator val = getValidator(StringUtil.convertUpperToPascal(javaT.name()));
-		if(val == null)
+		if(val != null)
 			return val.Validate(str);
 		
 		return false;		
@@ -55,9 +55,7 @@ public enum JAVA_TYPE
 			if(clazz != null && clazz.isInstance(Validator.class))
 				return (U) clazz.newInstance();
 		} catch (InstantiationException | IllegalAccessException e)
-		{
-			e.printStackTrace();
-		}
+		{}
 		
 		return null;
 	}

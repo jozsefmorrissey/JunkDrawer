@@ -34,9 +34,9 @@ public class StringUtil
 	public static String capitalizeIndex(String upperCase, int index)
 	{
 		char oldC = upperCase.charAt(index);
-		char newC = Character.toUpperCase(oldC);
+		Character newC = Character.toUpperCase(oldC);
 
-		upperCase = upperCase.replace(oldC + "", "" + newC);
+		upperCase = upperCase.substring(0, index).concat(newC.toString()).concat(upperCase.substring(index + 1));
 		return upperCase;
 	}
 
@@ -68,9 +68,7 @@ public class StringUtil
 		{
 			return Class.forName(classStr);
 		} catch (ClassNotFoundException e)
-		{
-			e.printStackTrace();
-		}
+		{}
 
 		return null;
 	}

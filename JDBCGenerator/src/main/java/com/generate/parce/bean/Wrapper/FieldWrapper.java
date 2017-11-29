@@ -8,4 +8,12 @@ public class FieldWrapper extends JavaAndSqlVarWrapper<Field>
 	{
 		super(jasVar);
 	}
+	
+	public String getJavaInitialValue()
+	{
+		if(!jasVar.stringIsEmpty(jasVar.getJavaInitialValue()))
+			return jasVar.getJavaInitialValue();
+		
+		return null;
+	}
 }

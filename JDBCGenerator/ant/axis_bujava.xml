@@ -40,7 +40,7 @@
 	<!-- Java classes -->
 	<property name="build.dir" location="bin" />
 	<property name="build.run.dir" location="bin/generate" />
-	<property name="build.gen.dir" location="bin/generated" />
+	<property name="build.gen.dir" location="bin/dataAccess" />
 	<property name="build.fake.dir" location="bin/fake" />
 	<property name="build.test.dir" location="bin/test" />
 
@@ -52,9 +52,10 @@
 	<property name="resource.location" location="../src/main/resources" />
 	<property name="resource.save.location" location="src/main/resources" />
 
-	<property name="bean.dir" location="src/main/java/com/generated/bean" />
-	<property name="dao.dir" location="src/main/java/com/generated/dao" />
-	<property name="jdbc.dir" location="src/main/java/com/generated/jdbc" />
+	<property name="gen.dir" location="src/main/java/com/dataAccess" />
+	<property name="bean.dir" location="src/main/java/com/dataAccess/bean" />
+	<property name="dao.dir" location="src/main/java/com/dataAccess/dao" />
+	<property name="jdbc.dir" location="src/main/java/com/dataAccess/jdbc" />
 
 	<!--=================================Properties===================================-->
 
@@ -166,8 +167,7 @@
 
 
 	<!-- Default, run this -->
-	<target name="main" depends="clean, distjdbc" />
-
+	<target name="main" depends="clean, distGenerations" />
 
 
 
@@ -197,30 +197,30 @@
 		</jar>
 	</target>
 
-	<target name="run" depends="distjdbc">
+	<target name="run" depends="distGenerations">
 	</target>
 
 	<!--=================================Developemnt===================================-->
 
 
-	<!--=================================Build Beans===================================-->
+	<!--=================================Define Classes===================================-->
 
-	<target name="generatebeans" depends="distFakeSuper">
+	<target name="defineClasses" >
 		<exec executable="java">
 			<arg value="-cp" />
-			<arg value='"${dist.dir}\${projectName}.jar;lib/compile/*;dist/fakeSuperGen.jar;"' />
+			<arg value='"${dist.dir}\${projectName}.jar;lib/compile/*;"' />
 			<arg value="com.generate.GenClass" />
 			<arg value="0" />
 		</exec>
 	</target>
 
-	<target name="compilebean" depends="generatebeans" description="compile the source ">
+	<target name="compileDefinitions" depends="defineClasses" description="compile the source ">
 		<!-- Compile the java code from ${src.dir} into ${build.dir} -->
 		<ivy:cachepath pathid="compile" conf="compile" />
-		<javac includeantruntime="false" srcdir="${bean.dir}" debug="true" destdir="${build.gen.dir}" classpath="dist/JDBCGenerator.jar;dist/JDBCGen.jar;dist/fakeSuperGen.jar;" classpathref="compile" />
+		<javac includeantruntime="false" srcdir="${gen.dir}" debug="true" destdir="${build.gen.dir}" classpath="dist/JDBCGenerator.jar;dist/JDBCGen.jar;dist/fakeSuperGen.jar;" classpathref="compile" />
 	</target>
 
-	<target name="distbean" depends="manifest, compilebean" description="package, output to JAR">
+	<target name="distDefinitions" depends="manifest, compileDefinitions" description="package, output to JAR">
 
 		<!-- Put everything in ${build} into the {$projectName}-${DSTAMP}.jar file -->
 		<jar jarfile="${dist.dir}/JDBCGen.jar" basedir="${build.gen.dir}">
@@ -235,13 +235,13 @@
 
 
 
-	<!--=================================Build Beans===================================-->
+	<!--=================================Define Classes===================================-->
 
 
-	<!--=================================Build DAO's===================================-->
+	<!--=================================generate===================================-->
 
 
-	<target name="generatedaos" depends="distbean">
+	<target name="generate" depends="distDefinitions">
 		<exec executable="java">
 			<arg value="-cp" />
 			<arg value='"dist/JDBCGen.jar;dist/JDBCGenerator.jar;lib/compile/*"' />
@@ -250,13 +250,13 @@
 		</exec>
 	</target>
 
-	<target name="compiledao" depends="generatedaos" description="compile the source ">
+	<target name="compileGenerations" depends="generate" description="compile the source ">
 		<!-- Compile the java code from ${src.dir} into ${build.dir} -->
 		<ivy:cachepath pathid="compile" conf="compile" />
-		<javac includeantruntime="false" srcdir="${dao.dir}" debug="true" destdir="${build.gen.dir}" classpath="dist/JDBCGenerator.jar;dist/JDBCGen.jar;" classpathref="compile" />
+		<javac includeantruntime="false" srcdir="${gen.dir}" debug="true" destdir="${build.gen.dir}" classpath="dist/JDBCGenerator.jar;dist/JDBCGen.jar;" classpathref="compile" />
 	</target>
 
-	<target name="distdao" depends="manifest, compiledao" description="package, output to JAR">
+	<target name="distGenerations" depends="manifest, compileGenerations" description="package, output to JAR">
 
 		<!-- Put everything in ${build} into the {$projectName}-${DSTAMP}.jar file -->
 		<jar jarfile="${dist.dir}/JDBCGen.jar" basedir="${build.gen.dir}">
@@ -270,43 +270,8 @@
 
 
 
-	<!--=================================Build DAO's===================================-->
+	<!--=================================generate===================================-->
 
-
-	<!--=================================Build JDBC's===================================-->
-
-
-	<target name="generatejdbcs" depends="distdao">
-		<exec executable="java">
-			<arg value="-cp" />
-			<arg value='"${dist.dir}/*;lib/compile/*"' />
-			<arg value="com.generate.GenClass" />
-			<arg value="2" />
-		</exec>
-	</target>
-
-	<target name="compilejdbc" depends="generatejdbcs" description="compile the source ">
-		<!-- Compile the java code from ${src.dir} into ${build.dir} -->
-		<ivy:cachepath pathid="compile" conf="compile" />
-		<javac includeantruntime="false" srcdir="${dao.dir}" debug="true" destdir="${build.gen.dir}" classpath="dist/JDBCGenerator.jar;dist/JDBCGen.jar;" classpathref="compile" />
-		<javac includeantruntime="false" srcdir="${jdbc.dir}" debug="true" destdir="${build.gen.dir}" classpath="dist/JDBCGenerator.jar;dist/JDBCGen.jar;" classpathref="compile" />
-	</target>
-
-	<target name="distjdbc" depends="manifest, compilejdbc" description="package, output to JAR">
-
-		<echo message="Manifest: ${manifest.classpath}" />
-
-		<!-- Put everything in ${build} into the {$projectName}.jar file -->
-		<jar jarfile="${dist.dir}/JDBCGen.jar" basedir="${build.gen.dir}">
-			<manifest>
-				<!-- create an executable Jar -->
-				<attribute name="Main-Class" value="com.generate.GenClass" />
-			</manifest>
-
-		</jar>
-	</target>
-
-	<!--=================================Build JDBC's===================================-->
 
 	<!--=================================Build Tests===================================-->
 
@@ -333,33 +298,6 @@
 
 	<!--=================================Build Tests===================================-->
 
-	
-	<target name="generateFakeSuper" depends="init, bootstrap, resolve">
-		<exec executable="java">
-			<arg value="-cp" />
-			<arg value='"${dist.dir}/*;lib/compile/*"' />
-			<arg value="com.generate.GenClass" />
-			<arg value="3" />
-		</exec>
-	</target>
 
-	<target name="compileFakeSuper" depends="generateFakeSuper" description="compile the source ">
-		<!-- Compile the java code from ${src.dir} into ${build.dir} -->
-		<ivy:cachepath pathid="compile" conf="compile" />
-		<javac includeantruntime="false" srcdir="${fake.super.path}" debug="true" destdir="${build.fake.dir}" classpath="dist/JDBCGenerator.jar;dist/JDBCGen.jar;" classpathref="compile" />
-	</target>
 
-	<target name="distFakeSuper" depends="manifest, compileFakeSuper" description="package, output to JAR">
-
-		<echo message="Manifest: ${manifest.classpath}" />
-
-		<!-- Put everything in ${build} into the {$projectName}.jar file -->
-		<jar jarfile="${dist.dir}/fakeSuperGen.jar" basedir="${build.fake.dir}">
-			<manifest>
-				<!-- create an executable Jar 
-				<attribute name="Main-Class" value="com.generate.GenClass" />-->
-			</manifest>
-
-		</jar>
-	</target>
 </project>

@@ -35,8 +35,7 @@ public class Parameter extends JavaAndSqlVar<Parameter>
 		if(obj == null)
 			return new Parameter(this.getSqlVarName(), this.getJavaVarName(), this.getJavaType(), this.sqlType);
 		
-		JavaAndSqlVar<Parameter> mergedSuper = super.merge(obj);
-		Parameter merged = new Parameter(mergedSuper.getSqlVarName(), mergedSuper.getJavaVarName(), mergedSuper.getJavaType(), null);
+		Parameter merged = super.mergeJASvar(obj, new Parameter());
 		
 		merged.setSqlType(mergeParam(this.sqlType, obj.sqlType));
 		

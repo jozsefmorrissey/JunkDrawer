@@ -36,7 +36,7 @@ public abstract class MergeBean<T extends MergeBean<T>> implements Merge<T>, Com
 					T one = copy1.get(i);
 					T two = copy2.get(j);
 					
-					if(one.shouldMerge(two))
+					if(one != null && one.shouldMerge(two))
 					{
 						mergedList.add(one.merge(two));
 						copy1.remove(one);

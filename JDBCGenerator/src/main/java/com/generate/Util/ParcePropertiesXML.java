@@ -45,12 +45,12 @@ public class ParcePropertiesXML
 		NodeList params = parameterSet.getElementsByTagName("param");
 		List<Parameter> paramList = new ArrayList<Parameter>();
 		for(int index = 0; index < params.getLength(); index++) {
-			Element elem = (Element) params.item(index);
-			
-			String paramName = GenUtil.getByTagName(elem, "paramName", 0).getTextContent();
-			String type = GenUtil.getByTagName(elem, "type", 0).getTextContent();
-			Node annoElem = GenUtil.getByTagName(elem, "paramAnnotations", 0);
-			List<String> annotations = GenUtil.parseFields(annoElem, "paramAnnotation");
+//			Element elem = (Element) params.item(index);
+//			
+//			String paramName = GenUtil.getByTagName(elem, "paramName", 0).getTextContent();
+//			String type = GenUtil.getByTagName(elem, "type", 0).getTextContent();
+//			Node annoElem = GenUtil.getByTagName(elem, "paramAnnotations", 0);
+//			List<String> annotations = GenUtil.parseFields(annoElem, "paramAnnotation");
 			
 			Parameter param = null;//new Parameter(paramName, type, annotations);
 			paramList.add(param);

@@ -1,13 +1,10 @@
 package com.characterBuilder.aerase;
 
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.junit.Before;
 import org.junit.Test;
-
-import com.generated.jdbc.JDBCBookDAO;
 
 
 public class TestGen
@@ -30,13 +27,13 @@ public class TestGen
 	@Test
 	public void testSpringAndJdbc() throws SQLException {
 		
-		ResultSet rs = dataSource.getConnection().prepareStatement("Select isbn_13, title, author from books").executeQuery();
+//		ResultSet rs = dataSource.getConnection().prepareStatement("Select isbn_13, title, author from books").executeQuery();
 
-		boolean b = rs.next();
+//		boolean b = rs.next();
+//		
+//		String author = rs.getString("author");
 		
-		String author = rs.getString("author");
-		
-		System.out.println(new JDBCBookDAO(dataSource).getAllBooks());
+//		System.out.println(new JDBCBookDAO(dataSource).getAllBooks());
 		
 //		assert(jsc != null);
 //		System.out.println(jsc.getResults("SELECT * FROM BOOKS"));

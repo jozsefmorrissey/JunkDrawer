@@ -23,7 +23,6 @@ import com.squareup.javapoet.ParameterizedTypeName;
 import com.squareup.javapoet.TypeName;
 import com.squareup.javapoet.TypeSpec;
 
-@SuppressWarnings("restriction")
 public class GenUtil
 {
 	public static void buildAndSave(String pckg, TypeSpec.Builder typeInfBuilder)

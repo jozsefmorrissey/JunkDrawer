@@ -4,10 +4,10 @@
 		<classAnnotations>
 			<annotation>Override</annotation>
 		</classAnnotations>
-		<superpckg>com/garbage/fill</superpckg>
-		<superclassname>FakeSuper</superclassname>
+		<superpckg>com/characterBuilder/aerase</superpckg>
+		<superclassname>JdbcSuperClass</superclassname>
 		
-		<superclass>com.garbage.fill.FakeSuper</superclass>
+		<superclass>com.characterBuilder.aerase.JdbcSuperClass</superclass>
 		<queryFunctionName></queryFunctionName>		
 		<constructor>
 			<parameters>
@@ -24,73 +24,44 @@
 
 
 	<jdbcClasses>
-		<jdbcClass name="ProviderServiceLocation">
-			<query name="getNonSense">
-				<format>
-					Select HELP_WANTED, PARTY_POOPER, BILL_VERMIN 
-						from diningRoom 
-						where $$BILL_VERMIN$$ = BILL_VERMIN 
-						AND $$PARTY_POOPER$$ = PARTY_POOPER
-				</format>
-				<columns>
-					<column>HELP_Not_WANTED</column>
-					<column>PARTY_POOPER</column>
-					<column>BILL_VERMIN</column>
-				</columns>
-				<substitutions>
-					<substitute>BILL_VERMIN</substitute>
-					<substitute type='java.lang.Long'>PARTY_POOPER</substitute>
-				</substitutions>
-			</query>
-			<query name="getEverything">
-				<format>
-					Select HELP_WANTED, PARTY_POOPER, BILL_VERMIN 
-						from diningRoom 
-						where $$BREAD_BUTTER$$ = BREAD_BUTTER 
-				</format>
-				<columns>
-					<column>HELP_WANTED</column>
-					<column>BILL_VERMIN</column>
-				</columns>
-				<substitutions>
-					<substitute>BREAD_BUTTER</substitute>
-				</substitutions>
-			</query>
+		<jdbcClass name="Book">
+			<querys>
+				<query name="getAllBooks">
+						Select isbn_13, title, author 
+							from books
+					<fields>
+					</fields>
+					<parameters>
+					</parameters>
+				</query>
+				<query name="getBooksByRussell">
+						Select publish_date, price, isbn_13 
+							from books 
+							where $$author$$ = author 
+					<fields>
+					</fields>
+					<parameters>
+						<parameter sqlVarName="author"/>
+					</parameters>
+				</query>
+			</querys>
 		</jdbcClass>
-			<jdbcClass name="AccreditationAproximation">
-			<query name="getGarbTastic">
-				<format>
-					Select HELICOPTER, DOWN_HAWK_BLACK, BRUCE_WILLIS, SPAGGETIOS 
-						from darkDungion 
-						where $$BILL_VERMIN$$ = BILL_VERMIN 
-						AND $$PARTY_POOPER$$ = PARTY_POOPER
-				</format>
-				<columns>
-					<column>HELICOPTER</column>
-					<column>DOWN_HAWK_BLACK</column>
-					<column>BRUCE_WILLIS</column>
-					<column>SPAGGETIOS</column>
-				</columns>
-				<substitutions>
-					<substitute>BILL_VERMIN</substitute>
-					<substitute type='java.lang.Long'>PARTY_POOPER</substitute>
-				</substitutions>
-			</query>
-				<query name="getStuffedBunnies">
-				<format>
-					Select HELICOPTER, DOWN_HAWK_BLACK, BRUCE_WILLIS, SPAGGETIOS 
-						from darkDungion 
-						where $$DOWN_HAWK_BLACK$$ = DOWN_HAWK_BLACK 
-						AND $$SKITTLES$$ = SKITTLES
-				</format>
-				<columns>
-					<column type='java.lang.long'>DOWN_HAWK_BLACK</column>
-					<column>SKITTLES</column>
-				</columns>
-				<substitutions>
-					<substitute>BREAD_BUTTER</substitute>
-				</substitutions>
-			</query>
+		<jdbcClass name="user_info">
+			<querys>
+				<query name="getUserByEmail">
+						Select email, password, name 
+							from user_info 
+							where $$email$$ = email 
+					<fields>
+						<field>name</field>
+						<field>password</field>
+						<field>email</field>
+					</fields>
+					<parameters>
+						<parameter sqlVarName="email"/>
+					</parameters>
+				</query>
+			</querys>
 		</jdbcClass>
 	</jdbcClasses>
 </jdbcTemplates>

@@ -1,6 +1,6 @@
 package com.generate.parce.bean;
 
-public class JavaAndSqlVar<T extends JavaAndSqlVar<T>> extends MergeBean<T>
+public abstract class JavaAndSqlVar<T extends JavaAndSqlVar<T>> extends MergeBean<T>
 {
 	private String sqlVarName;
 	private String javaVarName;
@@ -24,12 +24,22 @@ public class JavaAndSqlVar<T extends JavaAndSqlVar<T>> extends MergeBean<T>
 		this.javaType = javaType;
 	}
 	
-	public T merge(T obj)
+	/**
+	 * The templateing force me to create this function in this way.
+	 * 
+	 * @param obj - object you are merging with
+	 * @param merged
+	 * @return
+	 */
+	public <U extends JavaAndSqlVar<?>> U mergeJASvar(U obj, U merged)
 	{
 		if(obj == null)
-			return (T) new JavaAndSqlVar(this.sqlVarName, this.javaVarName, this.javaType);
-		
-		T merged = (T) new JavaAndSqlVar();
+		{
+			merged.setJavaType(javaType);
+			merged.setJavaVarName(javaVarName);
+			merged.setSqlVarName(sqlVarName);
+			return merged;
+		}
 		
 		merged.setJavaType(mergeParam(this.javaType, obj.getJavaType()));
 		merged.setJavaVarName(mergeParam(this.javaVarName, obj.getJavaVarName()));
@@ -45,14 +55,12 @@ public class JavaAndSqlVar<T extends JavaAndSqlVar<T>> extends MergeBean<T>
 		return (U) field1;
 	}
 	
-	public boolean shouldMerge(JavaAndSqlVar obj)
+	public boolean shouldMerge(T obj)
 	{
-		boolean sqlVarEq = this.sqlVarName.equals(obj.sqlVarName);
-		boolean thisJVarNull = this.javaVarName == null;
-		boolean aJVarNull = thisJVarNull && obj.javaVarName == null;
+		boolean sqlVarEq = this.sqlVarName.equals(obj.getSqlVarName());
 
 		boolean sqlEqAJVarNotSet = sqlVarEq;
-		boolean jVarSetEq = this.javaVarName != null && this.javaVarName.equals(obj.javaVarName);
+		boolean jVarSetEq = this.javaVarName != null && this.javaVarName.equals(obj.getJavaVarName());
 
 		return sqlEqAJVarNotSet || jVarSetEq;
 	}
@@ -67,6 +75,7 @@ public class JavaAndSqlVar<T extends JavaAndSqlVar<T>> extends MergeBean<T>
 		result = prime * result + ((sqlVarName == null) ? 0 : sqlVarName.hashCode());
 		return result;
 	}
+	@SuppressWarnings("unchecked")
 	@Override
 	public boolean equals(Object obj)
 	{
@@ -76,7 +85,7 @@ public class JavaAndSqlVar<T extends JavaAndSqlVar<T>> extends MergeBean<T>
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		JavaAndSqlVar other = (JavaAndSqlVar) obj;
+		JavaAndSqlVar<T> other = (JavaAndSqlVar<T>) obj;
 		if (javaType == null)
 		{
 			if (other.javaType != null)

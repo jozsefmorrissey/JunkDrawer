@@ -24,6 +24,8 @@ public class TagFieldParcer extends TagParcerAbs<Field>
 		String javaType = node.getAttribute("javaType");
 		String javaInitialValue = node.getAttribute("javaInitialValue");
 		
+		if((sqlName == null || sqlName.isEmpty()) && (javaVarName == null || javaVarName.isEmpty()))
+			return null;
 		return new Field(sqlName, javaVarName, javaType, javaInitialValue);
 	}
 }

@@ -2,8 +2,6 @@ package com.generate.parce;
 
 import java.util.List;
 
-import org.w3c.dom.Element;
-
 import com.generate.exception.XmlParceException;
 
 public interface Parcer<T, U>

@@ -3,13 +3,10 @@ package com.example;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Set;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.reflections.Reflections;
 
-import com.dataAccess.map.DAOMap;
 import com.generate.parce.bean.JdbcType;
 
 public class InternalTest
@@ -40,7 +37,7 @@ public class InternalTest
 		}		
 	}
 	
-	private void printArray(int lineLength, byte[] array) {
+	public void printArray(int lineLength, byte[] array) {
 		String line = "\tbyte[] encoded = new byte[]{";
 		for(int index = 0; index < array.length; index++)
 		{
@@ -106,10 +103,10 @@ public class InternalTest
 //		System.out.println(StringUtil.arrayPretty(jdbcTypes, 0));
 
 
-		Reflections r = new Reflections();
-		Set<Class<? extends DAOMap>> maps = r.getSubTypesOf(DAOMap.class);
-		for(Class<?> m : maps)
-			System.out.println(m.getSimpleName());
+//		Reflections r = new Reflections();
+//		Set<Class<? extends DAOMap>> maps = r.getSubTypesOf(DAOMap.class);
+//		for(Class<?> m : maps)
+//			System.out.println(m.getSimpleName());
 		//assert(jdbcT.equals(jdbcTypes.get(0)));
 	}
 	

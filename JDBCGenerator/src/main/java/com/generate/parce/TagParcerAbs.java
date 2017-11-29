@@ -6,7 +6,6 @@ import java.util.List;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
-import com.generate.Util.StringUtil;
 import com.generate.exception.XmlParceException;
 
 public abstract class TagParcerAbs<T> implements Parcer<T, Element>

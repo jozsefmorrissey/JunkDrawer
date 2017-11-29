@@ -34,14 +34,6 @@ public class JavaAndSqlVarWrapper<T extends JavaAndSqlVar<T>>
 	{
 		return getJavaTypeClass().getName();
 	}
-
-	public String getJavaInitialValue()
-	{
-		if(!jasVar.stringIsEmpty(jasVar.getJavaType()))
-			return jasVar.getJavaType();
-		
-		return null;
-	}
 	
 	public Class<?> getJavaTypeClass()
 	{

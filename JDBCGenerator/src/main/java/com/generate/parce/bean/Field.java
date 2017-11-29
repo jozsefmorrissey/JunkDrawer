@@ -25,8 +25,7 @@ public class Field extends JavaAndSqlVar<Field>
 		if(obj == null)
 			return new Field(this.getSqlVarName(), this.getJavaVarName(), this.getJavaType(), this.javaInitialValue);
 		
-		JavaAndSqlVar<Field> mergedSuper = super.merge(obj);
-		Field merged = new Field(mergedSuper.getSqlVarName(), mergedSuper.getJavaVarName(), mergedSuper.getJavaType(), null);
+		Field merged = super.mergeJASvar(obj, new Field());
 		
 		merged.setJavaInitialValue(mergeParam(this.getJavaInitialValue(), obj.getJavaInitialValue()));
 	

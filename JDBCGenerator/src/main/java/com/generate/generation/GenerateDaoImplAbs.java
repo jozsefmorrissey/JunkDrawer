@@ -39,12 +39,12 @@ public class GenerateDaoImplAbs
 	public GenerateDaoImplAbs(JdbcTypeWrapper jdbcTypeW) throws IOException {
 		super();
 		this.jdbcType = jdbcTypeW;
-		buildBean();
 	}
 	
-	public void buildBean() throws IOException {
-		TypeSpec.Builder typeBuilder = TypeSpec.classBuilder(jdbcType.getAbstractName())
-			    .addModifiers(Modifier.PUBLIC, Modifier.ABSTRACT)
+	public void generate() throws IOException {
+		TypeSpec.Builder typeBuilder = defineImplAbs();
+
+		typeBuilder.addModifiers(Modifier.PUBLIC, Modifier.ABSTRACT)
 			    .addAnnotation(GenUtil.getSuppressAnnotation());
 		
 		buildFieldsAndGetSet(typeBuilder);
@@ -53,9 +53,25 @@ public class GenerateDaoImplAbs
 		
 		buildMethods(typeBuilder);
 		
-		GenUtil.buildAndSave(jdbcType.getPackage(jdbcType.getDaoPkg()), typeBuilder);
-	
+		save(typeBuilder);
+	}
 
+	private void save(TypeSpec.Builder typeBuilder)
+	{
+		GenUtil.buildAndSave(jdbcType.getPackage(jdbcType.getDaoPkg()), typeBuilder);
+	}
+
+	public void define()
+	{
+		TypeSpec.Builder typeBuilder = defineImplAbs();
+
+		save(typeBuilder);
+	}
+	
+	private TypeSpec.Builder defineImplAbs()
+	{
+		TypeSpec.Builder typeBuilder = TypeSpec.classBuilder(jdbcType.getAbstractName());
+		return typeBuilder;
 	}
 
 	private void buildMethods(TypeSpec.Builder typeBuilder)

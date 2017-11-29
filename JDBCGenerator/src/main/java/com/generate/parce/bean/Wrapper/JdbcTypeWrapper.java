@@ -119,7 +119,6 @@ public class JdbcTypeWrapper extends JdbcType
 	}
 	
 	public String createFQName(String name, String subPkg) {
-		String s = packageString(getPackage(subPkg), name);
 		return packageString(getPackage(subPkg), name);
 	}
 	

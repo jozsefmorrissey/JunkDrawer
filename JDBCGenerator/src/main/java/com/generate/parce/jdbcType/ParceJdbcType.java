@@ -6,7 +6,6 @@ import org.w3c.dom.Element;
 
 import com.generate.exception.XmlParceException;
 import com.generate.parce.TagParcerAbs;
-import com.generate.parce.bean.JdbcType;
 import com.generate.parce.bean.Query;
 import com.generate.parce.bean.Wrapper.JdbcTypeWrapper;
 import com.generate.parce.query.DefaultTagQueryParcer;
