@@ -1,0 +1,28 @@
+<!-- root html file -->
+<!DOCTYPE html>
+<html style="min-height: 100%; position: relative;">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>Hello World</title>
+
+        <script src="index.js"></script><!-- root js file -->
+
+        <link rel="stylesheet" href="index.css"> <!-- root css file -->
+    </head>
+
+    <!-- apply our angular app to our site -->
+    <body ng-app="routerApp">
+
+        <div id="body">
+          enter content
+            <div ui-view></div> <!-- angular content injected here  -->
+        </div>
+
+
+        <div id="footer-wrapper">
+          Footer
+        </div>
+
+    </body>
+</html>
