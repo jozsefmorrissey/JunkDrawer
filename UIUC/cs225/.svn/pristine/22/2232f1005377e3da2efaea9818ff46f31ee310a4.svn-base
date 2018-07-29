@@ -1,0 +1,54 @@
+Grading revision r22935 by jtmorri2, dated 2015-03-08 20:22:41.000069322 -0500 CDT
+Monad Autograder
+Testing lab_trees at 2015-03-09 00:28:50
+
+"@return A voidean value indicating whether the test was successful." ~ lab_avl
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+test_isOrdered  . [33 pts] - passed
+test_mirror . . . [33 pts] - passed
+test_printPaths . [34 pts] - FAILED: Incorrect Terminal Output
+test_sumDistances [25 pts] - FAILED: unit_tests.cpp:174: [tree.sumDistances() => -1] != [19 => 19]
+
+
+Total score...
+================================================================
+TOTAL SCORE: 66
+
+
+
+Detailed test output...
+================================================================
+----------------------------------------------------------------
+test_printPaths [34 points]
+Result: FAILED: Incorrect Terminal Output
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+test_sumDistances [25 points]
+Result: FAILED: unit_tests.cpp:174: [tree.sumDistances() => -1] != [19 => 19]
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+            __ 5 __              
+         __/       \__           
+       3               7         
+     /   \           /   \       
+   1       4       6       8     
+  / \                       \    
+ 0   2                       9   
+
+
+----------------------------------------------------------------
+Total score...
+================================================================
+TOTAL SCORE: 66
+

@@ -1,0 +1,12 @@
+*.jpg
+*.html
+*.iso
+*~
+*.o
+*.exe
+getone
+getone_blocking
+webget
+mget
+mget_select
+dracula.txt

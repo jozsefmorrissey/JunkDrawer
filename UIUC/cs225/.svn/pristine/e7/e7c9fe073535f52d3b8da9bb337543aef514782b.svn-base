@@ -1,0 +1,26 @@
+Grading revision r5960 by jtmorri2, dated 2015-02-01 16:48:00.000734799 -0600 CST
+Monad Autograder
+Testing mp2.1 at 2015-02-04 00:58:22
+
+"More than the act of testing, the act of designing tests is one of the best bug preventers known. The thinking that must be done to create a useful test can discover and eliminate bugs before they are coded - indeed, test-design thinking can discover and eliminate bugs at every stage in the creation of software, from conception to specification, to design, coding and the rest." ~ Boris Bezier
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+InvertColorsEven  . . [30 pts] - passed
+FlipLeftEven  . . . . [15 pts] - passed
+FlipLeftOdd . . . . . [15 pts] - passed
+AdjustBrightnessEven  [10 pts] - passed
+AdjustBrightnessEven2 [10 pts] - passed
+AdjustBrightnessEven3 [10 pts] - passed
+ImageMakefile . . . . [10 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 100
+

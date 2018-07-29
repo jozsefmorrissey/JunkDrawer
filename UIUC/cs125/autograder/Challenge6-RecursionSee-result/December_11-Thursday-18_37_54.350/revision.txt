@@ -1,0 +1,11 @@
+Path: work/students/jtmorri2/Challenge6-RecursionSee
+URL: https://subversion.ews.illinois.edu/svn/fa14-cs125/jtmorri2/Challenge6-RecursionSee
+Repository Root: https://subversion.ews.illinois.edu/svn/fa14-cs125
+Repository UUID: d41138f7-c5d8-4081-8717-40b89346d955
+Revision: 42979
+Node Kind: directory
+Schedule: normal
+Last Changed Author: jtmorri2
+Last Changed Rev: 30306
+Last Changed Date: 2014-11-11 00:18:40 -0600 (Tue, 11 Nov 2014)
+

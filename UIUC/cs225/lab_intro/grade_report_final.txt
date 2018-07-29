@@ -1,0 +1,8 @@
+Grading revision r1319 by bzhang44, dated 2015-01-21 12:45:00.000056373 -0600 CST
+Monad Autograder
+Testing lab_intro at 2015-01-26 00:36:00
+
+"Rejoice!" ~ Kotomine Kirei
+
+Setting up test environment...
+Error: /dev/shm/cs225student/autograder/temp/lab_intro/rgbapixel.cpp does not exist.

@@ -1,0 +1,65 @@
+Overworked Interns
+CS 241 Fall 2015
+-------------------------------------------------------------------------------------
+
+Define
+    Deadlock
+        Response Here:
+    Livelock
+        Response Here:
+    Starvation
+        Response Here:
+
+What are the Coffman conditions? Define/describe them.
+1)
+2)
+3)
+4)
+
+For each Coffman condition, describe one way to break only that condition
+and no others in the COMPANY AND INTERN SCENARIO (Label what condition you are breaking).
+1)
+2)
+3)
+4)
+
+For each of the following scenarios answer:
+    Is this
+        deadlock
+        livelock
+        starvation
+        some of the above
+        none of the above
+    Explain
+
+    Scenario 1: You are walking down the street and someone is getting in your way.
+    You move in one direction to get out of their way, but they move in the same direction.
+    You then switch, but they do the same. This repeats till the end of time.
+        Response Here:
+
+    Scenario 2: You are a 241 TA eager to answer questions on piazza, but Jake Bailey gets to all of them first.
+        Response Here:
+
+    Scenario 3: You tell your friend that you will write the latex for the 374 homework once he solves it.
+    Your friend says that they will solve the problems as soon as you write the latex.
+        Response Here:
+
+Please run the simulation in the following ways and answer the respective questions:
+
+    Experiment 1: Run the bad solution with 5 companies and 5 interns
+        What happens?
+            Response Here:
+        Why?
+            Response Here:
+
+    Experiment 2: Run the bad solution with 5 companies and 15 interns. Notice that it no longer deadlocks.
+        Why is this (which of the Coffman Condition(s) did we break)?
+            Response Here:
+        For N companies what is the minimum number of interns do you need to break the same condition(s)?
+            Response Here:
+
+    Experiment 3: Run the bad solution with 2 companies and 2 interns, then 20 companies and 20 interns several times each.
+        Which deadlocks faster?
+            Response Here:
+        Why is that?
+            Response Here:

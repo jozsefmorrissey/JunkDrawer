@@ -1,0 +1,60 @@
+Test 3: Empty lines, dream big. 
+String 0: *AMAZEDRUM SOLO*
+String 1: I wanna be the very best,
+String 2: Like no one ever was.
+String 3: To catch them is my real test,
+String 4: To train them is my cause.
+String 5:
+String 6: I will travel across the land,
+String 7: Searching far and wide.
+String 8: Each Pokemon to understand
+String 9: The power that's inside
+String 10:
+String 11: Pokemon, (gotta catch them all) its you and me
+String 12: I know its my destiny
+String 13: Pokemon, oh, you're my best friend
+String 14: In a world we must defend
+String 15:
+String 16: Pokemon, (gotta catch them all) a heart so true
+String 17: Our courage will pull us through
+String 18: You teach me and I'll teach you
+String 19: (Po-ke-mon) Gotta catch 'em all
+quu..__
+ $$$b  `---.__
+  "$$b        `--.                          ___.---uuudP
+   `$$b           `.__.------.__     __.---'      $$$$"              .
+     "$b          -'            `-.-'            $$$"              .'|
+       ".                                       d$"             _.'  |
+         `.   /                              ..."             .'     |
+           `./                           ..::-'            _.'       |
+            /                         .:::-'            .-'         .'
+           :                          ::''\          _.'            |
+          .' .-.             .-.           `.      .'               |
+          : /'$$|           .@"$\           `.   .'              _.-'
+         .'|$u$$|          |$$,$$|           |  <            _.-'
+         | `:$$:'          :$$$$$:           `.  `.       .-'
+         :                  `"--'             |    `-.     \
+        :##.       ==             .###.       `.      `.    `\
+        |##:                      :###:        |        >     >
+        |#'     `..'`..'          `###'        x:      /     /
+         \                                   xXX|     /    ./
+          \                                xXXX'|    /   ./
+          /`-.                                  `.  /   /
+         :    `-  ...........,                   | /  .'
+         |         ``:::::::'       .            |<    `.
+         |             ```          |           x| \ `.:``.
+         |                         .'    /'   xXX|  `:`M`M':.
+         |    |                    ;    /:' xXXX'|  -'MMMMM:'
+         `.  .'                   :    /:'       |-'MMMM.-'
+          |  |                   .'   /'        .'MMM.-'
+          `'`'                   :  ,'          |MMM<
+            |                     `'            |tbap\
+             \                                  :MM.-'
+              \                 |              .''
+               \.               `.            /
+                /     .:::::::.. :           /
+               |     .:::::::::::`.         /
+               |   .:::------------\       /
+              /   .''               >::'  /
+              `',:                 :    .'
+Test 3 Success!

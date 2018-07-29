@@ -1,0 +1,4099 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   GRADE REPORT
+  </title>
+  <style>
+   nav, header, section, footer, div {
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+		}
+
+		textarea {
+			background-color: black;
+			color: white;
+			font-family: monospace;
+		}
+
+		.two_column {
+			-webkit-column-count: 2; /* Chrome, Safari, Opera */
+		    -moz-column-count: 2; /* Firefox */
+		    column-count: 2;
+		}
+
+		.result {
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			width: 60%;
+		}
+		
+		.testcase {
+			padding-top: 2.5%;
+			padding-bottom: 2.5%;
+			border: 1px solid black;
+		}
+
+		.pass {
+			color: green;
+		}
+		
+		.fail {
+			color: red;
+		}
+
+		.hidden {
+			display: none;
+		}
+		
+		.visible {
+			display: visible;
+			-webkit-animation: fadein 2s; /* Chrome, Safari, Opera */
+		}
+  </style>
+ </head>
+ <body onhashchange="load();" onload="load();">
+  <!-- Navigation -->
+  <nav>
+   <button onclick="incrementResults(-1)">
+    Previous Results
+   </button>
+   <!-- Selector gets populated by Beautiful Soup 4 -->
+   <select id="selector" onchange="changeResults(this.value)">
+    <option selected="selected" value="Chart">
+     Chart
+    </option>
+    <option value="0">
+     2015-12-02 19:35:51.004714
+    </option>
+    <option value="1">
+     2015-12-03 21:56:15.016279
+    </option>
+    <option value="2">
+     2015-12-05 03:04:14.010666
+    </option>
+    <option value="3">
+     2015-12-06 05:32:20.328977
+    </option>
+    <option value="4">
+     2015-12-07 02:27:48.383912
+    </option>
+    <option value="5">
+     2015-12-07 18:44:28.871179
+    </option>
+    <option value="6">
+     2015-12-08 02:19:45.628341
+    </option>
+    <option value="7">
+     2015-12-09 02:43:25.387030
+    </option>
+    <option value="8">
+     2015-12-09 19:05:14.261047
+    </option>
+    <option value="9">
+     2015-12-10 02:44:22.057691
+    </option>
+   </select>
+   <button onclick="incrementResults(1)">
+    Next Results
+   </button>
+  </nav>
+  <div id="disclaimer" style="width:60%; text-align:left">
+   <h2>
+    <span style="color:red;">
+     Disclaimer:
+    </span>
+   </h2>
+   This autograder is a preliminary assessment of your program's correctness. Your grade may change UP OR DOWN based on the CORRECTNESS OF YOUR PROGRAM. We make every effort to ensure that our autograder is 'smart' enough to not count off for simple things like grammar but, in doing so, we may inadvertently allow for incorrect code to be counted as correct. If we have to change our script to better reflect the CORRECTNESS OF YOUR PROGRAM, we will run the script on EVERY TESTCASE and update EVERY STUDENT'S AUTOGRADER OUTPUT to ensure fairness to all students. Thanks for understanding!
+   <br/>
+   <br/>
+   <span style="color:red;">
+    Acedemic Integrity:
+   </span>
+   A reminder the University of Illinois and the department of computer science has a
+   <a href="https://cs.illinois.edu/current-students/undergraduates/policies-and-procedures-0/honor-code-and-academic-integrity" target="_blank">
+    policy
+   </a>
+   about what is allowed regarding collaboration and publishing of solutions. i.e. Your score should be based on your own work and you may not publish your solutions or leave them in 'plain view'. For this MP, the code you submit must be your own work i.e. entirely your own work product.
+   <br/>
+   <span style="color:green;">
+    Rule of Thumb
+   </span>
+   - If at any point you can not reproduce the code you have submitted, then you have cheated. We run an in house plagiarism detector (not MOSS) and we have caught students.
+   <br/>
+   <br/>
+   - CS 241 Staff
+  </div>
+  <!-- Results -->
+  <section id="results">
+   <div id="carousel">
+    <h1>
+     Results
+    </h1>
+    <div class="visible result" id="result_div">
+     <div class="two_column">
+      <h2 id="revision">
+       Revision: 44347
+      </h2>
+      <h2 id="timestamp">
+       Time: 2015-12-02 19:35:51.004714
+      </h2>
+     </div>
+     <br/>
+     <br/>
+     <br/>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: One Wearable
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing server with one wearable ...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,15
+&gt; Results for heart_beat:
+&gt; Size:1
+&gt; Median:100
+&gt; Average:100
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Two Wearable
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing server with two wearables
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,30
+&gt; Results for heart_beat:
+&gt; Size:5
+&gt; Median:100
+&gt; Average:104
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:4
+&gt; Median:111
+&gt; Average:109
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:5
+&gt; Median:100
+&gt; Average:104
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:2
+&gt; Median:104
+&gt; Average:104
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:5
+&gt; Median:111
+&gt; Average:108
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Synchronized
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing Server for synchronization...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,30
+&gt; Results for heart_beat:
+&gt; Size:472
+&gt; Median:104
+&gt; Average:100
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:516
+&gt; Median:92
+&gt; Average:96
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:553
+&gt; Median:104
+&gt; Average:100
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:555
+&gt; Median:104
+&gt; Average:100
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:596
+&gt; Median:96
+&gt; Average:97
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:640
+&gt; Median:104
+&gt; Average:100
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Stress
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Stress Testing Server...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,30
+&gt; Results for heart_beat:
+&gt; Size:180
+&gt; Median:102
+&gt; Average:102
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:211
+&gt; Median:101
+&gt; Average:100
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:204
+&gt; Median:102
+&gt; Average:101
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:4507
+&gt; Median:100
+&gt; Average:99
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:4591
+&gt; Median:99
+&gt; Average:99
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:4502
+&gt; Median:100
+&gt; Average:99
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Tricky
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Now I'm just messing with you :)
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,60
+&gt; Results for heart_beat:
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:3
+&gt; Median:104
+&gt; Average:114
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:2
+&gt; Median:124
+&gt; Average:124
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:3
+&gt; Median:104
+&gt; Average:114
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:2
+&gt; Median:124
+&gt; Average:124
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:4
+&gt; Median:104
+&gt; Average:111
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:3
+&gt; Median:104
+&gt; Average:117
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:11
+&gt; Median:120
+&gt; Average:149
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:4
+&gt; Median:104
+&gt; Average:111
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:7
+&gt; Median:111
+&gt; Average:112
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Memory Leak
+       </h3>
+       <h3 class="pass" id="score">
+        Score: 5.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Checking for memory leaks...
+Trying to compile your code...
+Successfully compiled your code..
+==1842== Memcheck, a memory error detector
+==1842== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==1842== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==1842== Command: ./mpwearables/svn/jtmorri2/mpwearables/wearable_server 49640 49641
+==1842== 
+==1842== Warning: invalid file descriptor -1 in syscall close()
+==1842== 
+==1842== HEAP SUMMARY:
+==1842==     in use at exit: 0 bytes in 0 blocks
+==1842==   total heap usage: 1 allocs, 1 frees, 272 bytes allocated
+==1842== 
+==1842== All heap blocks were freed -- no leaks are possible
+==1842== 
+==1842== For counts of detected and suppressed errors, rerun with: -v
+==1842== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)
+      </textarea>
+     </div>
+    </div>
+    <div class="visible result" id="result_div">
+     <div class="two_column">
+      <h2 id="revision">
+       Revision: 44347
+      </h2>
+      <h2 id="timestamp">
+       Time: 2015-12-03 21:56:15.016279
+      </h2>
+     </div>
+     <br/>
+     <br/>
+     <br/>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: One Wearable
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing server with one wearable ...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,15
+&gt; Results for heart_beat:
+&gt; Size:1
+&gt; Median:100
+&gt; Average:100
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Two Wearable
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing server with two wearables
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,30
+&gt; Results for heart_beat:
+&gt; Size:5
+&gt; Median:100
+&gt; Average:104
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:4
+&gt; Median:111
+&gt; Average:109
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:5
+&gt; Median:100
+&gt; Average:104
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:2
+&gt; Median:104
+&gt; Average:104
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:5
+&gt; Median:111
+&gt; Average:108
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Synchronized
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing Server for synchronization...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,30
+&gt; Results for heart_beat:
+&gt; Size:472
+&gt; Median:104
+&gt; Average:100
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:516
+&gt; Median:92
+&gt; Average:96
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:553
+&gt; Median:104
+&gt; Average:100
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:555
+&gt; Median:104
+&gt; Average:100
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:596
+&gt; Median:96
+&gt; Average:97
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:640
+&gt; Median:104
+&gt; Average:100
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Stress
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Stress Testing Server...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,30
+&gt; Results for heart_beat:
+&gt; Size:180
+&gt; Median:102
+&gt; Average:102
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:211
+&gt; Median:101
+&gt; Average:100
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:204
+&gt; Median:102
+&gt; Average:101
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:4507
+&gt; Median:100
+&gt; Average:99
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:4591
+&gt; Median:99
+&gt; Average:99
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:4502
+&gt; Median:100
+&gt; Average:99
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Tricky
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Now I'm just messing with you :)
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,60
+&gt; Results for heart_beat:
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:3
+&gt; Median:104
+&gt; Average:114
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:2
+&gt; Median:124
+&gt; Average:124
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:3
+&gt; Median:104
+&gt; Average:114
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:2
+&gt; Median:124
+&gt; Average:124
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:4
+&gt; Median:104
+&gt; Average:111
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:3
+&gt; Median:104
+&gt; Average:117
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:11
+&gt; Median:120
+&gt; Average:149
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:4
+&gt; Median:104
+&gt; Average:111
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:7
+&gt; Median:111
+&gt; Average:112
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Memory Leak
+       </h3>
+       <h3 class="pass" id="score">
+        Score: 5.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Checking for memory leaks...
+Trying to compile your code...
+Successfully compiled your code..
+==3039== Memcheck, a memory error detector
+==3039== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3039== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==3039== Command: ./mpwearables/svn/jtmorri2/mpwearables/wearable_server 49640 49641
+==3039== 
+==3039== Warning: invalid file descriptor -1 in syscall close()
+==3039== 
+==3039== HEAP SUMMARY:
+==3039==     in use at exit: 0 bytes in 0 blocks
+==3039==   total heap usage: 1 allocs, 1 frees, 272 bytes allocated
+==3039== 
+==3039== All heap blocks were freed -- no leaks are possible
+==3039== 
+==3039== For counts of detected and suppressed errors, rerun with: -v
+==3039== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)
+      </textarea>
+     </div>
+    </div>
+    <div class="visible result" id="result_div">
+     <div class="two_column">
+      <h2 id="revision">
+       Revision: 44347
+      </h2>
+      <h2 id="timestamp">
+       Time: 2015-12-05 03:04:14.010666
+      </h2>
+     </div>
+     <br/>
+     <br/>
+     <br/>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: One Wearable
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing server with one wearable ...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,15
+&gt; Results for heart_beat:
+&gt; Size:1
+&gt; Median:100
+&gt; Average:100
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Two Wearable
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing server with two wearables
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,30
+&gt; Results for heart_beat:
+&gt; Size:5
+&gt; Median:100
+&gt; Average:104
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:4
+&gt; Median:111
+&gt; Average:109
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:5
+&gt; Median:100
+&gt; Average:104
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:2
+&gt; Median:104
+&gt; Average:104
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:5
+&gt; Median:111
+&gt; Average:108
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Synchronized
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing Server for synchronization...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,30
+&gt; Results for heart_beat:
+&gt; Size:472
+&gt; Median:104
+&gt; Average:100
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:516
+&gt; Median:92
+&gt; Average:96
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:553
+&gt; Median:104
+&gt; Average:100
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:555
+&gt; Median:104
+&gt; Average:100
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:596
+&gt; Median:96
+&gt; Average:97
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:640
+&gt; Median:104
+&gt; Average:100
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Stress
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Stress Testing Server...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,30
+&gt; Results for heart_beat:
+&gt; Size:180
+&gt; Median:102
+&gt; Average:102
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:211
+&gt; Median:101
+&gt; Average:100
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:204
+&gt; Median:102
+&gt; Average:101
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:4507
+&gt; Median:100
+&gt; Average:99
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:4591
+&gt; Median:99
+&gt; Average:99
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:4502
+&gt; Median:100
+&gt; Average:99
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Tricky
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Now I'm just messing with you :)
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,60
+&gt; Results for heart_beat:
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:3
+&gt; Median:104
+&gt; Average:114
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:2
+&gt; Median:124
+&gt; Average:124
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:3
+&gt; Median:104
+&gt; Average:114
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:2
+&gt; Median:124
+&gt; Average:124
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:4
+&gt; Median:104
+&gt; Average:111
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:3
+&gt; Median:104
+&gt; Average:117
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:11
+&gt; Median:120
+&gt; Average:149
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:4
+&gt; Median:104
+&gt; Average:111
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:7
+&gt; Median:111
+&gt; Average:112
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Memory Leak
+       </h3>
+       <h3 class="pass" id="score">
+        Score: 5.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Checking for memory leaks...
+Trying to compile your code...
+Successfully compiled your code..
+==8744== Memcheck, a memory error detector
+==8744== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==8744== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==8744== Command: ./mpwearables/svn/jtmorri2/mpwearables/wearable_server 49640 49641
+==8744== 
+==8744== Warning: invalid file descriptor -1 in syscall close()
+==8744== 
+==8744== HEAP SUMMARY:
+==8744==     in use at exit: 0 bytes in 0 blocks
+==8744==   total heap usage: 1 allocs, 1 frees, 272 bytes allocated
+==8744== 
+==8744== All heap blocks were freed -- no leaks are possible
+==8744== 
+==8744== For counts of detected and suppressed errors, rerun with: -v
+==8744== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)
+      </textarea>
+     </div>
+    </div>
+    <div class="visible result" id="result_div">
+     <div class="two_column">
+      <h2 id="revision">
+       Revision: 44347
+      </h2>
+      <h2 id="timestamp">
+       Time: 2015-12-06 05:32:20.328977
+      </h2>
+     </div>
+     <br/>
+     <br/>
+     <br/>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: One Wearable
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing server with one wearable ...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,15
+&gt; Results for heart_beat:
+&gt; Size:1
+&gt; Median:100
+&gt; Average:100
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Two Wearable
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing server with two wearables
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,30
+&gt; Results for heart_beat:
+&gt; Size:5
+&gt; Median:100
+&gt; Average:104
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:4
+&gt; Median:111
+&gt; Average:109
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:5
+&gt; Median:100
+&gt; Average:104
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:2
+&gt; Median:104
+&gt; Average:104
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:5
+&gt; Median:111
+&gt; Average:108
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Synchronized
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing Server for synchronization...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,30
+&gt; Results for heart_beat:
+&gt; Size:472
+&gt; Median:104
+&gt; Average:100
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:516
+&gt; Median:92
+&gt; Average:96
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:553
+&gt; Median:104
+&gt; Average:100
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:555
+&gt; Median:104
+&gt; Average:100
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:596
+&gt; Median:96
+&gt; Average:97
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:640
+&gt; Median:104
+&gt; Average:100
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Stress
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Stress Testing Server...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,30
+&gt; Results for heart_beat:
+&gt; Size:180
+&gt; Median:102
+&gt; Average:102
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:211
+&gt; Median:101
+&gt; Average:100
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:204
+&gt; Median:102
+&gt; Average:101
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:4507
+&gt; Median:100
+&gt; Average:99
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:4591
+&gt; Median:99
+&gt; Average:99
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:4502
+&gt; Median:100
+&gt; Average:99
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Tricky
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Now I'm just messing with you :)
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,60
+&gt; Results for heart_beat:
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:3
+&gt; Median:104
+&gt; Average:114
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:2
+&gt; Median:124
+&gt; Average:124
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:3
+&gt; Median:104
+&gt; Average:114
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:2
+&gt; Median:124
+&gt; Average:124
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:4
+&gt; Median:104
+&gt; Average:111
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:3
+&gt; Median:104
+&gt; Average:117
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:11
+&gt; Median:120
+&gt; Average:149
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:4
+&gt; Median:104
+&gt; Average:111
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:7
+&gt; Median:111
+&gt; Average:112
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Memory Leak
+       </h3>
+       <h3 class="pass" id="score">
+        Score: 5.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Checking for memory leaks...
+Trying to compile your code...
+Successfully compiled your code..
+==5758== Memcheck, a memory error detector
+==5758== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==5758== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==5758== Command: ./mpwearables/svn/jtmorri2/mpwearables/wearable_server 49640 49641
+==5758== 
+==5758== Warning: invalid file descriptor -1 in syscall close()
+==5758== 
+==5758== HEAP SUMMARY:
+==5758==     in use at exit: 0 bytes in 0 blocks
+==5758==   total heap usage: 1 allocs, 1 frees, 272 bytes allocated
+==5758== 
+==5758== All heap blocks were freed -- no leaks are possible
+==5758== 
+==5758== For counts of detected and suppressed errors, rerun with: -v
+==5758== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)
+      </textarea>
+     </div>
+    </div>
+    <div class="visible result" id="result_div">
+     <div class="two_column">
+      <h2 id="revision">
+       Revision: 47743
+      </h2>
+      <h2 id="timestamp">
+       Time: 2015-12-07 02:27:48.383912
+      </h2>
+     </div>
+     <br/>
+     <br/>
+     <br/>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: One Wearable
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing server with one wearable ...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:1
+&gt; Median:100
+&gt; Average:100
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+7,14c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Two Wearable
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing server with two wearables
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:5
+&gt; Median:100
+&gt; Average:104
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+7,9c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4
+&gt; Median:111
+&gt; Average:109
+12,14c17,19
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:5
+&gt; Median:100
+&gt; Average:104
+17,19c22,24
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:2
+&gt; Median:104
+&gt; Average:104
+22,29c27,29
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:5
+&gt; Median:111
+&gt; Average:108
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Synchronized
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing Server for synchronization...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:472
+&gt; Median:104
+&gt; Average:100
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:516
+&gt; Median:92
+&gt; Average:96
+7,9c12,14
+&lt; Size:3
+&lt; Median:129
+&lt; Average:111
+---
+&gt; Size:553
+&gt; Median:104
+&gt; Average:100
+12,14c17,19
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:555
+&gt; Median:104
+&gt; Average:100
+17,19c22,24
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:596
+&gt; Median:96
+&gt; Average:97
+22,29c27,29
+&lt; Size:3
+&lt; Median:129
+&lt; Average:111
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:640
+&gt; Median:104
+&gt; Average:100
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Stress
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Stress Testing Server...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:180
+&gt; Median:102
+&gt; Average:102
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:211
+&gt; Median:101
+&gt; Average:100
+7,9c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:204
+&gt; Median:102
+&gt; Average:101
+12,14c17,19
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4507
+&gt; Median:100
+&gt; Average:99
+17,19c22,24
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4591
+&gt; Median:99
+&gt; Average:99
+22,29c27,29
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4502
+&gt; Median:100
+&gt; Average:99
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Tricky
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Now I'm just messing with you :)
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:3
+&gt; Median:104
+&gt; Average:114
+7,9c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:2
+&gt; Median:124
+&gt; Average:124
+12,14c17,19
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+17,19c22,24
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:3
+&gt; Median:104
+&gt; Average:114
+22,24c27,29
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:2
+&gt; Median:124
+&gt; Average:124
+27,29c32,34
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+32,34c37,39
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4
+&gt; Median:104
+&gt; Average:111
+37,39c42,44
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:3
+&gt; Median:104
+&gt; Average:117
+42,44c47,49
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:11
+&gt; Median:120
+&gt; Average:149
+47,49c52,54
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4
+&gt; Median:104
+&gt; Average:111
+52,59c57,59
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:7
+&gt; Median:111
+&gt; Average:112
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Memory Leak
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Checking for memory leaks...
+Trying to compile your code...
+Successfully compiled your code..
+==7674== Memcheck, a memory error detector
+==7674== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==7674== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==7674== Command: ./mpwearables/svn/jtmorri2/mpwearables/wearable_server 49640 49641
+==7674== 
+==7674== Thread 2:
+==7674== Conditional jump or move depends on uninitialised value(s)
+==7674==    at 0x4C2CCAB: strcpy (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7674==    by 0x401B81: user_request_thread (wearable_server.c:180)
+==7674==    by 0x4E3CDF2: start_thread (in /usr/lib64/libpthread-2.17.so)
+==7674==    by 0x51471EC: clone (in /usr/lib64/libc-2.17.so)
+==7674== 
+==7674== Conditional jump or move depends on uninitialised value(s)
+==7674==    at 0x508B2D6: ____strtol_l_internal (in /usr/lib64/libc-2.17.so)
+==7674==    by 0x401BBD: atol (stdlib.h:285)
+==7674==    by 0x401BBD: user_request_thread (wearable_server.c:186)
+==7674==    by 0x4E3CDF2: start_thread (in /usr/lib64/libpthread-2.17.so)
+==7674==    by 0x51471EC: clone (in /usr/lib64/libc-2.17.so)
+==7674== 
+==7674== 
+==7674== HEAP SUMMARY:
+==7674==     in use at exit: 272 bytes in 1 blocks
+==7674==   total heap usage: 8 allocs, 7 frees, 12,720 bytes allocated
+==7674== 
+==7674== Thread 1:
+==7674== 272 bytes in 1 blocks are possibly lost in loss record 1 of 1
+==7674==    at 0x4C2B974: calloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7674==    by 0x4011EB4: _dl_allocate_tls (in /usr/lib64/ld-2.17.so)
+==7674==    by 0x4E3D9A0: pthread_create@@GLIBC_2.2.5 (in /usr/lib64/libpthread-2.17.so)
+==7674==    by 0x4012D6: main (wearable_server.c:344)
+==7674== 
+==7674== LEAK SUMMARY:
+==7674==    definitely lost: 0 bytes in 0 blocks
+==7674==    indirectly lost: 0 bytes in 0 blocks
+==7674==      possibly lost: 272 bytes in 1 blocks
+==7674==    still reachable: 0 bytes in 0 blocks
+==7674==         suppressed: 0 bytes in 0 blocks
+==7674== 
+==7674== For counts of detected and suppressed errors, rerun with: -v
+==7674== Use --track-origins=yes to see where uninitialised values come from
+==7674== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 2 from 2)
+      </textarea>
+     </div>
+    </div>
+    <div class="visible result" id="result_div">
+     <div class="two_column">
+      <h2 id="revision">
+       Revision: 48201
+      </h2>
+      <h2 id="timestamp">
+       Time: 2015-12-07 18:44:28.871179
+      </h2>
+     </div>
+     <br/>
+     <br/>
+     <br/>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: One Wearable
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing server with one wearable ...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,15
+&gt; Results for heart_beat:
+&gt; Size:1
+&gt; Median:100
+&gt; Average:100
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Two Wearable
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing server with two wearables
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,30
+&gt; Results for heart_beat:
+&gt; Size:5
+&gt; Median:100
+&gt; Average:104
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:4
+&gt; Median:111
+&gt; Average:109
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:5
+&gt; Median:100
+&gt; Average:104
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:2
+&gt; Median:104
+&gt; Average:104
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:5
+&gt; Median:111
+&gt; Average:108
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Synchronized
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing Server for synchronization...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,30
+&gt; Results for heart_beat:
+&gt; Size:472
+&gt; Median:104
+&gt; Average:100
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:516
+&gt; Median:92
+&gt; Average:96
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:553
+&gt; Median:104
+&gt; Average:100
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:555
+&gt; Median:104
+&gt; Average:100
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:596
+&gt; Median:96
+&gt; Average:97
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:640
+&gt; Median:104
+&gt; Average:100
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Stress
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Stress Testing Server...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,30
+&gt; Results for heart_beat:
+&gt; Size:180
+&gt; Median:102
+&gt; Average:102
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:211
+&gt; Median:101
+&gt; Average:100
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:204
+&gt; Median:102
+&gt; Average:101
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:4507
+&gt; Median:100
+&gt; Average:99
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:4591
+&gt; Median:99
+&gt; Average:99
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:4502
+&gt; Median:100
+&gt; Average:99
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Tricky
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Now I'm just messing with you :)
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,60
+&gt; Results for heart_beat:
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:3
+&gt; Median:104
+&gt; Average:114
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:2
+&gt; Median:124
+&gt; Average:124
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:3
+&gt; Median:104
+&gt; Average:114
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:2
+&gt; Median:124
+&gt; Average:124
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:4
+&gt; Median:104
+&gt; Average:111
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:3
+&gt; Median:104
+&gt; Average:117
+&gt; 
+&gt; Results for heart_beat:
+&gt; Size:11
+&gt; Median:120
+&gt; Average:149
+&gt; 
+&gt; Results for blood_sugar:
+&gt; Size:4
+&gt; Median:104
+&gt; Average:111
+&gt; 
+&gt; Results for body_temp:
+&gt; Size:7
+&gt; Median:111
+&gt; Average:112
+&gt;
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Memory Leak
+       </h3>
+       <h3 class="pass" id="score">
+        Score: 5.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Checking for memory leaks...
+Trying to compile your code...
+Successfully compiled your code..
+==3791== Memcheck, a memory error detector
+==3791== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3791== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==3791== Command: ./mpwearables/svn/jtmorri2/mpwearables/wearable_server 49640 49641
+==3791== 
+171
+Logged
+376
+==3791== Thread 2:
+==3791== Conditional jump or move depends on uninitialised value(s)
+==3791==    at 0x4C2CCAB: strcpy (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3791==    by 0x401CC7: user_request_thread (wearable_server.c:181)
+==3791==    by 0x4E3CDF2: start_thread (in /usr/lib64/libpthread-2.17.so)
+==3791==    by 0x51471EC: clone (in /usr/lib64/libc-2.17.so)
+==3791== 
+==3791== Conditional jump or move depends on uninitialised value(s)
+==3791==    at 0x508B2D6: ____strtol_l_internal (in /usr/lib64/libc-2.17.so)
+==3791==    by 0x401D03: atol (stdlib.h:285)
+==3791==    by 0x401D03: user_request_thread (wearable_server.c:187)
+==3791==    by 0x4E3CDF2: start_thread (in /usr/lib64/libpthread-2.17.so)
+==3791==    by 0x51471EC: clone (in /usr/lib64/libc-2.17.so)
+==3791== 
+in
+Results for blood_sugar:
+Size:0
+Median:0
+Average:0
+
+Results for body_temp:
+Size:0
+Median:0
+Average:0
+
+Results for heart_beat:
+Size:1
+Median:100
+Average:100
+
+
+220
+==3791== 
+==3791== HEAP SUMMARY:
+==3791==     in use at exit: 0 bytes in 0 blocks
+==3791==   total heap usage: 11 allocs, 11 frees, 12,832 bytes allocated
+==3791== 
+==3791== All heap blocks were freed -- no leaks are possible
+==3791== 
+==3791== For counts of detected and suppressed errors, rerun with: -v
+==3791== Use --track-origins=yes to see where uninitialised values come from
+==3791== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 2 from 2)
+      </textarea>
+     </div>
+    </div>
+    <div class="visible result" id="result_div">
+     <div class="two_column">
+      <h2 id="revision">
+       Revision: 48290
+      </h2>
+      <h2 id="timestamp">
+       Time: 2015-12-08 02:19:45.628341
+      </h2>
+     </div>
+     <br/>
+     <br/>
+     <br/>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: One Wearable
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing server with one wearable ...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:1
+&gt; Median:100
+&gt; Average:100
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+7,14c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Two Wearable
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing server with two wearables
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:5
+&gt; Median:100
+&gt; Average:104
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+7,9c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4
+&gt; Median:111
+&gt; Average:109
+12,14c17,19
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:5
+&gt; Median:100
+&gt; Average:104
+17,19c22,24
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:2
+&gt; Median:104
+&gt; Average:104
+22,29c27,29
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:5
+&gt; Median:111
+&gt; Average:108
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Synchronized
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing Server for synchronization...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:472
+&gt; Median:104
+&gt; Average:100
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:516
+&gt; Median:92
+&gt; Average:96
+7,9c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:553
+&gt; Median:104
+&gt; Average:100
+12,14c17,19
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:555
+&gt; Median:104
+&gt; Average:100
+17,19c22,24
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:596
+&gt; Median:96
+&gt; Average:97
+22,29c27,29
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:640
+&gt; Median:104
+&gt; Average:100
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Stress
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Stress Testing Server...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:180
+&gt; Median:102
+&gt; Average:102
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:211
+&gt; Median:101
+&gt; Average:100
+7,9c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:204
+&gt; Median:102
+&gt; Average:101
+12,14c17,19
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4507
+&gt; Median:100
+&gt; Average:99
+17,19c22,24
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4591
+&gt; Median:99
+&gt; Average:99
+22,29c27,29
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4502
+&gt; Median:100
+&gt; Average:99
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Tricky
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Now I'm just messing with you :)
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:3
+&gt; Median:104
+&gt; Average:114
+7,9c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:2
+&gt; Median:124
+&gt; Average:124
+12,14c17,19
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+17,19c22,24
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:3
+&gt; Median:104
+&gt; Average:114
+22,24c27,29
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:2
+&gt; Median:124
+&gt; Average:124
+27,29c32,34
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+32,34c37,39
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4
+&gt; Median:104
+&gt; Average:111
+37,39c42,44
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:3
+&gt; Median:104
+&gt; Average:117
+42,44c47,49
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:11
+&gt; Median:120
+&gt; Average:149
+47,49c52,54
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4
+&gt; Median:104
+&gt; Average:111
+52,59c57,59
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:7
+&gt; Median:111
+&gt; Average:112
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Memory Leak
+       </h3>
+       <h3 class="pass" id="score">
+        Score: 5.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Checking for memory leaks...
+Trying to compile your code...
+Successfully compiled your code..
+==26269== Memcheck, a memory error detector
+==26269== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==26269== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==26269== Command: ./mpwearables/svn/jtmorri2/mpwearables/wearable_server 49640 49641
+==26269== 
+171
+Logged
+386
+==26269== Thread 2:
+==26269== Conditional jump or move depends on uninitialised value(s)
+==26269==    at 0x4C2CCAB: strcpy (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==26269==    by 0x401CF7: user_request_thread (wearable_server.c:181)
+==26269==    by 0x4E3CDF2: start_thread (in /usr/lib64/libpthread-2.17.so)
+==26269==    by 0x51471EC: clone (in /usr/lib64/libc-2.17.so)
+==26269== 
+==26269== Conditional jump or move depends on uninitialised value(s)
+==26269==    at 0x508B2D6: ____strtol_l_internal (in /usr/lib64/libc-2.17.so)
+==26269==    by 0x401D33: atol (stdlib.h:285)
+==26269==    by 0x401D33: user_request_thread (wearable_server.c:187)
+==26269==    by 0x4E3CDF2: start_thread (in /usr/lib64/libpthread-2.17.so)
+==26269==    by 0x51471EC: clone (in /usr/lib64/libc-2.17.so)
+==26269== 
+in
+220
+==26269== 
+==26269== HEAP SUMMARY:
+==26269==     in use at exit: 0 bytes in 0 blocks
+==26269==   total heap usage: 11 allocs, 11 frees, 12,832 bytes allocated
+==26269== 
+==26269== All heap blocks were freed -- no leaks are possible
+==26269== 
+==26269== For counts of detected and suppressed errors, rerun with: -v
+==26269== Use --track-origins=yes to see where uninitialised values come from
+==26269== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 2 from 2)
+      </textarea>
+     </div>
+    </div>
+    <div class="visible result" id="result_div">
+     <div class="two_column">
+      <h2 id="revision">
+       Revision: 48290
+      </h2>
+      <h2 id="timestamp">
+       Time: 2015-12-09 02:43:25.387030
+      </h2>
+     </div>
+     <br/>
+     <br/>
+     <br/>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: One Wearable
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing server with one wearable ...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:1
+&gt; Median:100
+&gt; Average:100
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+7,14c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Two Wearable
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing server with two wearables
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:5
+&gt; Median:100
+&gt; Average:104
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+7,9c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4
+&gt; Median:111
+&gt; Average:109
+12,14c17,19
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:5
+&gt; Median:100
+&gt; Average:104
+17,19c22,24
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:2
+&gt; Median:104
+&gt; Average:104
+22,29c27,29
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:5
+&gt; Median:111
+&gt; Average:108
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Synchronized
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing Server for synchronization...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:472
+&gt; Median:104
+&gt; Average:100
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:516
+&gt; Median:92
+&gt; Average:96
+7,9c12,14
+&lt; Size:3
+&lt; Median:106
+&lt; Average:101
+---
+&gt; Size:553
+&gt; Median:104
+&gt; Average:100
+12,14c17,19
+&lt; Size:1
+&lt; Median:79
+&lt; Average:79
+---
+&gt; Size:555
+&gt; Median:104
+&gt; Average:100
+17,19c22,24
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:596
+&gt; Median:96
+&gt; Average:97
+22,29c27,29
+&lt; Size:3
+&lt; Median:106
+&lt; Average:101
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:1
+&lt; Median:79
+&lt; Average:79
+---
+&gt; Size:640
+&gt; Median:104
+&gt; Average:100
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Stress
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Stress Testing Server...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:180
+&gt; Median:102
+&gt; Average:102
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:211
+&gt; Median:101
+&gt; Average:100
+7,9c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:204
+&gt; Median:102
+&gt; Average:101
+12,14c17,19
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4507
+&gt; Median:100
+&gt; Average:99
+17,19c22,24
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4591
+&gt; Median:99
+&gt; Average:99
+22,29c27,29
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4502
+&gt; Median:100
+&gt; Average:99
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Tricky
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Now I'm just messing with you :)
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:3
+&gt; Median:104
+&gt; Average:114
+7,9c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:2
+&gt; Median:124
+&gt; Average:124
+12,14c17,19
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+17,19c22,24
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:3
+&gt; Median:104
+&gt; Average:114
+22,24c27,29
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:2
+&gt; Median:124
+&gt; Average:124
+27,29c32,34
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+32,34c37,39
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4
+&gt; Median:104
+&gt; Average:111
+37,39c42,44
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:3
+&gt; Median:104
+&gt; Average:117
+42,44c47,49
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:11
+&gt; Median:120
+&gt; Average:149
+47,49c52,54
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4
+&gt; Median:104
+&gt; Average:111
+52,59c57,59
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:7
+&gt; Median:111
+&gt; Average:112
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Memory Leak
+       </h3>
+       <h3 class="pass" id="score">
+        Score: 5.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Checking for memory leaks...
+Trying to compile your code...
+Successfully compiled your code..
+==21867== Memcheck, a memory error detector
+==21867== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==21867== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==21867== Command: ./mpwearables/svn/jtmorri2/mpwearables/wearable_server 49640 49641
+==21867== 
+171
+Logged
+386
+==21867== Thread 2:
+==21867== Conditional jump or move depends on uninitialised value(s)
+==21867==    at 0x4C2CCAB: strcpy (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21867==    by 0x401CF7: user_request_thread (wearable_server.c:181)
+==21867==    by 0x4E3CDF2: start_thread (in /usr/lib64/libpthread-2.17.so)
+==21867==    by 0x51471EC: clone (in /usr/lib64/libc-2.17.so)
+==21867== 
+==21867== Conditional jump or move depends on uninitialised value(s)
+==21867==    at 0x508B2D6: ____strtol_l_internal (in /usr/lib64/libc-2.17.so)
+==21867==    by 0x401D33: atol (stdlib.h:285)
+==21867==    by 0x401D33: user_request_thread (wearable_server.c:187)
+==21867==    by 0x4E3CDF2: start_thread (in /usr/lib64/libpthread-2.17.so)
+==21867==    by 0x51471EC: clone (in /usr/lib64/libc-2.17.so)
+==21867== 
+in
+220
+==21867== 
+==21867== HEAP SUMMARY:
+==21867==     in use at exit: 0 bytes in 0 blocks
+==21867==   total heap usage: 11 allocs, 11 frees, 12,832 bytes allocated
+==21867== 
+==21867== All heap blocks were freed -- no leaks are possible
+==21867== 
+==21867== For counts of detected and suppressed errors, rerun with: -v
+==21867== Use --track-origins=yes to see where uninitialised values come from
+==21867== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 2 from 2)
+      </textarea>
+     </div>
+    </div>
+    <div class="visible result" id="result_div">
+     <div class="two_column">
+      <h2 id="revision">
+       Revision: 48290
+      </h2>
+      <h2 id="timestamp">
+       Time: 2015-12-09 19:05:14.261047
+      </h2>
+     </div>
+     <br/>
+     <br/>
+     <br/>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: One Wearable
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing server with one wearable ...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:1
+&gt; Median:100
+&gt; Average:100
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+7,14c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Two Wearable
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing server with two wearables
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:5
+&gt; Median:100
+&gt; Average:104
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+7,9c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4
+&gt; Median:111
+&gt; Average:109
+12,14c17,19
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:5
+&gt; Median:100
+&gt; Average:104
+17,19c22,24
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:2
+&gt; Median:104
+&gt; Average:104
+22,29c27,29
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:5
+&gt; Median:111
+&gt; Average:108
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Synchronized
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing Server for synchronization...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:472
+&gt; Median:104
+&gt; Average:100
+&gt; 
+2,4c7,9
+&lt; Size:14
+&lt; Median:98
+&lt; Average:93
+---
+&gt; Size:516
+&gt; Median:92
+&gt; Average:96
+7,9c12,14
+&lt; Size:22
+&lt; Median:105
+&lt; Average:101
+---
+&gt; Size:553
+&gt; Median:104
+&gt; Average:100
+12,14c17,19
+&lt; Size:9
+&lt; Median:84
+&lt; Average:91
+---
+&gt; Size:555
+&gt; Median:104
+&gt; Average:100
+17,19c22,24
+&lt; Size:14
+&lt; Median:98
+&lt; Average:93
+---
+&gt; Size:596
+&gt; Median:96
+&gt; Average:97
+22,29c27,29
+&lt; Size:22
+&lt; Median:105
+&lt; Average:101
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:9
+&lt; Median:84
+&lt; Average:91
+---
+&gt; Size:640
+&gt; Median:104
+&gt; Average:100
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Stress
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Stress Testing Server...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:180
+&gt; Median:102
+&gt; Average:102
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:211
+&gt; Median:101
+&gt; Average:100
+7,9c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:204
+&gt; Median:102
+&gt; Average:101
+12,14c17,19
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4507
+&gt; Median:100
+&gt; Average:99
+17,19c22,24
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4591
+&gt; Median:99
+&gt; Average:99
+22,29c27,29
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4502
+&gt; Median:100
+&gt; Average:99
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Tricky
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Now I'm just messing with you :)
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:3
+&gt; Median:104
+&gt; Average:114
+7,9c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:2
+&gt; Median:124
+&gt; Average:124
+12,14c17,19
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+17,19c22,24
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:3
+&gt; Median:104
+&gt; Average:114
+22,24c27,29
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:2
+&gt; Median:124
+&gt; Average:124
+27,29c32,34
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+32,34c37,39
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4
+&gt; Median:104
+&gt; Average:111
+37,39c42,44
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:3
+&gt; Median:104
+&gt; Average:117
+42,44c47,49
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:11
+&gt; Median:120
+&gt; Average:149
+47,49c52,54
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4
+&gt; Median:104
+&gt; Average:111
+52,59c57,59
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:7
+&gt; Median:111
+&gt; Average:112
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Memory Leak
+       </h3>
+       <h3 class="pass" id="score">
+        Score: 5.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Checking for memory leaks...
+Trying to compile your code...
+Successfully compiled your code..
+==10235== Memcheck, a memory error detector
+==10235== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==10235== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==10235== Command: ./mpwearables/svn/jtmorri2/mpwearables/wearable_server 49640 49641
+==10235== 
+Logged
+386
+171
+==10235== Thread 2:
+==10235== Conditional jump or move depends on uninitialised value(s)
+==10235==    at 0x4C2CCAB: strcpy (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10235==    by 0x401CF7: user_request_thread (wearable_server.c:181)
+==10235==    by 0x4E3CDF2: start_thread (in /usr/lib64/libpthread-2.17.so)
+==10235==    by 0x51471EC: clone (in /usr/lib64/libc-2.17.so)
+==10235== 
+==10235== Conditional jump or move depends on uninitialised value(s)
+==10235==    at 0x508B2D6: ____strtol_l_internal (in /usr/lib64/libc-2.17.so)
+==10235==    by 0x401D33: atol (stdlib.h:285)
+==10235==    by 0x401D33: user_request_thread (wearable_server.c:187)
+==10235==    by 0x4E3CDF2: start_thread (in /usr/lib64/libpthread-2.17.so)
+==10235==    by 0x51471EC: clone (in /usr/lib64/libc-2.17.so)
+==10235== 
+in
+220
+==10235== 
+==10235== HEAP SUMMARY:
+==10235==     in use at exit: 0 bytes in 0 blocks
+==10235==   total heap usage: 11 allocs, 11 frees, 12,832 bytes allocated
+==10235== 
+==10235== All heap blocks were freed -- no leaks are possible
+==10235== 
+==10235== For counts of detected and suppressed errors, rerun with: -v
+==10235== Use --track-origins=yes to see where uninitialised values come from
+==10235== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 2 from 2)
+      </textarea>
+     </div>
+    </div>
+    <div class="visible result" id="result_div">
+     <div class="two_column">
+      <h2 id="revision">
+       Revision: 48290
+      </h2>
+      <h2 id="timestamp">
+       Time: 2015-12-10 02:44:22.057691
+      </h2>
+     </div>
+     <br/>
+     <br/>
+     <br/>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: One Wearable
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing server with one wearable ...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:1
+&gt; Median:100
+&gt; Average:100
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+7,14c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Two Wearable
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing server with two wearables
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:5
+&gt; Median:100
+&gt; Average:104
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:1
+&gt; Median:104
+&gt; Average:104
+7,9c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4
+&gt; Median:111
+&gt; Average:109
+12,14c17,19
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:5
+&gt; Median:100
+&gt; Average:104
+17,19c22,24
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:2
+&gt; Median:104
+&gt; Average:104
+22,29c27,29
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:5
+&gt; Median:111
+&gt; Average:108
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Synchronized
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Testing Server for synchronization...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:472
+&gt; Median:104
+&gt; Average:100
+&gt; 
+2,4c7,9
+&lt; Size:1
+&lt; Median:98
+&lt; Average:98
+---
+&gt; Size:516
+&gt; Median:92
+&gt; Average:96
+7,9c12,14
+&lt; Size:4
+&lt; Median:129
+&lt; Average:115
+---
+&gt; Size:553
+&gt; Median:104
+&gt; Average:100
+12,14c17,19
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:555
+&gt; Median:104
+&gt; Average:100
+17,19c22,24
+&lt; Size:1
+&lt; Median:98
+&lt; Average:98
+---
+&gt; Size:596
+&gt; Median:96
+&gt; Average:97
+22,29c27,29
+&lt; Size:4
+&lt; Median:129
+&lt; Average:115
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:640
+&gt; Median:104
+&gt; Average:100
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Stress
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Stress Testing Server...
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:180
+&gt; Median:102
+&gt; Average:102
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:211
+&gt; Median:101
+&gt; Average:100
+7,9c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:204
+&gt; Median:102
+&gt; Average:101
+12,14c17,19
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4507
+&gt; Median:100
+&gt; Average:99
+17,19c22,24
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4591
+&gt; Median:99
+&gt; Average:99
+22,29c27,29
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4502
+&gt; Median:100
+&gt; Average:99
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Tricky
+       </h3>
+       <h3 class="fail" id="score">
+        Score: 0.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Now I'm just messing with you :)
+Trying to compile your code...
+Successfully compiled your code..
+Diffing your output with the expected solution...
+RESULTS DIFFERED FROM SOLUTION!
+
+0a1,5
+&gt; Results for heart_beat:
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+&gt; 
+2,4c7,9
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:3
+&gt; Median:104
+&gt; Average:114
+7,9c12,14
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:2
+&gt; Median:124
+&gt; Average:124
+12,14c17,19
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+17,19c22,24
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:3
+&gt; Median:104
+&gt; Average:114
+22,24c27,29
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:2
+&gt; Median:124
+&gt; Average:124
+27,29c32,34
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:10
+&gt; Median:126
+&gt; Average:153
+32,34c37,39
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4
+&gt; Median:104
+&gt; Average:111
+37,39c42,44
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:3
+&gt; Median:104
+&gt; Average:117
+42,44c47,49
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:11
+&gt; Median:120
+&gt; Average:149
+47,49c52,54
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:4
+&gt; Median:104
+&gt; Average:111
+52,59c57,59
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+&lt; 
+&lt; Results for heart_beat:
+&lt; Size:0
+&lt; Median:0
+&lt; Average:0
+---
+&gt; Size:7
+&gt; Median:111
+&gt; Average:112
+      </textarea>
+     </div>
+     <div class="testcase" id="testcase_div">
+      <div class="two_column">
+       <h3 id="testcase">
+        TestCase: Memory Leak
+       </h3>
+       <h3 class="pass" id="score">
+        Score: 5.0
+       </h3>
+      </div>
+      <h4>
+       Output Log
+      </h4>
+      <textarea cols="80" id="output_log" rows="15">
+       Checking for memory leaks...
+Trying to compile your code...
+Successfully compiled your code..
+==2868== Memcheck, a memory error detector
+==2868== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==2868== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==2868== Command: ./mpwearables/svn/jtmorri2/mpwearables/wearable_server 49640 49641
+==2868== 
+171
+386
+==2868== Thread 2:
+==2868== Conditional jump or move depends on uninitialised value(s)
+==2868==    at 0x4C2CCAB: strcpy (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2868==    by 0x401CF7: user_request_thread (wearable_server.c:181)
+==2868==    by 0x4E3CDF2: start_thread (in /usr/lib64/libpthread-2.17.so)
+==2868==    by 0x51471EC: clone (in /usr/lib64/libc-2.17.so)
+==2868== 
+==2868== Conditional jump or move depends on uninitialised value(s)
+==2868==    at 0x508B2D6: ____strtol_l_internal (in /usr/lib64/libc-2.17.so)
+==2868==    by 0x401D33: atol (stdlib.h:285)
+==2868==    by 0x401D33: user_request_thread (wearable_server.c:187)
+==2868==    by 0x4E3CDF2: start_thread (in /usr/lib64/libpthread-2.17.so)
+==2868==    by 0x51471EC: clone (in /usr/lib64/libc-2.17.so)
+==2868== 
+in
+220
+==2868== 
+==2868== HEAP SUMMARY:
+==2868==     in use at exit: 0 bytes in 0 blocks
+==2868==   total heap usage: 8 allocs, 8 frees, 12,720 bytes allocated
+==2868== 
+==2868== All heap blocks were freed -- no leaks are possible
+==2868== 
+==2868== For counts of detected and suppressed errors, rerun with: -v
+==2868== Use --track-origins=yes to see where uninitialised values come from
+==2868== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 2 from 2)
+      </textarea>
+     </div>
+    </div>
+   </div>
+  </section>
+  <script type="text/javascript">
+   function getDirectChildren(){
+			var carousel = document.getElementById('carousel');
+			var child_divs = carousel.getElementsByTagName('div');
+			var direct_children = [];
+			for (i=0; i<child_divs.length;i++){
+				var className = child_divs[i].getAttribute("class")
+				if (className == "visible result" || className == "hidden result"){
+					direct_children.push(child_divs[i]);
+				}
+			}
+			return direct_children;
+		}
+
+		function getCurrentResultIndex(){
+			var direct_children = getDirectChildren();
+			var current_index = -1;
+			for (i=0; i<direct_children.length;i++){
+				var div = direct_children[i];
+				if(div.getAttribute("class") == "visible result"){
+					current_index = i;
+					break;
+				}
+			}
+			return current_index;
+		}
+
+		function incrementResults(amount){
+			var direct_children = getDirectChildren();
+			var current_index = getCurrentResultIndex();
+			var next_index = ((current_index+amount)%direct_children.length+direct_children.length)%direct_children.length;
+			change_page(next_index);
+		}
+
+		function changeResults(destination){
+			var direct_children = getDirectChildren();
+			var current_index = getCurrentResultIndex();
+			var diff = destination - current_index;
+			incrementResults(diff);
+		}
+
+		function load(){
+			var page_number = location.hash.split("#")[1];
+			if(page_number == null){
+				change_page(0);
+				incrementResults(-1);
+			}
+			if(!isNaN(page_number)){
+				change_page(parseInt(page_number));
+			}
+		}
+
+		function change_page(page_number){
+			if(page_number == "Chart"){
+				window.location.replace("thumbs.html");
+				return;
+			}
+			direct_children = getDirectChildren();
+			for (i=0; i<direct_children.length;i++){
+				var div = direct_children[i];
+				div.className = "hidden result";
+			}
+			next_div = direct_children[page_number];
+			next_div.className = "visible result";
+			document.getElementById('selector').value = page_number.toString();
+			location.hash = "#"+page_number.toString();
+		}
+  </script>
+ </body>
+</html>

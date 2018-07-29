@@ -1,0 +1,47 @@
+Grading revision r38950 by jtmorri2, dated 2015-04-17 16:08:08.000267012 -0500 CDT
+Monad Autograder
+Testing lab_hash at 2015-04-20 00:38:00
+
+"Don't beg. Earn it. Then it will be granted to you." ~ Adroc Thurston
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+testRemoveEASY . [6 pts]  - passed
+testRemoveHard . [10 pts] - passed
+testResizeOnce . [7 pts]  - passed
+testResizeAll  . [11 pts] - passed
+testInsertEasy . [6 pts]  - passed
+testInsertHard . [10 pts] - passed
+testAnagramsSC . [8 pts]  - passed
+testAnagramsLP . [8 pts]  - passed
+testWordCountSC  [8 pts]  - passed
+testWordCountLP  [8 pts]  - passed
+testLogfileParse [18 pts] - FAILED: unit_tests.cpp:238: Found too many URLs
+
+
+Total score...
+================================================================
+TOTAL SCORE: 82
+
+
+
+Detailed test output...
+================================================================
+----------------------------------------------------------------
+testLogfileParse [18 points]
+Result: FAILED: unit_tests.cpp:238: Found too many URLs
+Took 0ms (5000ms timeout)
+Output:
+----------------------------------------------------------------
+
+
+----------------------------------------------------------------
+Total score...
+================================================================
+TOTAL SCORE: 82
+

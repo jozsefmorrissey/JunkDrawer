@@ -1,0 +1,95 @@
+Grading revision r44618 by jtmorri2, dated 2015-05-02 20:49:17.000304007 -0500 CDT
+Monad Autograder
+Testing lab_graphs at 2015-05-04 00:24:56
+
+"Computer Science is no more about computers than astronomy is about telescopes." ~ E. Dijkstra
+
+Setting up test environment...
+Compiling...
+================================================================
+In file included from graph_tools.cpp:8:
+In file included from ./graph_tools.h:9:
+In file included from /class/cs225/lm35/bin/../include/c++/v1/algorithm:628:
+/class/cs225/lm35/bin/../include/c++/v1/memory:1409:22: error: type 'allocator_type' (aka 'unsigned long') cannot be used prior to '::' because it has no members
+    typedef typename allocator_type::value_type value_type;
+                     ^
+/class/cs225/lm35/bin/../include/c++/v1/vector:341:22: note: in instantiation of template class 'std::__1::allocator_traits<unsigned long>' requested here
+    typedef typename __alloc_traits::size_type       size_type;
+                     ^
+/class/cs225/lm35/bin/../include/c++/v1/vector:482:15: note: in instantiation of template class 'std::__1::__vector_base<unsigned long, unsigned long>' requested here
+    : private __vector_base<_Tp, _Allocator>
+              ^
+graph_tools.cpp:34:30: note: in instantiation of template class 'std::__1::vector<unsigned long, unsigned long>' requested here
+        std::vector<Vertex, Vertex> stack;
+                                    ^
+In file included from graph_tools.cpp:8:
+In file included from ./graph_tools.h:11:
+In file included from /class/cs225/lm35/bin/../include/c++/v1/queue:170:
+/class/cs225/lm35/bin/../include/c++/v1/vector:491:30: error: '__alloc_traits' is a protected member of 'std::__1::__vector_base<unsigned long, unsigned long>'
+    typedef typename __base::__alloc_traits          __alloc_traits;
+                             ^
+graph_tools.cpp:34:30: note: in instantiation of template class 'std::__1::vector<unsigned long, unsigned long>' requested here
+        std::vector<Vertex, Vertex> stack;
+                                    ^
+/class/cs225/lm35/bin/../include/c++/v1/vector:338:54: note: declared protected here
+    typedef allocator_traits<allocator_type>         __alloc_traits;
+                                                     ^
+/class/cs225/lm35/bin/../include/c++/v1/vector:492:30: error: 'reference' is a protected member of 'std::__1::__vector_base<unsigned long, unsigned long>'
+    typedef typename __base::reference               reference;
+                             ^
+/class/cs225/lm35/bin/../include/c++/v1/vector:339:54: note: declared protected here
+    typedef value_type&                              reference;
+                                                     ^
+/class/cs225/lm35/bin/../include/c++/v1/vector:493:30: error: 'const_reference' is a protected member of 'std::__1::__vector_base<unsigned long, unsigned long>'
+    typedef typename __base::const_reference         const_reference;
+                             ^
+/class/cs225/lm35/bin/../include/c++/v1/vector:340:54: note: declared protected here
+    typedef const value_type&                        const_reference;
+                                                     ^
+/class/cs225/lm35/bin/../include/c++/v1/vector:494:30: error: 'size_type' is a protected member of 'std::__1::__vector_base<unsigned long, unsigned long>'
+    typedef typename __base::size_type               size_type;
+                             ^
+/class/cs225/lm35/bin/../include/c++/v1/vector:341:54: note: declared protected here
+    typedef typename __alloc_traits::size_type       size_type;
+                                                     ^
+/class/cs225/lm35/bin/../include/c++/v1/vector:495:30: error: 'difference_type' is a protected member of 'std::__1::__vector_base<unsigned long, unsigned long>'
+    typedef typename __base::difference_type         difference_type;
+                             ^
+/class/cs225/lm35/bin/../include/c++/v1/vector:342:54: note: declared protected here
+    typedef typename __alloc_traits::difference_type difference_type;
+                                                     ^
+/class/cs225/lm35/bin/../include/c++/v1/vector:496:30: error: 'pointer' is a protected member of 'std::__1::__vector_base<unsigned long, unsigned long>'
+    typedef typename __base::pointer                 pointer;
+                             ^
+/class/cs225/lm35/bin/../include/c++/v1/vector:343:54: note: declared protected here
+    typedef typename __alloc_traits::pointer         pointer;
+                                                     ^
+/class/cs225/lm35/bin/../include/c++/v1/vector:497:30: error: 'const_pointer' is a protected member of 'std::__1::__vector_base<unsigned long, unsigned long>'
+    typedef typename __base::const_pointer           const_pointer;
+                             ^
+/class/cs225/lm35/bin/../include/c++/v1/vector:344:54: note: declared protected here
+    typedef typename __alloc_traits::const_pointer   const_pointer;
+                                                     ^
+/class/cs225/lm35/bin/../include/c++/v1/vector:503:37: error: type 'allocator_type' (aka 'unsigned long') cannot be used prior to '::' because it has no members
+    static_assert((is_same<typename allocator_type::value_type, value_type>::value),
+                                    ^
+/class/cs225/lm35/bin/../include/c++/v1/vector:525:5: error: multiple overloads of 'vector' instantiate to the same signature 'void (size_type, const_reference)'
+    vector(size_type __n, const_reference __x);
+    ^
+/class/cs225/lm35/bin/../include/c++/v1/vector:523:14: note: previous declaration is here
+    explicit vector(size_type __n, const allocator_type& __a);
+             ^
+10 errors generated.
+make: *** [graph_tools.o] Error 1
+make: *** Waiting for unfinished jobs....
+
+
+Running tests...
+================================================================
+Could not execute test cases
+
+
+Total score...
+================================================================
+TOTAL SCORE: 0
+

@@ -1,0 +1,109 @@
+Grading revision r19151 by jtmorri2, dated 2015-02-27 17:10:09.00089507 -0600 CST
+Monad Autograder
+Testing mp3 at 2015-02-28 00:26:33
+
+"The slogan of Subversion for a while was "CVS done right", or something like that, and if you start with that kind of slogan, there's nowhere you can go. There is no way to do CVS right." ~ Linus Torvalds
+
+Setting up test environment...
+Compiling...
+================================================================
+In file included from unit_tests.cpp:38:
+In file included from ./list.h:300:
+./list.cpp:485:17: error: reference to non-static member function must be called
+        merger->head = merge;   
+                       ^~~~~
+./list.cpp:482:28: error: member reference type 'List<int>' is not a pointer; maybe you meant to use '.'?
+                ListNode * merge = merger->merge(head, secondHead);
+                                   ~~~~~~^~
+                                         .
+./list.cpp:455:12: note: in instantiation of member function 'List<int>::mergesort' requested here
+    head = mergesort(head, length);
+           ^
+unit_tests.cpp:482:7: note: in instantiation of member function 'List<int>::sort' requested here
+        list.sort();
+             ^
+In file included from unit_tests.cpp:38:
+In file included from ./list.h:300:
+./list.cpp:486:12: error: no viable conversion from 'List<int>' to 'List<int>::ListNode *'
+    return merger; // change me!
+           ^~~~~~
+3 errors generated.
+In file included from unit_tests.cpp:38:
+In file included from ./list.h:300:
+./list.cpp:485:17: error: reference to non-static member function must be called
+        merger->head = merge;   
+                       ^~~~~
+./list.cpp:482:28: error: member reference type 'List<int>' is not a pointer; maybe you meant to use '.'?
+                ListNode * merge = merger->merge(head, secondHead);
+                                   ~~~~~~^~
+                                         .
+./list.cpp:455:12: note: in instantiation of member function 'List<int>::mergesort' requested here
+    head = mergesort(head, length);
+           ^
+unit_tests.cpp:482:7: note: in instantiation of member function 'List<int>::sort' requested here
+        list.sort();
+             ^
+In file included from unit_tests.cpp:38:
+In file included from ./list.h:300:
+./list.cpp:486:12: error: no viable conversion from 'List<int>' to 'List<int>::ListNode *'
+    return merger; // change me!
+           ^~~~~~
+3 errors generated.
+ld: no input files
+In file included from unit_tests.cpp:38:
+In file included from ./list.h:300:
+./list.cpp:485:17: error: reference to non-static member function must be called
+        merger->head = merge;   
+                       ^~~~~
+./list.cpp:482:28: error: member reference type 'List<int>' is not a pointer; maybe you meant to use '.'?
+                ListNode * merge = merger->merge(head, secondHead);
+                                   ~~~~~~^~
+                                         .
+./list.cpp:455:12: note: in instantiation of member function 'List<int>::mergesort' requested here
+    head = mergesort(head, length);
+           ^
+unit_tests.cpp:482:7: note: in instantiation of member function 'List<int>::sort' requested here
+        list.sort();
+             ^
+In file included from unit_tests.cpp:38:
+In file included from ./list.h:300:
+./list.cpp:486:12: error: no viable conversion from 'List<int>' to 'List<int>::ListNode *'
+    return merger; // change me!
+           ^~~~~~
+3 errors generated.
+clang-3.5: error: no such file or directory: 'unit_tests.o'
+make: *** [proxy] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from unit_tests.cpp:38:
+In file included from ./list.h:300:
+./list.cpp:485:17: error: reference to non-static member function must be called
+        merger->head = merge;   
+                       ^~~~~
+./list.cpp:482:28: error: member reference type 'List<int>' is not a pointer; maybe you meant to use '.'?
+                ListNode * merge = merger->merge(head, secondHead);
+                                   ~~~~~~^~
+                                         .
+./list.cpp:455:12: note: in instantiation of member function 'List<int>::mergesort' requested here
+    head = mergesort(head, length);
+           ^
+unit_tests.cpp:482:7: note: in instantiation of member function 'List<int>::sort' requested here
+        list.sort();
+             ^
+In file included from unit_tests.cpp:38:
+In file included from ./list.h:300:
+./list.cpp:486:12: error: no viable conversion from 'List<int>' to 'List<int>::ListNode *'
+    return merger; // change me!
+           ^~~~~~
+3 errors generated.
+ld: no input files
+
+
+Running tests...
+================================================================
+Could not execute test cases
+
+
+Total score...
+================================================================
+TOTAL SCORE: 0
+

@@ -1,0 +1,27 @@
+Grading revision r12606 by jtmorri2, dated 2015-02-14 19:15:17.000811167 -0600 CST
+Monad Autograder
+Testing lab_inheritance at 2015-02-16 00:38:57
+
+"There's an old story about the person who wished his computer were as easy to use as his telephone. That wish has come true, since I no longer know how to use my telephone." ~ Bjarne Stroustrup
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+test_virtual_perim  . . . . . . [10 pts] - passed
+test_virtual_area . . . . . . . [10 pts] - passed
+test_destructor (asan)  . . . . [20 pts] - passed
+test_constructor  . . . . . . . [10 pts] - passed
+test_drawable_destructor (asan) [10 pts] - passed
+test_truck_draw . . . . . . . . [10 pts] - passed
+test_slicing  . . . . . . . . . [20 pts] - passed
+test_flower_destructor (asan) . [10 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 100
+

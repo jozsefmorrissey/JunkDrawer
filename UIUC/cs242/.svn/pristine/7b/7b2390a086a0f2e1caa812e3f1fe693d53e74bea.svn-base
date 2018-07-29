@@ -1,0 +1,1131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="f554e5d4-6e8a-4713-b330-1c51fb916061" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/control" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_base" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/objects/descritptions" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/objects/images" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/objects/images/default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/Test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/file_dataTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/constants.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/control/connect_to_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/control/control.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/control/control_functions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/control/initialize.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/init_data_structure.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/objects/comment.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/objects/descritptions/default.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/objects/organization.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/objects/project.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/objects/team.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/objects/traverse_tree.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/svn/file_data.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web_template/contact.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web_template/footer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web_template/header.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web_template/image_left.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web_template/image_right.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web_template/main_page.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web_template/portfolio.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web_template/project_display.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web_template/team.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web_template/temp.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main_page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/svn/parse_svn.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/assets/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/assets/css/ie9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/assets/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/assets/js/ie/html5shiv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/assets/js/ie/respond.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/assets/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/assets/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/assets/js/skel.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/assets/js/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/css/skel-noscript.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/css/style-1000px.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/css/style-desktop.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/css/style-mobile.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/js/html5shiv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/js/init.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/js/skel-panels.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/js/skel.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/onecolumn.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/twocolumn1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/twocolumn2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/assets" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/assets/css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/assets/fonts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/assets/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/assets/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/assets/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/assets/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/assets/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/assets/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/assets/js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/assets/js/ie" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/css/images" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/css/images/img_arrow.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/css/images/mobileUI-site-nav-opener-bg.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/images" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/images/banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/images/pic01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/images/pic02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/images/pics01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/images/pics02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/images/pics03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/images/pics04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/images/pics05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/images/pics06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/images/pics07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/images/pics08.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/images/pics09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/images/pics10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/images/pics11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/images/pics12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/images/spacer.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web_template/js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/parse/objects/svn_component.php" afterPath="$PROJECT_DIR$/svn/objects/svn_component.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/parse/objects/svn_list_entry.php" afterPath="$PROJECT_DIR$/svn/objects/svn_list_entry.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/parse/objects/svn_log_entry.php" afterPath="$PROJECT_DIR$/svn/objects/svn_log_entry.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/parse/parse_svn.php" afterPath="$PROJECT_DIR$/svn/parse.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/xml_files/svn_list.xml" afterPath="$PROJECT_DIR$/xml_files/sp16_cs242_svn_list.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/xml_files/svn_log.xml" afterPath="$PROJECT_DIR$/xml_files/sp16_cs242_svn_log.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/objectTest.php" afterPath="$PROJECT_DIR$/Tests/objectTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/svn_logTest.php" afterPath="$PROJECT_DIR$/Tests/svn_logTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/objects/extended_classes/name.php" afterPath="$PROJECT_DIR$/objects/extended_classes/name.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/objects/object.php" afterPath="$PROJECT_DIR$/objects/object.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2/Assignment3.0/Svn_portfolio/Tests/objectTest.php" afterPath="$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2/Assignment3.0/Svn_portfolio/Tests/objectTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2/Assignment3.0/Svn_portfolio/Tests/svn_logTest.php" afterPath="$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2/Assignment3.0/Svn_portfolio/Tests/svn_logTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2/Assignment3.0/Svn_portfolio/main_page.php" afterPath="$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2/Assignment3.0/Svn_portfolio/main_page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2/Assignment3.0/Svn_portfolio/web_template/assets/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2/Assignment3.0/Svn_portfolio/web_template/assets/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2/Assignment3.0/Svn_portfolio/web_template/assets/js/ie/html5shiv.js" afterPath="$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2/Assignment3.0/Svn_portfolio/web_template/assets/js/ie/html5shiv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2/Assignment3.0/Svn_portfolio/web_template/assets/js/jquery.min.js" afterPath="$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2/Assignment3.0/Svn_portfolio/web_template/assets/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2/Assignment3.0/Svn_portfolio/web_template/js/html5shiv.js" afterPath="$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2/Assignment3.0/Svn_portfolio/web_template/js/html5shiv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2/Assignment3.0/Svn_portfolio/web_template/js/skel.min.js" afterPath="$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2/Assignment3.0/Svn_portfolio/web_template/js/skel.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2/shopping/list3.txt" afterPath="$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2/shopping/list3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/parse" afterPath="$PROJECT_DIR$/svn" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/parse/objects" afterPath="$PROJECT_DIR$/svn/objects" />
+    </list>
+    <ignored path="untitled.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/untitled$objectTest.coverage" NAME="objectTest Coverage Results" MODIFIED="1457765702329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/untitled$Tests.coverage" NAME="Tests Coverage Results" MODIFIED="1457654460282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="untitled" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="name.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/objects/extended_classes/name.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.181818">
+              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="initialize.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/control/initialize.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.875">
+              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comment.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/objects/comment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.166667">
+              <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_page.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_template/main_page.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.25">
+              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project_display.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_template/project_display.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-34.916668">
+              <caret line="126" column="44" selection-start-line="126" selection-start-column="44" selection-end-line="126" selection-end-column="44" />
+              <folding>
+                <marker date="1458257664302" expanded="true" signature="2823:2841" placeholder="..." />
+                <marker date="1458257664302" expanded="true" signature="2823:2915" placeholder="..." />
+                <marker date="1458257664302" expanded="true" signature="2921:3005" placeholder="..." />
+                <marker date="1458257664302" expanded="true" signature="3742:3845" placeholder="..." />
+                <marker date="1458257664302" expanded="true" signature="3742:4033" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="team.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_template/team.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-42.416668">
+              <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web_template/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.12790698">
+              <caret line="862" column="14" selection-start-line="862" selection-start-column="14" selection-end-line="862" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/web_template/home/windows/loading_page.php" />
+        <option value="$PROJECT_DIR$/web_template/home/windows/image_left.php" />
+        <option value="$PROJECT_DIR$/web_template/home/windows/contact.php" />
+        <option value="$PROJECT_DIR$/web_template/home/windows/image_right.php" />
+        <option value="$PROJECT_DIR$/web_template/home/windows/main_page.php" />
+        <option value="$PROJECT_DIR$/web_template/home/windows/team.php" />
+        <option value="$PROJECT_DIR$/web_template/home/windows/portfolio.php" />
+        <option value="$PROJECT_DIR$/web_template/windows/loading_page.php" />
+        <option value="$PROJECT_DIR$/web_template/windows/init_data_structure.php" />
+        <option value="$PROJECT_DIR$/objects/organization.php" />
+        <option value="$PROJECT_DIR$/web_template/init_data_structure.php" />
+        <option value="$PROJECT_DIR$/objects/descritptions/default.txt" />
+        <option value="$PROJECT_DIR$/objects/project.php" />
+        <option value="$PROJECT_DIR$/web_template/loading_page.php" />
+        <option value="$PROJECT_DIR$/web_template/index.html" />
+        <option value="$PROJECT_DIR$/control.php" />
+        <option value="$PROJECT_DIR$/main_page.php" />
+        <option value="$PROJECT_DIR$/connect.php" />
+        <option value="$PROJECT_DIR$/control_functions.php" />
+        <option value="$PROJECT_DIR$/pull_from_html.php" />
+        <option value="$PROJECT_DIR$/.php" />
+        <option value="$PROJECT_DIR$/connect_to_view.php" />
+        <option value="$PROJECT_DIR$/web_template/control.php" />
+        <option value="$PROJECT_DIR$/web_template/initialize.php" />
+        <option value="$PROJECT_DIR$/constants.php" />
+        <option value="$PROJECT_DIR$/control/control_functions.php" />
+        <option value="$PROJECT_DIR$/Tests/file_dataTest.php" />
+        <option value="$PROJECT_DIR$/Tests/Test.php" />
+        <option value="$PROJECT_DIR$/temp.php" />
+        <option value="$PROJECT_DIR$/web_template/footer" />
+        <option value="$PROJECT_DIR$/web_template/contact.php" />
+        <option value="$PROJECT_DIR$/web_template/image_left.php" />
+        <option value="$PROJECT_DIR$/web_template/image_right.php" />
+        <option value="$PROJECT_DIR$/web_template/main_page.php" />
+        <option value="$PROJECT_DIR$/web_template/team.php" />
+        <option value="$PROJECT_DIR$/web_template/project_display.html" />
+        <option value="$PROJECT_DIR$/svn/parse.php" />
+        <option value="$PROJECT_DIR$/svn/objects/svn_component.php" />
+        <option value="$PROJECT_DIR$/web_template/css/directory_style.css" />
+        <option value="$PROJECT_DIR$/web_template/temp.php" />
+        <option value="$PROJECT_DIR$/control/control.php" />
+        <option value="$PROJECT_DIR$/web_template/header.php" />
+        <option value="$PROJECT_DIR$/control/initialize.php" />
+        <option value="$PROJECT_DIR$/objects/object.php" />
+        <option value="$PROJECT_DIR$/web_template/portfolio.php" />
+        <option value="$PROJECT_DIR$/init_data_structure.php" />
+        <option value="$PROJECT_DIR$/comment.php" />
+        <option value="$PROJECT_DIR$/objects/extended_classes/name.php" />
+        <option value="$PROJECT_DIR$/objects/comment.php" />
+        <option value="$PROJECT_DIR$/web_template/project_display.php" />
+        <option value="$PROJECT_DIR$/web_template/css/style.css" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.5">
+    <include_path>
+      <path value="" />
+      <path value="/etc/php5/cli/conf.d" />
+      <path value="/etc/php5/mods-available" />
+      <path value="/etc/php5" />
+      <path value="/bin" />
+      <path value="/usr/bin/X11" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1535" />
+    <option name="height" value="904" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Svn_portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Svn_portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web_template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Svn_portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web_template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/objects" />
+      <recent name="$PROJECT_DIR$/web_template" />
+      <recent name="$PROJECT_DIR$/control" />
+      <recent name="$PROJECT_DIR$/" />
+      <recent name="$PROJECT_DIR$/web_template/" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/objects/images" />
+      <recent name="$PROJECT_DIR$/objects" />
+      <recent name="$PROJECT_DIR$/web_template/home/windows" />
+      <recent name="$PROJECT_DIR$/Tests/xml_test_files" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHP Script.initialize.php">
+    <configuration default="false" name="initialize.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/untitled/control/initialize.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="project_display.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/web_template/project_display.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="control.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/control/control.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="initialize.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/control/initialize.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="name.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/objects/extended_classes/name.php">
+      <method />
+    </configuration>
+    <configuration default="true" type="AppEnginePhpConfigurationType" factoryName="App Engine for PHP">
+      <method />
+    </configuration>
+    <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
+      <method />
+    </configuration>
+    <configuration default="true" type="FirefoxRemoteDebugType" factoryName="Firefox Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeWebKit" factoryName="NW.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpHttpRequestRunConfigurationType" factoryName="PHP HTTP Request">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="XSLT" factoryName="XSLT">
+      <option name="myOutputFile" />
+      <option name="myOpenOutputFile" value="false" />
+      <option name="myOpenInBrowser" value="false" />
+      <option name="mySmartErrorHandling" value="true" />
+      <option name="myRunnerPort" value="34873" />
+      <option name="myVmArguments" />
+      <option name="myWorkingDirectory" />
+      <option name="myModule" />
+      <option name="myJdk" />
+      <parameters />
+      <OutputType value="CONSOLE" save-to-file="false" />
+      <FileType name="XML" />
+      <JdkChoice value="FROM_MODULE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
+      <envs />
+      <force value="false" />
+      <verbose value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.initialize.php" />
+      <item index="1" class="java.lang.String" itemvalue="PHP Script.project_display.php" />
+      <item index="2" class="java.lang.String" itemvalue="PHP Script.control.php" />
+      <item index="3" class="java.lang.String" itemvalue="PHP Script.initialize.php" />
+      <item index="4" class="java.lang.String" itemvalue="PHP Script.name.php" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.initialize.php" />
+        <item index="1" class="java.lang.String" itemvalue="PHP Script.name.php" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.initialize.php" />
+        <item index="3" class="java.lang.String" itemvalue="PHP Script.control.php" />
+        <item index="4" class="java.lang.String" itemvalue="PHP Script.project_display.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f554e5d4-6e8a-4713-b330-1c51fb916061" name="Default" comment="" />
+      <created>1457128853681</created>
+      <option name="number" value="Default" />
+      <updated>1457128853681</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Test - 2016.03.16 at 02h 24m 08s.xml">
+      <configuration name="Test" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Test - 2016.03.16 at 02h 24m 21s.xml">
+      <configuration name="Test" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="file_dataTest - 2016.03.16 at 01h 50m 46s.xml">
+      <configuration name="file_dataTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="file_dataTest - 2016.03.16 at 01h 51m 12s.xml">
+      <configuration name="file_dataTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="objectTest - 2016.03.12 at 22h 21m 58s.xml">
+      <configuration name="objectTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="objectTest - 2016.03.12 at 22h 29m 51s.xml">
+      <configuration name="objectTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="objectTest - 2016.03.12 at 22h 31m 53s.xml">
+      <configuration name="objectTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="objectTest - 2016.03.12 at 22h 32m 19s.xml">
+      <configuration name="objectTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="objectTest - 2016.03.16 at 01h 50m 26s.xml">
+      <configuration name="objectTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="svn_logTest - 2016.03.16 at 01h 50m 34s.xml">
+      <configuration name="svn_logTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="-4" width="1535" height="904" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35910225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1921824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36658356" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296417" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35910225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296417" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1921824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36658356" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="11" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web_template/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/svn_logTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.3333333">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42391303">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xml_files/sp16_cs242_svn_log.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objects/extended_classes/author.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.3636365">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objects/extended_classes/date.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.8">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objects/extended_classes/kind.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6363635">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objects/extended_classes/operation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.7272725">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objects/extended_classes/revision.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5454545">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objects/extended_classes/size.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.2727275">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objects/traverse_tree.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_template/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.2545457">
+          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_template/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3636364">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_template/image_left.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47838214">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_template/image_right.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47838214">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5230126">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xml_files/sp16_cs242_svn_list.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7419786">
+          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objects/organization.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.375">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xml_files/fa15_cs241_svn_list.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xml_files/fa15_cs241_svn_log.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objects/team.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.125">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svn/parse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8727272">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svn/objects/svn_component.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8727274">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xml_files/sp15-cs225_svn_list.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4004.5833">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xml_files/sp15_cs225_svn_log.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1077.7084">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_template/css/responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_template/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_template/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="183.67133">
+          <caret line="5469" column="11" selection-start-line="5469" selection-start-column="4" selection-end-line="5469" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_template/css/directory_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.416667">
+          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/file_dataTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.916667">
+          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2/Assignment1.0/Chess_Game/Chess_Game.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svn/code/svn_repo/sp16-cs242/jtmorri2/Assignment1.0/Chess_Game/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svn/file_data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.7065217">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/objectTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6934783">
+          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objects/project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.8">
+          <caret line="51" column="50" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_template/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.541667">
+          <caret line="43" column="122" selection-start-line="43" selection-start-column="122" selection-end-line="43" selection-end-column="122" />
+          <folding>
+            <marker date="1458194078848" expanded="true" signature="1074:1142" placeholder="..." />
+            <marker date="1458194078848" expanded="true" signature="1080:1135" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control/connect_to_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <marker date="1457954230566" expanded="true" signature="345:364" placeholder="SELECT * FRO... state" />
+            <marker date="1457954230566" expanded="true" signature="391:470" placeholder="INSERT INTO Persons... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control/control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.6363635">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control/control_functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.8181818">
+          <caret line="25" column="45" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="45" />
+          <folding>
+            <element signature="e#7#88#0#PHP" expanded="true" />
+            <marker date="1458103695048" expanded="true" signature="715:722" placeholder="SELECT COUNT... user" />
+            <marker date="1458103695048" expanded="true" signature="715:842" placeholder="SELECT `user... user" />
+            <marker date="1458103695048" expanded="true" signature="715:859" placeholder="SELECT `user... user" />
+            <marker date="1458103695048" expanded="true" signature="715:860" placeholder="SELECT `user... user" />
+            <marker date="1458103695048" expanded="true" signature="715:869" placeholder="SELECT `user... user" />
+            <marker date="1458103695048" expanded="true" signature="715:871" placeholder="SELECT 'user... " />
+            <marker date="1458103695048" expanded="true" signature="915:950" placeholder="SELECT 'user... " />
+            <marker date="1458103695048" expanded="true" signature="1168:1272" placeholder="SELECT `orga... state" />
+            <marker date="1458103695048" expanded="true" signature="1168:1282" placeholder="SELECT `orga... state" />
+            <marker date="1458103695048" expanded="true" signature="1168:1283" placeholder="SELECT `orga... state" />
+            <marker date="1458103695048" expanded="true" signature="1168:1284" placeholder="SELECT `orga... state" />
+            <marker date="1458103695048" expanded="true" signature="1168:1291" placeholder="SELECT `orga... state" />
+            <marker date="1458103695048" expanded="true" signature="2001:2088" placeholder="UPDATE `stat... " />
+            <marker date="1458103695048" expanded="true" signature="2001:2094" placeholder="SELECT `user... user" />
+            <marker date="1458103695048" expanded="true" signature="2304:2361" placeholder="SELECT `stat... state" />
+            <marker date="1458103695048" expanded="true" signature="2310:2312" placeholder="SELECT `user... user" />
+            <marker date="1458103695048" expanded="true" signature="2310:2359" placeholder="SELECT `stat... state" />
+            <marker date="1458103695048" expanded="true" signature="2310:2361" placeholder="SELECT `stat... state" />
+            <marker date="1458103695048" expanded="true" signature="2492:2590" placeholder="UPDATE `stat... " />
+            <marker date="1458103695048" expanded="true" signature="2492:2591" placeholder="UPDATE `stat... " />
+            <marker date="1458103695048" expanded="true" signature="2492:2599" placeholder="UPDATE `stat... " />
+            <marker date="1458103695048" expanded="true" signature="2938:3000" placeholder="UPDATE `stat... " />
+            <marker date="1458103695048" expanded="true" signature="3127:3181" placeholder="UPDATE `stat... " />
+            <marker date="1458103695048" expanded="true" signature="3311:3368" placeholder="UPDATE `stat... " />
+            <marker date="1458103695048" expanded="true" signature="3495:3560" placeholder="UPDATE `stat... " />
+            <marker date="1458103695048" expanded="true" signature="3692:3761" placeholder="UPDATE `data... " />
+            <marker date="1458103695048" expanded="true" signature="3884:3932" placeholder="SELECT `data... user" />
+            <marker date="1458103695048" expanded="true" signature="3890:3932" placeholder="UPDATE `stat... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objects/object.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.781818">
+          <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init_data_structure.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_template/portfolio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.454546">
+          <caret line="75" column="221" selection-start-line="75" selection-start-column="221" selection-end-line="75" selection-end-column="221" />
+          <folding>
+            <marker date="1458194934676" expanded="true" signature="3170:3301" placeholder="..." />
+            <marker date="1458194934676" expanded="true" signature="3170:3302" placeholder="..." />
+            <marker date="1458194934676" expanded="true" signature="3170:3336" placeholder="..." />
+            <marker date="1458194934676" expanded="true" signature="3170:3337" placeholder="..." />
+            <marker date="1458194934676" expanded="true" signature="3170:3389" placeholder="..." />
+            <marker date="1458194934676" expanded="true" signature="3170:3390" placeholder="..." />
+            <marker date="1458194934676" expanded="true" signature="3170:3405" placeholder="..." />
+            <marker date="1458194934676" expanded="true" signature="3170:3406" placeholder="..." />
+            <marker date="1458194934676" expanded="true" signature="3170:3432" placeholder="..." />
+            <marker date="1458194934676" expanded="true" signature="3170:3467" placeholder="..." />
+            <marker date="1458194934676" expanded="true" signature="3170:3468" placeholder="..." />
+            <marker date="1458194934676" expanded="true" signature="3170:3469" placeholder="..." />
+            <marker date="1458194934676" expanded="true" signature="3170:3507" placeholder="..." />
+            <marker date="1458194934676" expanded="true" signature="3170:3508" placeholder="..." />
+            <marker date="1458194934676" expanded="true" signature="3170:3526" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objects/extended_classes/name.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.181818">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_template/temp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_template/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="28.125">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1457834446398" expanded="true" signature="901:953" placeholder="..." />
+            <marker date="1457834446398" expanded="true" signature="907:946" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objects/comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.166667">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_template/team.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-42.416668">
+          <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control/initialize.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_template/main_page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_template/project_display.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-34.916668">
+          <caret line="126" column="44" selection-start-line="126" selection-start-column="44" selection-end-line="126" selection-end-column="44" />
+          <folding>
+            <marker date="1458257664302" expanded="true" signature="2823:2841" placeholder="..." />
+            <marker date="1458257664302" expanded="true" signature="2823:2915" placeholder="..." />
+            <marker date="1458257664302" expanded="true" signature="2921:3005" placeholder="..." />
+            <marker date="1458257664302" expanded="true" signature="3742:3845" placeholder="..." />
+            <marker date="1458257664302" expanded="true" signature="3742:4033" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_template/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12790698">
+          <caret line="862" column="14" selection-start-line="862" selection-start-column="14" selection-end-line="862" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,11 @@
+Path: work/students/jtmorri2/Challenge4-Photoscoop
+URL: https://subversion.ews.illinois.edu/svn/fa14-cs125/jtmorri2/Challenge4-Photoscoop
+Repository Root: https://subversion.ews.illinois.edu/svn/fa14-cs125
+Repository UUID: d41138f7-c5d8-4081-8717-40b89346d955
+Revision: 26897
+Node Kind: directory
+Schedule: normal
+Last Changed Author: jtmorri2
+Last Changed Rev: 19299
+Last Changed Date: 2014-10-13 12:06:17 -0500 (Mon, 13 Oct 2014)
+

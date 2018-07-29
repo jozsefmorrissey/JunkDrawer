@@ -1,0 +1,370 @@
+Grading revision r13490 by bzhang44, dated 2015-02-18 12:06:36.000917516 -0600 CST
+Monad Autograder
+Testing lab_gdb at 2015-02-23 00:22:54
+
+"There's no real reason for a lot of the things that I say." ~ Urvashi Khandelwal
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+testInsertFront  . . . . . . . [5 pts]  - FAILED: unit_tests.cpp:78: List does not match solution's size
+testInsertBack . . . . . . . . [15 pts] - FAILED: unit_tests.cpp:78: List does not match solution's size
+testDestructor10 (asan)  . . . [10 pts] - FAILED: Memory errors detected by ASAN
+testDestructor37 (asan)  . . . [10 pts] - FAILED: unit_tests.cpp:78: List does not match solution's size
+testReverse20_size . . . . . . [3 pts]  - FAILED: Segmentation fault
+testReverse20  . . . . . . . . [5 pts]  - FAILED: Segmentation fault
+testReverse37_size . . . . . . [3 pts]  - FAILED: Segmentation fault
+testReverse37  . . . . . . . . [5 pts]  - FAILED: Segmentation fault
+testReverse_memory (asan)  . . [4 pts]  - FAILED: Memory errors detected by ASAN
+testReverseEmpty_memory (asan) [5 pts]  - FAILED: Memory errors detected by ASAN
+testReverse20_memory (asan)  . [5 pts]  - FAILED: Memory errors detected by ASAN
+testShuffle20_size . . . . . . [5 pts]  - FAILED: Segmentation fault
+testShuffle20  . . . . . . . . [4 pts]  - FAILED: Segmentation fault
+testShuffle37_size . . . . . . [5 pts]  - FAILED: Segmentation fault
+testShuffle37  . . . . . . . . [4 pts]  - FAILED: Segmentation fault
+testShuffle_memory (asan)  . . [4 pts]  - FAILED: Memory errors detected by ASAN
+testShuffleEmpty_memory (asan) [3 pts]  - FAILED: Memory errors detected by ASAN
+testShuffle20_memory (asan)  . [5 pts]  - FAILED: Memory errors detected by ASAN
+
+
+Total score...
+================================================================
+TOTAL SCORE: 0
+
+
+
+Detailed test output...
+================================================================
+----------------------------------------------------------------
+testInsertFront [5 points]
+Result: FAILED: unit_tests.cpp:78: List does not match solution's size
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< >
+
+----------------------------------------------------------------
+testInsertBack [15 points]
+Result: FAILED: unit_tests.cpp:78: List does not match solution's size
+Took 0ms (10000ms timeout)
+Output:
+----------------------------------------------------------------
+< 0 >
+
+----------------------------------------------------------------
+testDestructor10 (run under asan) [10 points]
+Result: FAILED: Memory errors detected by ASAN
+Took unknown time (20000ms timeout)
+Output:
+----------------------------------------------------------------
+Running testDestructor10 [worth 10 points, output below]
+< 1 >
+
+=================================================================
+==32247==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 144 byte(s) in 9 object(s) allocated from:
+    #0 0x421d8b in operator new(unsigned long) /dev/shm/225/lm35/src/llvm/projects/compiler-rt/lib/asan/asan_new_delete.cc:62:35
+    #1 0x650da2 in List<int>::insertBack(int const&) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x650da2)
+    #2 0x6432e2 in proxy_test::testDestructor10(util::sizedpipestream<512ul>&) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x6432e2)
+    #3 0x4e6ab8 in monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4e6ab8)
+    #4 0x4cdec3 in proxy::test_execution::child_test() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4cdec3)
+    #5 0x4bfa19 in proxy::test_execution::child() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4bfa19)
+    #6 0x4ba2d2 in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4ba2d2)
+    #7 0x4b4267 in proxy::RunTests::run_single_test(char const*) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4b4267)
+    #8 0x4b3407 in proxy::RunTests::execute_by_mode() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4b3407)
+    #9 0x4afb69 in proxy::RunTests::execute() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4afb69)
+    #10 0x4adc70 in main (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4adc70)
+    #11 0x394cc1ed5c in __libc_start_main (/lib64/libc.so.6+0x394cc1ed5c)
+
+Direct leak of 16 byte(s) in 1 object(s) allocated from:
+    #0 0x421d8b in operator new(unsigned long) /dev/shm/225/lm35/src/llvm/projects/compiler-rt/lib/asan/asan_new_delete.cc:62:35
+    #1 0x642db1 in proxy_test::testDestructor10(util::sizedpipestream<512ul>&) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x642db1)
+    #2 0x4e6ab8 in monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4e6ab8)
+    #3 0x4cdec3 in proxy::test_execution::child_test() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4cdec3)
+    #4 0x4bfa19 in proxy::test_execution::child() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4bfa19)
+    #5 0x4ba2d2 in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4ba2d2)
+    #6 0x4b4267 in proxy::RunTests::run_single_test(char const*) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4b4267)
+    #7 0x4b3407 in proxy::RunTests::execute_by_mode() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4b3407)
+    #8 0x4afb69 in proxy::RunTests::execute() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4afb69)
+    #9 0x4adc70 in main (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4adc70)
+    #10 0x394cc1ed5c in __libc_start_main (/lib64/libc.so.6+0x394cc1ed5c)
+
+Indirect leak of 16 byte(s) in 1 object(s) allocated from:
+    #0 0x421d8b in operator new(unsigned long) /dev/shm/225/lm35/src/llvm/projects/compiler-rt/lib/asan/asan_new_delete.cc:62:35
+    #1 0x650b7b in List<int>::insertBack(int const&) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x650b7b)
+    #2 0x6432e2 in proxy_test::testDestructor10(util::sizedpipestream<512ul>&) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x6432e2)
+    #3 0x4e6ab8 in monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4e6ab8)
+    #4 0x4cdec3 in proxy::test_execution::child_test() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4cdec3)
+    #5 0x4bfa19 in proxy::test_execution::child() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4bfa19)
+    #6 0x4ba2d2 in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4ba2d2)
+    #7 0x4b4267 in proxy::RunTests::run_single_test(char const*) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4b4267)
+    #8 0x4b3407 in proxy::RunTests::execute_by_mode() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4b3407)
+    #9 0x4afb69 in proxy::RunTests::execute() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4afb69)
+    #10 0x4adc70 in main (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4adc70)
+    #11 0x394cc1ed5c in __libc_start_main (/lib64/libc.so.6+0x394cc1ed5c)
+
+SUMMARY: AddressSanitizer: 176 byte(s) leaked in 11 allocation(s).
+Result: FAILED:
+Memory Leaks Detected by ASAN
+
+----------------------------------------------------------------
+testDestructor37 (run under asan) [10 points]
+Result: FAILED: unit_tests.cpp:78: List does not match solution's size
+Took unknown time (2000ms timeout)
+Output:
+----------------------------------------------------------------
+Running testDestructor37 [worth 10 points, output below]
+< >
+Result: FAILED:
+unit_tests.cpp:78: List does not match solution's size
+
+----------------------------------------------------------------
+testReverse20_size [3 points]
+Result: FAILED: Segmentation fault
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testReverse20 [5 points]
+Result: FAILED: Segmentation fault
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testReverse37_size [3 points]
+Result: FAILED: Segmentation fault
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testReverse37 [5 points]
+Result: FAILED: Segmentation fault
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testReverse_memory (run under asan) [4 points]
+Result: FAILED: Memory errors detected by ASAN
+Took unknown time (10000ms timeout)
+Output:
+----------------------------------------------------------------
+Running testReverse_memory [worth 4 points, output below]
+ASAN:SIGSEGV
+=================================================================
+==32262==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x000000652b6f bp 0x7fff8264ef50 sp 0x7fff8264ed40 T0)
+    #0 0x652b6e in List<int>::reverse(List<int>::ListNode*, List<int>::ListNode*, int) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x652b6e)
+    #1 0x6511e1 in List<int>::reverse() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x6511e1)
+    #2 0x646c07 in testReverse(int, check_t, bool) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x646c07)
+    #3 0x647574 in proxy_test::testReverse_memory(util::sizedpipestream<512ul>&) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x647574)
+    #4 0x4e6ab8 in monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4e6ab8)
+    #5 0x4cdec3 in proxy::test_execution::child_test() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4cdec3)
+    #6 0x4bfa19 in proxy::test_execution::child() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4bfa19)
+    #7 0x4ba2d2 in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4ba2d2)
+    #8 0x4b4267 in proxy::RunTests::run_single_test(char const*) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4b4267)
+    #9 0x4b3407 in proxy::RunTests::execute_by_mode() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4b3407)
+    #10 0x4afb69 in proxy::RunTests::execute() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4afb69)
+    #11 0x4adc70 in main (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4adc70)
+    #12 0x394cc1ed5c in __libc_start_main (/lib64/libc.so.6+0x394cc1ed5c)
+    #13 0x4a67fc in _start (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4a67fc)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ??:0 List<int>::reverse(List<int>::ListNode*, List<int>::ListNode*, int)
+==32262==ABORTING
+Result: FAILED:
+Memory Errors Detected by ASAN
+
+----------------------------------------------------------------
+testReverseEmpty_memory (run under asan) [5 points]
+Result: FAILED: Memory errors detected by ASAN
+Took unknown time (10000ms timeout)
+Output:
+----------------------------------------------------------------
+Running testReverseEmpty_memory [worth 5 points, output below]
+ASAN:SIGSEGV
+=================================================================
+==32267==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x000000652b6f bp 0x7fff49f819b0 sp 0x7fff49f817a0 T0)
+    #0 0x652b6e in List<int>::reverse(List<int>::ListNode*, List<int>::ListNode*, int) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x652b6e)
+    #1 0x6511e1 in List<int>::reverse() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x6511e1)
+    #2 0x646c07 in testReverse(int, check_t, bool) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x646c07)
+    #3 0x6476c4 in proxy_test::testReverseEmpty_memory(util::sizedpipestream<512ul>&) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x6476c4)
+    #4 0x4e6ab8 in monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4e6ab8)
+    #5 0x4cdec3 in proxy::test_execution::child_test() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4cdec3)
+    #6 0x4bfa19 in proxy::test_execution::child() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4bfa19)
+    #7 0x4ba2d2 in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4ba2d2)
+    #8 0x4b4267 in proxy::RunTests::run_single_test(char const*) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4b4267)
+    #9 0x4b3407 in proxy::RunTests::execute_by_mode() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4b3407)
+    #10 0x4afb69 in proxy::RunTests::execute() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4afb69)
+    #11 0x4adc70 in main (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4adc70)
+    #12 0x394cc1ed5c in __libc_start_main (/lib64/libc.so.6+0x394cc1ed5c)
+    #13 0x4a67fc in _start (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4a67fc)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ??:0 List<int>::reverse(List<int>::ListNode*, List<int>::ListNode*, int)
+==32267==ABORTING
+Result: FAILED:
+Memory Errors Detected by ASAN
+
+----------------------------------------------------------------
+testReverse20_memory (run under asan) [5 points]
+Result: FAILED: Memory errors detected by ASAN
+Took unknown time (10000ms timeout)
+Output:
+----------------------------------------------------------------
+Running testReverse20_memory [worth 5 points, output below]
+ASAN:SIGSEGV
+=================================================================
+==32272==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x000000652b6f bp 0x7fff2cb6fe90 sp 0x7fff2cb6fc80 T0)
+    #0 0x652b6e in List<int>::reverse(List<int>::ListNode*, List<int>::ListNode*, int) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x652b6e)
+    #1 0x6511e1 in List<int>::reverse() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x6511e1)
+    #2 0x646c07 in testReverse(int, check_t, bool) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x646c07)
+    #3 0x647814 in proxy_test::testReverse20_memory(util::sizedpipestream<512ul>&) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x647814)
+    #4 0x4e6ab8 in monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4e6ab8)
+    #5 0x4cdec3 in proxy::test_execution::child_test() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4cdec3)
+    #6 0x4bfa19 in proxy::test_execution::child() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4bfa19)
+    #7 0x4ba2d2 in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4ba2d2)
+    #8 0x4b4267 in proxy::RunTests::run_single_test(char const*) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4b4267)
+    #9 0x4b3407 in proxy::RunTests::execute_by_mode() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4b3407)
+    #10 0x4afb69 in proxy::RunTests::execute() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4afb69)
+    #11 0x4adc70 in main (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4adc70)
+    #12 0x394cc1ed5c in __libc_start_main (/lib64/libc.so.6+0x394cc1ed5c)
+    #13 0x4a67fc in _start (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4a67fc)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ??:0 List<int>::reverse(List<int>::ListNode*, List<int>::ListNode*, int)
+==32272==ABORTING
+Result: FAILED:
+Memory Errors Detected by ASAN
+
+----------------------------------------------------------------
+testShuffle20_size [5 points]
+Result: FAILED: Segmentation fault
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testShuffle20 [4 points]
+Result: FAILED: Segmentation fault
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testShuffle37_size [5 points]
+Result: FAILED: Segmentation fault
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testShuffle37 [4 points]
+Result: FAILED: Segmentation fault
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testShuffle_memory (run under asan) [4 points]
+Result: FAILED: Memory errors detected by ASAN
+Took unknown time (10000ms timeout)
+Output:
+----------------------------------------------------------------
+Running testShuffle_memory [worth 4 points, output below]
+ASAN:SIGSEGV
+=================================================================
+==32281==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x0000006518f0 bp 0x7fff2e4e71f0 sp 0x7fff2e4e7020 T0)
+    #0 0x6518ef in List<int>::shuffle() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x6518ef)
+    #1 0x64a754 in testShuffle(int, check_t, bool) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x64a754)
+    #2 0x64b1b4 in proxy_test::testShuffle_memory(util::sizedpipestream<512ul>&) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x64b1b4)
+    #3 0x4e6ab8 in monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4e6ab8)
+    #4 0x4cdec3 in proxy::test_execution::child_test() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4cdec3)
+    #5 0x4bfa19 in proxy::test_execution::child() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4bfa19)
+    #6 0x4ba2d2 in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4ba2d2)
+    #7 0x4b4267 in proxy::RunTests::run_single_test(char const*) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4b4267)
+    #8 0x4b3407 in proxy::RunTests::execute_by_mode() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4b3407)
+    #9 0x4afb69 in proxy::RunTests::execute() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4afb69)
+    #10 0x4adc70 in main (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4adc70)
+    #11 0x394cc1ed5c in __libc_start_main (/lib64/libc.so.6+0x394cc1ed5c)
+    #12 0x4a67fc in _start (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4a67fc)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ??:0 List<int>::shuffle()
+==32281==ABORTING
+Result: FAILED:
+Memory Errors Detected by ASAN
+
+----------------------------------------------------------------
+testShuffleEmpty_memory (run under asan) [3 points]
+Result: FAILED: Memory errors detected by ASAN
+Took unknown time (10000ms timeout)
+Output:
+----------------------------------------------------------------
+Running testShuffleEmpty_memory [worth 3 points, output below]
+ASAN:SIGSEGV
+=================================================================
+==32286==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x0000006518f0 bp 0x7fff95126ff0 sp 0x7fff95126e20 T0)
+    #0 0x6518ef in List<int>::shuffle() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x6518ef)
+    #1 0x64a754 in testShuffle(int, check_t, bool) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x64a754)
+    #2 0x64b304 in proxy_test::testShuffleEmpty_memory(util::sizedpipestream<512ul>&) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x64b304)
+    #3 0x4e6ab8 in monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4e6ab8)
+    #4 0x4cdec3 in proxy::test_execution::child_test() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4cdec3)
+    #5 0x4bfa19 in proxy::test_execution::child() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4bfa19)
+    #6 0x4ba2d2 in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4ba2d2)
+    #7 0x4b4267 in proxy::RunTests::run_single_test(char const*) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4b4267)
+    #8 0x4b3407 in proxy::RunTests::execute_by_mode() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4b3407)
+    #9 0x4afb69 in proxy::RunTests::execute() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4afb69)
+    #10 0x4adc70 in main (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4adc70)
+    #11 0x394cc1ed5c in __libc_start_main (/lib64/libc.so.6+0x394cc1ed5c)
+    #12 0x4a67fc in _start (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4a67fc)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ??:0 List<int>::shuffle()
+==32286==ABORTING
+Result: FAILED:
+Memory Errors Detected by ASAN
+
+----------------------------------------------------------------
+testShuffle20_memory (run under asan) [5 points]
+Result: FAILED: Memory errors detected by ASAN
+Took unknown time (10000ms timeout)
+Output:
+----------------------------------------------------------------
+Running testShuffle20_memory [worth 5 points, output below]
+ASAN:SIGSEGV
+=================================================================
+==32291==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x0000006518f0 bp 0x7fffb66a4790 sp 0x7fffb66a45c0 T0)
+    #0 0x6518ef in List<int>::shuffle() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x6518ef)
+    #1 0x64a754 in testShuffle(int, check_t, bool) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x64a754)
+    #2 0x64b454 in proxy_test::testShuffle20_memory(util::sizedpipestream<512ul>&) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x64b454)
+    #3 0x4e6ab8 in monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4e6ab8)
+    #4 0x4cdec3 in proxy::test_execution::child_test() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4cdec3)
+    #5 0x4bfa19 in proxy::test_execution::child() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4bfa19)
+    #6 0x4ba2d2 in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4ba2d2)
+    #7 0x4b4267 in proxy::RunTests::run_single_test(char const*) (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4b4267)
+    #8 0x4b3407 in proxy::RunTests::execute_by_mode() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4b3407)
+    #9 0x4afb69 in proxy::RunTests::execute() (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4afb69)
+    #10 0x4adc70 in main (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4adc70)
+    #11 0x394cc1ed5c in __libc_start_main (/lib64/libc.so.6+0x394cc1ed5c)
+    #12 0x4a67fc in _start (/dev/shm/cs225student/autograder/monad/monad/lab_gdb_grade/proxy-asan+0x4a67fc)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV ??:0 List<int>::shuffle()
+==32291==ABORTING
+Result: FAILED:
+Memory Errors Detected by ASAN
+
+
+----------------------------------------------------------------
+Total score...
+================================================================
+TOTAL SCORE: 0
+

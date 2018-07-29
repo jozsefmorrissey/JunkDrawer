@@ -1,0 +1,69 @@
+Initial Values:
+x:  -1 	 y: 1
+Final Values:
+x:  1.00000000000000 	 y:  1.00000000000000
+Number of Iterations:
+1
+Residual:
+[0]
+[ ]
+[0]
+
+Initial Values:
+x:  0 	 y: 1
+Final Values:
+x:  1.00000000000000 	 y:  1.00000000000000
+Number of Iterations:
+5
+Residual:
+[-2.54185956738055e-28]
+[                     ]
+[-1.01671827677395e-23]
+
+Initial Values:
+x:  2 	 y: 1
+Final Values:
+x:  1.00000000000000 	 y:  1.00000000000000
+Number of Iterations:
+5
+Residual:
+[7.11236556627378e-39 ]
+[                     ]
+[-2.56490711024473e-33]
+
+Round:  0
+Initial Values:
+x:  -1 	 y: 1
+Final Values:
+x:  1.00000000000000 	 y:  0.999999999999998
+Number of Iterations:
+32158
+Residual:
+[          0          ]
+[                     ]
+[-2.22044604925031e-15]
+
+Round:  1
+Initial Values:
+x:  0 	 y: 1
+Final Values:
+x:  0 	 y:  1
+Number of Iterations:
+0
+Residual:
+[-1.0]
+[    ]
+[ 0  ]
+
+Round:  2
+Initial Values:
+x:  2 	 y: 1
+Final Values:
+x:  1.00000000000036 	 y:  1.00000000000075
+Number of Iterations:
+5179
+Residual:
+[3.5704772471945e-13 ]
+[                    ]
+[7.49844630831831e-13]
+

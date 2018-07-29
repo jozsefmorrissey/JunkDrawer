@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lists>
+    <list
+            path="https://subversion.ews.illinois.edu/svn/sp16-cs242/jtmorri2">
+        <entry
+                kind="dir">
+            <name>Assignment1.0</name>
+            <commit
+                    revision="7141">
+                <author>jtmorri2</author>
+                <date>2016-02-26T00:59:06.561096Z</date>
+            </commit>
+        </entry>
+        <entry
+                kind="dir">
+            <name>Assignment1.0</name>
+            <commit
+                    revision="7141">
+                <author>jtmorri2</author>
+                <date>2016-02-26T00:59:06.561096Z</date>
+            </commit>
+        </entry>
+        <entry
+                kind="dir">
+            <name>HitList</name>
+            <commit
+                    revision="7141">
+                <author>jackdaripper</author>
+                <date>2016-02-26T00:59:06.561096Z</date>
+            </commit>
+        </entry>
+        <entry
+                kind="file">
+            <name>shopping/list3.txt</name>
+            <size>23</size>
+            <commit
+                    revision="2069">
+                <author>jtmorri2</author>
+                <date>2016-01-28T23:33:46.413030Z</date>
+            </commit>
+        </entry>
+    </list>
+</lists>

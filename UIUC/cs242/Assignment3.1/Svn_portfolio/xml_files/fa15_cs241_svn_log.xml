@@ -1,0 +1,4534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<log>
+<logentry
+   revision="49648">
+<author>btruong2</author>
+<date>2015-12-15T19:39:06.971069Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/chatroom/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="49646">
+<author>btruong2</author>
+<date>2015-12-15T05:12:32.457821Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/jtmorri2/chatroom/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="49645">
+<author>emsauer2</author>
+<date>2015-12-15T03:37:57.654818Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/ttt_threads/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="49639">
+<author>emsauer2</author>
+<date>2015-12-14T01:40:33.377578Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/jtmorri2/ttt_threads/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="49638">
+<author>emsauer2</author>
+<date>2015-12-13T09:13:42.529234Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/scheduler/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="49636">
+<author>bschong2</author>
+<date>2015-12-13T05:40:50.547655Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/jtmorri2/et_tu_brute/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="49633">
+<author>emsauer2</author>
+<date>2015-12-13T04:19:32.070478Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/scheduler/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="49632">
+<author>emsauer2</author>
+<date>2015-12-13T03:45:19.867272Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/jtmorri2/scheduler/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="49626">
+<author>jianliu4</author>
+<date>2015-12-12T04:32:35.724842Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/epoll_downloader/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="49622">
+<author>jianliu4</author>
+<date>2015-12-12T03:47:34.456327Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/jtmorri2/epoll_downloader/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="49615">
+<author>btruong2</author>
+<date>2015-12-10T10:58:36.824113Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/mpwearables/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="49573">
+<author>jianliu4</author>
+<date>2015-12-10T05:29:23.592255Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mad_mad_access_pattern/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="49395">
+<author>btruong2</author>
+<date>2015-12-10T02:56:11.322140Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/mpwearables/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="49061">
+<author>btruong2</author>
+<date>2015-12-09T17:35:43.119236Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/mpwearables/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="48736">
+<author>btruong2</author>
+<date>2015-12-08T14:37:54.876011Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mpwearables/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="48367">
+<author>btruong2</author>
+<date>2015-12-08T03:09:43.650921Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/mpwearables/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="48290">
+<author>jtmorri2</author>
+<date>2015-12-08T01:03:28.401927Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mpwearables/wearable_server.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="48277">
+<author>jtmorri2</author>
+<date>2015-12-08T00:43:29.322018Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/mpwearables/wearable_server.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="48201">
+<author>jtmorri2</author>
+<date>2015-12-07T21:02:56.649263Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mpwearables/wearable_server.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="48187">
+<author>jtmorri2</author>
+<date>2015-12-07T20:22:58.284587Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mpwearables/wearable_server.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="48183">
+<author>jtmorri2</author>
+<date>2015-12-07T20:15:34.276361Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mpwearables/wearable_server.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="48126">
+<author>jtmorri2</author>
+<date>2015-12-07T18:15:11.174867Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mpwearables/wearable_server.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="48122">
+<author>jtmorri2</author>
+<date>2015-12-07T18:08:26.546293Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mpwearables/wearable_server.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="48119">
+<author>jtmorri2</author>
+<date>2015-12-07T18:04:03.241623Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mpwearables/wearable_server.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="48102">
+<author>jtmorri2</author>
+<date>2015-12-07T17:02:09.883081Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/mpwearables/wearable_server.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="48067">
+<author>btruong2</author>
+<date>2015-12-07T09:50:49.599456Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/mpwearables/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="47743">
+<author>jtmorri2</author>
+<date>2015-12-07T00:18:34.779144Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mpwearables/queue.h</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/mpwearables/wearable_server.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="47548">
+<author>btruong2</author>
+<date>2015-12-06T12:50:04.158361Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mpwearables/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="47289">
+<author>bschong2</author>
+<date>2015-12-06T09:01:58.888637Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/jtmorri2/mpwearables/queue.c</path>
+</paths>
+<msg>Updated files to new version</msg>
+</logentry>
+<logentry
+   revision="47288">
+<author>bschong2</author>
+<date>2015-12-06T09:01:58.654619Z</date>
+<paths>
+<path
+   kind="file"
+   action="D">/jtmorri2/mpwearables/queue.c</path>
+</paths>
+<msg>removing a file</msg>
+</logentry>
+<logentry
+   revision="46704">
+<author>btruong2</author>
+<date>2015-12-05T11:31:12.439901Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mpwearables/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="46607">
+<author>jianliu4</author>
+<date>2015-12-05T03:08:41.308103Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/jtmorri2/mad_mad_access_pattern/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="46545">
+<author>btruong2</author>
+<date>2015-12-04T04:56:07.836948Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mpwearables/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="46543">
+<author>btruong2</author>
+<date>2015-12-04T01:55:59.471230Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mapreduce/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="46500">
+<author>jtmorri2</author>
+<date>2015-12-03T22:18:54.340353Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/epoll_downloader/control_loop_epoll.c</path>
+</paths>
+<msg>im fucking done
+</msg>
+</logentry>
+<logentry
+   revision="46310">
+<author>bschong2</author>
+<date>2015-12-03T09:42:40.809417Z</date>
+<paths>
+<path
+   kind="dir"
+   copyfrom-path="/_shared/epoll_downloader"
+   copyfrom-rev="46309"
+   action="A">/jtmorri2/epoll_downloader</path>
+</paths>
+<msg>Publishing MP to jtmorri2</msg>
+</logentry>
+<logentry
+   revision="45973">
+<author>btruong2</author>
+<date>2015-12-03T02:23:52.315801Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/jtmorri2/mpwearables/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="45617">
+<author>btruong2</author>
+<date>2015-12-02T09:35:32.658819Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mapreduce/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="45205">
+<author>btruong2</author>
+<date>2015-12-01T08:08:36.516309Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mapreduce/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="44418">
+<author>jychang3</author>
+<date>2015-11-30T07:25:47.190553Z</date>
+<paths>
+<path
+   kind="dir"
+   copyfrom-path="/_shared/mpwearables"
+   copyfrom-rev="44417"
+   action="A">/jtmorri2/mpwearables</path>
+</paths>
+<msg>Publishing MP to jtmorri2</msg>
+</logentry>
+<logentry
+   revision="43338">
+<author>jtmorri2</author>
+<date>2015-11-26T16:52:42.027681Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/mapreduce/Makefile</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/mapreduce/mr2.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/mapreduce/shuffler.c</path>
+</paths>
+<msg>thank god</msg>
+</logentry>
+<logentry
+   revision="43296">
+<author>jtmorri2</author>
+<date>2015-11-26T10:42:50.232909Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/mapreduce/mr2.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/mapreduce/shuffler.c</path>
+</paths>
+<msg>idk</msg>
+</logentry>
+<logentry
+   revision="42664">
+<author>jtmorri2</author>
+<date>2015-11-24T00:28:33.509821Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/mapreduce/mr2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="42660">
+<author>jtmorri2</author>
+<date>2015-11-24T00:26:27.960420Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/scheduler/libscheduler/libscheduler.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/scheduler/libscheduler/libscheduler.h</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="42131">
+<author>jtmorri2</author>
+<date>2015-11-20T03:16:03.834969Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/chatroom/client.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/chatroom/server.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="42028">
+<author>jtmorri2</author>
+<date>2015-11-19T20:20:18.489829Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/chatroom/client.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/chatroom/server.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="41985">
+<author>jtmorri2</author>
+<date>2015-11-19T18:13:07.731175Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/chatroom/client.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/chatroom/questions.txt</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/chatroom/server.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/et_tu_brute/brutus.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/extreme_edge_cases/basketcases.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/extreme_edge_cases/basketcases_tests.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/extreme_edge_cases/basketcases_tests.h</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/extreme_edge_cases/camelCaser_tests.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/alloc.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/mini_valgrind/test.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="41822">
+<author>bschong2</author>
+<date>2015-11-19T05:36:33.750090Z</date>
+<paths>
+<path
+   copyfrom-path="/_shared/chatroom"
+   copyfrom-rev="41821"
+   action="A"
+   kind="dir">/jtmorri2/chatroom</path>
+</paths>
+<msg>Publishing MP to jtmorri2</msg>
+</logentry>
+<logentry
+   revision="41559">
+<author>btruong2</author>
+<date>2015-11-18T06:52:42.581676Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mapreduce/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="41479">
+<author>btruong2</author>
+<date>2015-11-17T07:06:27.060149Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mapreduce/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="41145">
+<author>btruong2</author>
+<date>2015-11-17T00:33:04.272027Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mapreduce/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="40988">
+<author>btruong2</author>
+<date>2015-11-16T16:56:52.561908Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mapreduce/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="40949">
+<author>btruong2</author>
+<date>2015-11-16T06:33:32.894008Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/mapreduce/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="40753">
+<author>btruong2</author>
+<date>2015-11-15T23:08:20.245183Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/mapreduce/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="40677">
+<author>jtmorri2</author>
+<date>2015-11-15T18:00:31.721358Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mapreduce/mr0.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/mapreduce/mr1.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/mapreduce/mr2.c</path>
+</paths>
+<msg>I did stuff</msg>
+</logentry>
+<logentry
+   revision="40652">
+<author>jianliu4</author>
+<date>2015-11-15T06:44:19.778155Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/jtmorri2/two_to_tango/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="40651">
+<author>btruong2</author>
+<date>2015-11-15T06:43:07.833043Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/jtmorri2/mapreduce/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="40279">
+<author>jychang3</author>
+<date>2015-11-14T23:44:26.294530Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/jtmorri2/mapreduce/core/libds.c</path>
+</paths>
+<msg>Updated files to new version</msg>
+</logentry>
+<logentry
+   revision="40278">
+<author>jychang3</author>
+<date>2015-11-14T23:44:25.841493Z</date>
+<paths>
+<path
+   kind="file"
+   action="D">/jtmorri2/mapreduce/core/libds.c</path>
+</paths>
+<msg>removing a file</msg>
+</logentry>
+<logentry
+   revision="39705">
+<author>bschong2</author>
+<date>2015-11-14T06:59:20.405355Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/jtmorri2/mapreduce/mappers/wordcount.c</path>
+</paths>
+<msg>Updated files to new version</msg>
+</logentry>
+<logentry
+   revision="39704">
+<author>bschong2</author>
+<date>2015-11-14T06:59:20.126535Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/jtmorri2/mapreduce/core/mapper.c</path>
+<path
+   kind="file"
+   action="D">/jtmorri2/mapreduce/mappers/wordcount.c</path>
+</paths>
+<msg>removing a file</msg>
+</logentry>
+<logentry
+   revision="39703">
+<author>bschong2</author>
+<date>2015-11-14T06:59:19.755156Z</date>
+<paths>
+<path
+   kind="file"
+   action="D">/jtmorri2/mapreduce/core/mapper.c</path>
+</paths>
+<msg>removing a file</msg>
+</logentry>
+<logentry
+   revision="39333">
+<author>bschong2</author>
+<date>2015-11-14T06:01:13.394377Z</date>
+<paths>
+<path
+   kind="dir"
+   action="A">/jtmorri2/mapreduce/pi</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/mapreduce/pi/.gitignore</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/mapreduce/pi/BBP.py</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/mapreduce/pi/Makefile</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/mapreduce/pi/README.txt</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/mapreduce/pi/create_pi_input.py</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/mapreduce/pi/mapper_pi.c</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/mapreduce/pi/pidigits.h</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/mapreduce/pi/reducer_pi.c</path>
+</paths>
+<msg>Updated files to new version</msg>
+</logentry>
+<logentry
+   revision="38659">
+<author>bschong2</author>
+<date>2015-11-12T07:00:42.863783Z</date>
+<paths>
+<path
+   kind="dir"
+   copyfrom-path="/_shared/scheduler"
+   copyfrom-rev="38658"
+   action="A">/jtmorri2/scheduler</path>
+</paths>
+<msg>Publishing MP to jtmorri2</msg>
+</logentry>
+<logentry
+   revision="38421">
+<author>jtmorri2</author>
+<date>2015-11-12T02:11:23.136907Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/et_tu_brute/brutus.c</path>
+</paths>
+<msg>I dont apriciate when given code has memory leaks</msg>
+</logentry>
+<logentry
+   revision="38016">
+<author>btruong2</author>
+<date>2015-11-11T08:09:28.961078Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/parmake/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="37703">
+<author>btruong2</author>
+<date>2015-11-10T06:56:09.720495Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/parmake/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="37248">
+<author>bschong2</author>
+<date>2015-11-10T00:43:43.289468Z</date>
+<paths>
+<path
+   kind="dir"
+   copyfrom-path="/_shared/mapreduce"
+   copyfrom-rev="37247"
+   action="A">/jtmorri2/mapreduce</path>
+</paths>
+<msg>Publishing MP to jtmorri2</msg>
+</logentry>
+<logentry
+   revision="36968">
+<author>btruong2</author>
+<date>2015-11-09T21:27:47.684787Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/parmake/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="36688">
+<author>btruong2</author>
+<date>2015-11-09T07:08:17.030837Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/parmake/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="36185">
+<author>btruong2</author>
+<date>2015-11-08T07:10:28.124894Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/parmake/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="35709">
+<author>btruong2</author>
+<date>2015-11-07T22:32:20.805281Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/parmake/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="35428">
+<author>jtmorri2</author>
+<date>2015-11-07T08:18:59.238620Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/parmake/parmake.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="35423">
+<author>jtmorri2</author>
+<date>2015-11-07T08:01:33.596135Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/parmake/parmake.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="35420">
+<author>btruong2</author>
+<date>2015-11-07T07:47:10.705289Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/parmake/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="35170">
+<author>jtmorri2</author>
+<date>2015-11-06T16:52:03.865083Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/parmake/parmake.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="35168">
+<author>jtmorri2</author>
+<date>2015-11-06T16:38:00.428139Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/parmake/parmake.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="35128">
+<author>btruong2</author>
+<date>2015-11-06T07:15:51.786849Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/jtmorri2/parmake/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="34991">
+<author>jtmorri2</author>
+<date>2015-11-06T00:48:47.056183Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/parmake/parmake.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="34786">
+<author>jtmorri2</author>
+<date>2015-11-05T20:26:23.428777Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/parmake/parmake.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="34643">
+<author>zanema2</author>
+<date>2015-11-05T16:20:48.381514Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/_shared/et_tu_brute/cipher.o</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/et_tu_brute/cipher.o</path>
+</paths>
+</logentry>
+<logentry
+   revision="34506">
+<author>bschong2</author>
+<date>2015-11-05T08:07:07.823268Z</date>
+<paths>
+<path
+   action="A"
+   kind="dir"
+   copyfrom-path="/_shared/et_tu_brute"
+   copyfrom-rev="34505">/jtmorri2/et_tu_brute</path>
+</paths>
+<msg>Publishing MP to jtmorri2</msg>
+</logentry>
+<logentry
+   revision="34035">
+<author>btruong2</author>
+<date>2015-11-05T01:35:50.500117Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/parmake/queue.c</path>
+</paths>
+<msg>Updated files to new version</msg>
+</logentry>
+<logentry
+   revision="33866">
+<author>jtmorri2</author>
+<date>2015-11-04T23:45:34.432695Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/parmake/parmake.c</path>
+</paths>
+<msg>parcing complete</msg>
+</logentry>
+<logentry
+   revision="33778">
+<author>jtmorri2</author>
+<date>2015-11-04T22:22:54.835770Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/mad_mad_access_pattern/lookup1.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/mad_mad_access_pattern/lookup2.c</path>
+</paths>
+<msg>finally f-en mmap</msg>
+</logentry>
+<logentry
+   revision="32978">
+<author>bschong2</author>
+<date>2015-11-03T05:53:58.236227Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/jtmorri2/overworked_interns/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="32602">
+<author>jtmorri2</author>
+<date>2015-11-02T21:06:43.120949Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/mad_mad_access_pattern/lookup1.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="32521">
+<author>jtmorri2</author>
+<date>2015-11-02T17:59:01.272301Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/parmake/parmake.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="32349">
+<author>emsauer2</author>
+<date>2015-11-01T21:50:34.733259Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/utilities_unleashed/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="32348">
+<author>emsauer2</author>
+<date>2015-11-01T21:49:42.324274Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/jtmorri2/utilities_unleashed/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="32337">
+<author>emsauer2</author>
+<date>2015-11-01T20:27:35.771416Z</date>
+<paths>
+<path
+   kind="file"
+   action="D">/jtmorri2/utilities_unleashed/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="32336">
+<author>emsauer2</author>
+<date>2015-11-01T20:27:19.502435Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/utilities_unleashed/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="32289">
+<author>jtmorri2</author>
+<date>2015-11-01T00:43:29.890449Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/parmake/parmake.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="32234">
+<author>emsauer2</author>
+<date>2015-10-31T04:42:36.652024Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/utilities_unleashed/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="32154">
+<author>jtmorri2</author>
+<date>2015-10-30T19:40:40.850215Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/jtmorri2/mad_mad_access_pattern/lookup1.c</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/mad_mad_access_pattern/lookup2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="32087">
+<author>btruong2</author>
+<date>2015-10-30T04:25:10.125059Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="31709">
+<author>bschong2</author>
+<date>2015-10-29T07:43:00.865660Z</date>
+<paths>
+<path
+   action="A"
+   kind="dir"
+   copyfrom-path="/_shared/mad_mad_access_pattern"
+   copyfrom-rev="31708">/jtmorri2/mad_mad_access_pattern</path>
+</paths>
+<msg>Publishing MP to jtmorri2</msg>
+</logentry>
+<logentry
+   revision="31359">
+<author>emsauer2</author>
+<date>2015-10-28T21:04:57.507669Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/utilities_unleashed/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="31351">
+<author>emsauer2</author>
+<date>2015-10-28T20:39:38.417693Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/jtmorri2/utilities_unleashed/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="31186">
+<author>btruong2</author>
+<date>2015-10-28T08:31:59.628252Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="30836">
+<author>bschong2</author>
+<date>2015-10-27T23:37:27.151664Z</date>
+<paths>
+<path
+   action="A"
+   kind="dir">/jtmorri2/parmake/examples</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/parmake/examples/oldfile</path>
+</paths>
+<msg>Updated files to new version</msg>
+</logentry>
+<logentry
+   revision="30568">
+<author>btruong2</author>
+<date>2015-10-27T06:20:09.699177Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="30455">
+<author>btruong2</author>
+<date>2015-10-27T02:59:10.645264Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="30024">
+<author>jtmorri2</author>
+<date>2015-10-26T22:19:32.837807Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="30013">
+<author>btruong2</author>
+<date>2015-10-26T22:14:51.040938Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="30012">
+<author>jtmorri2</author>
+<date>2015-10-26T22:14:34.645383Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="30006">
+<author>jtmorri2</author>
+<date>2015-10-26T22:11:21.816113Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="30004">
+<author>jtmorri2</author>
+<date>2015-10-26T22:10:51.330446Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="30003">
+<author>jtmorri2</author>
+<date>2015-10-26T22:10:08.068936Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="29995">
+<author>jtmorri2</author>
+<date>2015-10-26T22:04:16.015871Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="29988">
+<author>jtmorri2</author>
+<date>2015-10-26T22:01:22.119238Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="29972">
+<author>jtmorri2</author>
+<date>2015-10-26T21:51:18.611285Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="29951">
+<author>jtmorri2</author>
+<date>2015-10-26T21:33:12.458447Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="29949">
+<author>jtmorri2</author>
+<date>2015-10-26T21:31:26.866356Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="29924">
+<author>jtmorri2</author>
+<date>2015-10-26T21:19:20.429601Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/oneMoreTest.txt</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="29908">
+<author>jtmorri2</author>
+<date>2015-10-26T21:13:03.107004Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/jtmorri2/password_cracker/oneMoreTest.txt</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="29843">
+<author>jtmorri2</author>
+<date>2015-10-26T20:40:49.499196Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/bigTest.txt</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="29435">
+<author>btruong2</author>
+<date>2015-10-26T08:52:26.933266Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="29177">
+<author>bschong2</author>
+<date>2015-10-26T05:14:35.830378Z</date>
+<paths>
+<path
+   copyfrom-path="/_shared/parmake"
+   copyfrom-rev="29176"
+   action="A"
+   kind="dir">/jtmorri2/parmake</path>
+</paths>
+<msg>Publishing MP to jtmorri2</msg>
+</logentry>
+<logentry
+   revision="29077">
+<author>jtmorri2</author>
+<date>2015-10-26T03:56:50.530857Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/overworked_interns/good_company.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28908">
+<author>jtmorri2</author>
+<date>2015-10-25T22:29:02.596339Z</date>
+<paths>
+<path
+   action="A"
+   kind="dir">/jtmorri2/cs450/hw5</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw5/Q2.py</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28907">
+<author>btruong2</author>
+<date>2015-10-25T22:27:19.603261Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="28623">
+<author>btruong2</author>
+<date>2015-10-25T01:21:23.146474Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="28271">
+<author>jtmorri2</author>
+<date>2015-10-23T04:34:43.948532Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/bigTest.txt</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28269">
+<author>jtmorri2</author>
+<date>2015-10-23T04:29:54.673555Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/jtmorri2/password_cracker/bigTest.txt</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28263">
+<author>jtmorri2</author>
+<date>2015-10-23T04:01:21.604803Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28262">
+<author>jtmorri2</author>
+<date>2015-10-23T04:00:23.357577Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28261">
+<author>jtmorri2</author>
+<date>2015-10-23T03:59:32.905562Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28259">
+<author>jtmorri2</author>
+<date>2015-10-23T03:58:16.733094Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28255">
+<author>jtmorri2</author>
+<date>2015-10-23T03:30:30.027495Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28254">
+<author>jtmorri2</author>
+<date>2015-10-23T03:29:36.107754Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28253">
+<author>jtmorri2</author>
+<date>2015-10-23T03:26:16.859213Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28251">
+<author>jtmorri2</author>
+<date>2015-10-23T03:24:18.283668Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28250">
+<author>jtmorri2</author>
+<date>2015-10-23T03:22:59.832466Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28249">
+<author>jtmorri2</author>
+<date>2015-10-23T03:21:34.362181Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28248">
+<author>jtmorri2</author>
+<date>2015-10-23T03:19:24.658870Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28247">
+<author>jtmorri2</author>
+<date>2015-10-23T03:16:37.282252Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28246">
+<author>jtmorri2</author>
+<date>2015-10-23T03:15:18.053764Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28245">
+<author>jtmorri2</author>
+<date>2015-10-23T03:13:31.694616Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28244">
+<author>jtmorri2</author>
+<date>2015-10-23T03:08:32.573064Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28242">
+<author>jtmorri2</author>
+<date>2015-10-23T02:54:23.861209Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28241">
+<author>jtmorri2</author>
+<date>2015-10-23T02:52:38.515210Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28240">
+<author>jtmorri2</author>
+<date>2015-10-23T02:50:09.364118Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28235">
+<author>jtmorri2</author>
+<date>2015-10-23T02:45:07.150455Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28234">
+<author>jtmorri2</author>
+<date>2015-10-23T02:36:52.640634Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28233">
+<author>jtmorri2</author>
+<date>2015-10-23T02:32:40.835742Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28232">
+<author>jtmorri2</author>
+<date>2015-10-23T02:31:28.813642Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28231">
+<author>jtmorri2</author>
+<date>2015-10-23T02:29:30.345714Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28229">
+<author>jtmorri2</author>
+<date>2015-10-23T02:27:15.929053Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28228">
+<author>jtmorri2</author>
+<date>2015-10-23T02:23:54.521694Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28227">
+<author>jtmorri2</author>
+<date>2015-10-23T02:19:26.531344Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/svnTest.txt</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28225">
+<author>jtmorri2</author>
+<date>2015-10-23T02:10:34.509853Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/svnTest.txt</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28224">
+<author>jtmorri2</author>
+<date>2015-10-23T02:08:33.007234Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/svnTest.txt</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28223">
+<author>jtmorri2</author>
+<date>2015-10-23T02:07:37.817962Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/svnTest.txt</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28221">
+<author>jtmorri2</author>
+<date>2015-10-23T02:06:43.585722Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/svnTest.txt</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28220">
+<author>jtmorri2</author>
+<date>2015-10-23T02:04:23.778431Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/svnTest.txt</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28219">
+<author>jtmorri2</author>
+<date>2015-10-23T01:59:09.609112Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/jtmorri2/password_cracker/svnTest.txt</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28134">
+<author>jtmorri2</author>
+<date>2015-10-22T21:52:14.298461Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="28088">
+<author>jtmorri2</author>
+<date>2015-10-22T20:32:20.309967Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="27802">
+<author>btruong2</author>
+<date>2015-10-22T08:48:56.437442Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="27786">
+<author>bschong2</author>
+<date>2015-10-22T08:48:49.738966Z</date>
+<paths>
+<path
+   copyfrom-path="/_shared/two_to_tango"
+   copyfrom-rev="27785"
+   action="A"
+   kind="dir">/jtmorri2/two_to_tango</path>
+</paths>
+<msg>Publishing MP to jtmorri2</msg>
+</logentry>
+<logentry
+   revision="27364">
+<author>btruong2</author>
+<date>2015-10-21T06:28:20.601068Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="27061">
+<author>emsauer2</author>
+<date>2015-10-20T17:51:18.425166Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/Makefile</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/thread_status.c</path>
+</paths>
+<msg>Updated files to new version</msg>
+</logentry>
+<logentry
+   revision="26974">
+<author>btruong2</author>
+<date>2015-10-20T07:05:21.433697Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="26764">
+<author>jtmorri2</author>
+<date>2015-10-20T02:46:31.283515Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/cracker1.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="26715">
+<author>btruong2</author>
+<date>2015-10-20T02:03:59.361697Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="26487">
+<author>jtmorri2</author>
+<date>2015-10-19T23:07:10.313256Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker1.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="26409">
+<author>btruong2</author>
+<date>2015-10-19T21:58:28.174123Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="26405">
+<author>jtmorri2</author>
+<date>2015-10-19T21:55:15.343509Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/cracker1.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="26341">
+<author>jtmorri2</author>
+<date>2015-10-19T20:52:32.013605Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker1.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="26263">
+<author>btruong2</author>
+<date>2015-10-19T19:00:05.297760Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="25909">
+<author>bschong2</author>
+<date>2015-10-19T03:52:35.219451Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/jtmorri2/password_cracker/cracker2_reference</path>
+</paths>
+<msg>Updated files to new version</msg>
+</logentry>
+<logentry
+   revision="25699">
+<author>bschong2</author>
+<date>2015-10-19T03:32:37.452569Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/cracker2.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2.h</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/cracker2_main.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/thread_status.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/thread_status.h</path>
+</paths>
+<msg>Updated files to new version</msg>
+</logentry>
+<logentry
+   revision="25551">
+<author>btruong2</author>
+<date>2015-10-18T23:56:43.154141Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/password_cracker/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="25542">
+<author>festekj2</author>
+<date>2015-10-18T23:26:11.231904Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/mini_valgrind/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="25539">
+<author>festekj2</author>
+<date>2015-10-18T23:24:45.009540Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/jtmorri2/mini_valgrind/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="25468">
+<author>btruong2</author>
+<date>2015-10-18T19:17:54.281352Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/password_cracker/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="25197">
+<author>btruong2</author>
+<date>2015-10-17T22:44:27.924253Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/jtmorri2/password_cracker/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="25195">
+<author>btruong2</author>
+<date>2015-10-17T22:34:31.801895Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/jtmorri2/text_editor/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="25104">
+<author>jianliu4</author>
+<date>2015-10-17T02:54:42.679024Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/ducky_debugging/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="24965">
+<author>jtmorri2</author>
+<date>2015-10-16T03:39:50.898463Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/overworked_interns/good_company.c</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/q1image.png</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/q2a_image.png</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/q2b_image.png</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="24713">
+<author>jianliu4</author>
+<date>2015-10-15T06:38:22.314124Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/jtmorri2/ducky_debugging/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="24547">
+<author>bschong2</author>
+<date>2015-10-15T05:25:06.400348Z</date>
+<paths>
+<path
+   kind="dir"
+   copyfrom-path="/_shared/overworked_interns"
+   copyfrom-rev="24546"
+   action="A">/jtmorri2/overworked_interns</path>
+</paths>
+<msg>Publishing MP to jtmorri2</msg>
+</logentry>
+<logentry
+   revision="24387">
+<author>jianliu4</author>
+<date>2015-10-15T04:25:26.823766Z</date>
+<paths>
+<path
+   action="D"
+   kind="file">/jtmorri2/ducky_debugging/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="24034">
+<author>jtmorri2</author>
+<date>2015-10-14T23:03:39.225948Z</date>
+<paths>
+<path
+   kind="dir"
+   action="A">/jtmorri2/cs450</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/Scientificomputation.pdf</path>
+<path
+   kind="dir"
+   action="A">/jtmorri2/cs450/hw1</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw1/cs450_HW1(1).pdf</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/cs450/hw1/cs450_HW1.pdf</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/cs450/hw1/hw1plot2.py</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/cs450/hw1/image.png</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw1/image2.png</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/cs450/hw1/plotting_sample_1.py</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/cs450/hw1/precision.py</path>
+<path
+   kind="dir"
+   action="A">/jtmorri2/cs450/hw2</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw2/cs450_HW2.pdf</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw2/hw2.pdf</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw2/hw2Q5a.py</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw2/hw2Q5b.py</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/cs450/hw2/hw2Q5c.py</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/cs450/hw2/hw2Q6a.py</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/cs450/hw2/hw2Q6b.py</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw2/hw2Q6c.py</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/cs450/hw2/hw2Q6d.py</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/cs450/hw2/image.png</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw2/plotting_sample_1.py</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw2/q5b.png</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw2/q5c.png</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/cs450/hw2/q6a.png</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw2/q6b.png</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw2/q6c.png</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/cs450/hw2/q6d.png</path>
+<path
+   action="A"
+   kind="dir">/jtmorri2/cs450/hw3</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw3/Q1.py</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw3/Q4.py</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw3/cs450hw3.docx</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/cs450/hw3/hw2Q6a.py</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw3/hw2Q6b.py</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw3/hw2Q6c.py</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/cs450/hw3/hw2Q6d.py</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/cs450/hw3/image.png</path>
+<path
+   action="A"
+   kind="dir">/jtmorri2/cs450/hw4</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw4/Q1.py</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/cs450/hw4/Q2.py</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/cs450/hw4/Q3.py</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw4/Q4.py</path>
+<path
+   kind="file"
+   action="A">/jtmorri2/cs450/hw4/hw4_2.pdf</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="23978">
+<author>jianliu4</author>
+<date>2015-10-14T21:59:45.241783Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/jtmorri2/ducky_debugging/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="23836">
+<author>btruong2</author>
+<date>2015-10-14T19:04:36.297797Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="23783">
+<author>jtmorri2</author>
+<date>2015-10-14T17:02:02.543182Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/lastTry.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="23780">
+<author>jtmorri2</author>
+<date>2015-10-14T16:54:09.993180Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/lastTry.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="23770">
+<author>jtmorri2</author>
+<date>2015-10-14T16:05:42.374722Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/lastTry.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="23769">
+<author>jtmorri2</author>
+<date>2015-10-14T16:05:03.982530Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/lastTry.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="23767">
+<author>jtmorri2</author>
+<date>2015-10-14T16:01:15.245391Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/lastTry.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="23766">
+<author>jtmorri2</author>
+<date>2015-10-14T15:59:52.051287Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/lastTry.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="23688">
+<author>jtmorri2</author>
+<date>2015-10-14T05:53:32.580907Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/lastTry.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="23654">
+<author>jtmorri2</author>
+<date>2015-10-14T05:23:58.705688Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/lastTry.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="23651">
+<author>jtmorri2</author>
+<date>2015-10-14T05:20:38.566957Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/lastTry.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="23645">
+<author>jtmorri2</author>
+<date>2015-10-14T05:08:39.616543Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/alloc.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/lastTry.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="23156">
+<author>jtmorri2</author>
+<date>2015-10-13T04:58:42.222156Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="23151">
+<author>jtmorri2</author>
+<date>2015-10-13T04:57:24.255517Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="23118">
+<author>jtmorri2</author>
+<date>2015-10-13T04:46:59.833834Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/lastTry.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="23075">
+<author>jtmorri2</author>
+<date>2015-10-13T04:29:37.954310Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="23073">
+<author>jtmorri2</author>
+<date>2015-10-13T04:28:37.914907Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="23071">
+<author>jtmorri2</author>
+<date>2015-10-13T04:27:44.055540Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="23061">
+<author>jtmorri2</author>
+<date>2015-10-13T04:21:27.244706Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/lastTry.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="23049">
+<author>jtmorri2</author>
+<date>2015-10-13T04:17:43.120636Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/lastTry.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="23042">
+<author>jtmorri2</author>
+<date>2015-10-13T04:14:14.914978Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/lastTry.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="22999">
+<author>jtmorri2</author>
+<date>2015-10-13T03:55:36.488673Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/lastTry.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="22971">
+<author>jtmorri2</author>
+<date>2015-10-13T03:41:34.138803Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/jtmorri2/malloc/lastTry.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="22951">
+<author>jtmorri2</author>
+<date>2015-10-13T03:30:01.924245Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="22919">
+<author>jtmorri2</author>
+<date>2015-10-13T03:12:19.668765Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/Makefile</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+<path
+   kind="file"
+   action="D">/jtmorri2/malloc/mytests.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/testers/tester-6.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/testers/tester-9.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="22504">
+<author>jtmorri2</author>
+<date>2015-10-12T22:32:34.587619Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/NICKNAME.txt</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="22177">
+<author>jtmorri2</author>
+<date>2015-10-12T16:10:16.016907Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="22175">
+<author>jtmorri2</author>
+<date>2015-10-12T16:07:31.014708Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="21974">
+<author>jtmorri2</author>
+<date>2015-10-12T07:03:33.489027Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/mytests.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="21954">
+<author>jtmorri2</author>
+<date>2015-10-12T06:42:59.604845Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="21952">
+<author>jtmorri2</author>
+<date>2015-10-12T06:40:29.213410Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="21949">
+<author>jtmorri2</author>
+<date>2015-10-12T06:39:22.204044Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="21791">
+<author>bschong2</author>
+<date>2015-10-12T05:55:36.752421Z</date>
+<paths>
+<path
+   action="A"
+   kind="dir"
+   copyfrom-path="/_shared/password_cracker"
+   copyfrom-rev="21790">/jtmorri2/password_cracker</path>
+</paths>
+<msg>Publishing MP to jtmorri2</msg>
+</logentry>
+<logentry
+   revision="21696">
+<author>jtmorri2</author>
+<date>2015-10-12T05:30:52.160934Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="21695">
+<author>jtmorri2</author>
+<date>2015-10-12T05:28:53.911826Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/alloc.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/mytests.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="21590">
+<author>jtmorri2</author>
+<date>2015-10-12T03:06:50.896319Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/mytests.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="21264">
+<author>jtmorri2</author>
+<date>2015-10-11T15:41:57.884801Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="21051">
+<author>jtmorri2</author>
+<date>2015-10-11T05:57:51.208360Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/mytests.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="21012">
+<author>jtmorri2</author>
+<date>2015-10-11T05:00:45.601718Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/alloc.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/mytests.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="20986">
+<author>jtmorri2</author>
+<date>2015-10-11T03:58:16.631528Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/mytests.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="20985">
+<author>jtmorri2</author>
+<date>2015-10-11T03:57:39.083292Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/mytests.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="20984">
+<author>jtmorri2</author>
+<date>2015-10-11T03:52:59.589244Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/mytests.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="20981">
+<author>jtmorri2</author>
+<date>2015-10-11T03:49:08.622530Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/mytests.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="20979">
+<author>jtmorri2</author>
+<date>2015-10-11T03:46:09.348374Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/mytests.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="20977">
+<author>jtmorri2</author>
+<date>2015-10-11T03:42:18.744809Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="20974">
+<author>jtmorri2</author>
+<date>2015-10-11T03:40:35.436913Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="20972">
+<author>jtmorri2</author>
+<date>2015-10-11T03:38:47.329260Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="20953">
+<author>jtmorri2</author>
+<date>2015-10-11T03:19:31.084862Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="20944">
+<author>jtmorri2</author>
+<date>2015-10-11T03:07:32.685778Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/mytests.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="20943">
+<author>jtmorri2</author>
+<date>2015-10-11T03:06:38.178305Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/mytests.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="20940">
+<author>jtmorri2</author>
+<date>2015-10-11T03:03:38.784481Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/mytests.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="20939">
+<author>jtmorri2</author>
+<date>2015-10-11T03:03:03.626146Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/mytests.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="20936">
+<author>jtmorri2</author>
+<date>2015-10-11T03:01:39.247720Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/alloc.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/mytests.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="20932">
+<author>jtmorri2</author>
+<date>2015-10-11T02:58:42.942138Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/alloc.c</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/malloc/mytests.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="20834">
+<author>jtmorri2</author>
+<date>2015-10-11T01:15:48.976958Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg>almost there</msg>
+</logentry>
+<logentry
+   revision="20488">
+<author>jtmorri2</author>
+<date>2015-10-10T17:24:16.091279Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/alloc.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/testers/tester-6.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="19790">
+<author>jtmorri2</author>
+<date>2015-10-08T20:28:01.070718Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="19712">
+<author>jtmorri2</author>
+<date>2015-10-08T18:36:14.104694Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/ttt_threads/queue.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/ttt_threads/queue.h</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/ttt_threads/rendezvous.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/ttt_threads/semamore.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/ttt_threads/testqueue.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="19409">
+<author>bschong2</author>
+<date>2015-10-08T06:16:47.016294Z</date>
+<paths>
+<path
+   kind="dir"
+   copyfrom-path="/_shared/ttt_threads"
+   copyfrom-rev="19408"
+   action="A">/jtmorri2/ttt_threads</path>
+</paths>
+<msg>Publishing MP to jtmorri2</msg>
+</logentry>
+<logentry
+   revision="19074">
+<author>jtmorri2</author>
+<date>2015-10-08T00:31:53.843119Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="18887">
+<author>btruong2</author>
+<date>2015-10-07T20:39:29.297082Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="18827">
+<author>jtmorri2</author>
+<date>2015-10-07T06:39:20.986563Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="18826">
+<author>jtmorri2</author>
+<date>2015-10-07T06:35:00.893000Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="18790">
+<author>jtmorri2</author>
+<date>2015-10-07T02:15:50.211891Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="18671">
+<author>btruong2</author>
+<date>2015-10-06T20:15:37.415385Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="18604">
+<author>jtmorri2</author>
+<date>2015-10-06T04:55:59.016813Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="18597">
+<author>jtmorri2</author>
+<date>2015-10-06T04:49:14.135636Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="18543">
+<author>tfliu2</author>
+<date>2015-10-06T03:35:39.251155Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/jtmorri2/code_review/grade_report.txt</path>
+</paths>
+</logentry>
+<logentry
+   revision="18127">
+<author>btruong2</author>
+<date>2015-10-05T20:33:42.696757Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="17821">
+<author>jtmorri2</author>
+<date>2015-10-05T05:05:27.392451Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="17747">
+<author>btruong2</author>
+<date>2015-10-05T03:57:44.458878Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/jtmorri2/malloc/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="17574">
+<author>jtmorri2</author>
+<date>2015-10-05T01:05:22.511631Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="17493">
+<author>jtmorri2</author>
+<date>2015-10-04T22:54:48.263231Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="17426">
+<author>jtmorri2</author>
+<date>2015-10-04T21:20:36.682703Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/Makefile</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="17294">
+<author>jtmorri2</author>
+<date>2015-10-04T16:44:53.872368Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="16872">
+<author>jtmorri2</author>
+<date>2015-10-02T04:00:28.131947Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="16817">
+<author>jtmorri2</author>
+<date>2015-10-01T23:37:08.437305Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/malloc/alloc.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="16593">
+<author>jtmorri2</author>
+<date>2015-10-01T17:17:23.459554Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/mini_valgrind/mini_valgrind.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="16592">
+<author>jtmorri2</author>
+<date>2015-10-01T17:15:21.005297Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/mini_valgrind/mini_valgrind.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/mini_valgrind/test.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="16360">
+<author>bschong2</author>
+<date>2015-10-01T08:36:09.918168Z</date>
+<paths>
+<path
+   action="A"
+   kind="dir"
+   copyfrom-path="/_shared/mini_valgrind"
+   copyfrom-rev="16359">/jtmorri2/mini_valgrind</path>
+</paths>
+<msg>Publishing MP to jtmorri2</msg>
+</logentry>
+<logentry
+   revision="16277">
+<author>btruong2</author>
+<date>2015-10-01T06:55:21.860208Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="15981">
+<author>btruong2</author>
+<date>2015-09-30T05:51:52.184103Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/what_the_shell/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="15698">
+<author>btruong2</author>
+<date>2015-09-29T06:04:31.821288Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="15349">
+<author>btruong2</author>
+<date>2015-09-29T01:01:55.538010Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="15204">
+<author>bschong2</author>
+<date>2015-09-29T00:44:53.450393Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/malloc/Makefile</path>
+</paths>
+<msg>Updated files to new version</msg>
+</logentry>
+<logentry
+   revision="14946">
+<author>btruong2</author>
+<date>2015-09-28T20:52:48.290675Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="14841">
+<author>jtmorri2</author>
+<date>2015-09-28T16:56:50.224892Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/what_the_shell/shell.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="14759">
+<author>btruong2</author>
+<date>2015-09-28T09:14:45.032901Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="14525">
+<author>bschong2</author>
+<date>2015-09-28T04:11:11.136491Z</date>
+<paths>
+<path
+   kind="dir"
+   copyfrom-path="/_shared/malloc"
+   copyfrom-rev="14524"
+   action="A">/jtmorri2/malloc</path>
+</paths>
+<msg>Publishing MP to jtmorri2</msg>
+</logentry>
+<logentry
+   revision="14447">
+<author>jtmorri2</author>
+<date>2015-09-28T04:06:32.204923Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/what_the_shell/shell.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="14428">
+<author>btruong2</author>
+<date>2015-09-28T03:52:42.061822Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/what_the_shell/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="13849">
+<author>btruong2</author>
+<date>2015-09-27T02:58:38.672520Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="13641">
+<author>jtmorri2</author>
+<date>2015-09-26T06:59:15.989086Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/shell.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="13364">
+<author>jtmorri2</author>
+<date>2015-09-25T01:55:36.530536Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/shell.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="13331">
+<author>jtmorri2</author>
+<date>2015-09-24T23:56:03.091328Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/what_the_shell/shell.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="13217">
+<author>jtmorri2</author>
+<date>2015-09-24T20:25:53.008353Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/what_the_shell/vector.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="13216">
+<author>jtmorri2</author>
+<date>2015-09-24T20:25:06.593488Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/log.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/what_the_shell/shell.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/vector.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="13173">
+<author>jtmorri2</author>
+<date>2015-09-24T19:01:30.634613Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/ducky_debugging/lab_gdb_bad.c</path>
+</paths>
+<msg>lab is good???????</msg>
+</logentry>
+<logentry
+   revision="13156">
+<author>jtmorri2</author>
+<date>2015-09-24T18:48:24.326853Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/jtmorri2/ducky_debugging/getline.txt</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/ducky_debugging/lab_gdb_bad.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="13013">
+<author>bschong2</author>
+<date>2015-09-24T07:02:28.990470Z</date>
+<paths>
+<path
+   kind="dir"
+   action="A">/jtmorri2/ducky_debugging</path>
+<path
+   action="A"
+   kind="file">/jtmorri2/ducky_debugging/lab_gdb_bad.c</path>
+</paths>
+</logentry>
+<logentry
+   revision="12901">
+<author>jtmorri2</author>
+<date>2015-09-24T01:04:20.855078Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/what_the_shell/shell.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="12881">
+<author>jtmorri2</author>
+<date>2015-09-24T00:42:58.179189Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/what_the_shell/log.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/log_test.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/what_the_shell/shell.c</path>
+</paths>
+<msg>""</msg>
+</logentry>
+<logentry
+   revision="12830">
+<author>jtmorri2</author>
+<date>2015-09-23T21:56:15.600509Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/shell.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="12780">
+<author>btruong2</author>
+<date>2015-09-23T18:08:03.745638Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="12777">
+<author>btruong2</author>
+<date>2015-09-23T17:44:11.646708Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="12595">
+<author>btruong2</author>
+<date>2015-09-22T08:05:33.463959Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="12074">
+<author>btruong2</author>
+<date>2015-09-22T00:35:09.768450Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="11966">
+<author>jtmorri2</author>
+<date>2015-09-21T22:06:27.904487Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/shell.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="11874">
+<author>jtmorri2</author>
+<date>2015-09-21T20:17:28.532185Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/what_the_shell/log.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/log_test.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/shell.c</path>
+</paths>
+<msg>hello</msg>
+</logentry>
+<logentry
+   revision="11839">
+<author>jtmorri2</author>
+<date>2015-09-21T19:08:29.343926Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/log.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="11645">
+<author>btruong2</author>
+<date>2015-09-21T05:54:13.450825Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/what_the_shell/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="11452">
+<author>jtmorri2</author>
+<date>2015-09-21T02:52:27.771529Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/what_the_shell/log.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/log_test.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="11210">
+<author>btruong2</author>
+<date>2015-09-20T22:39:22.737370Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/what_the_shell/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="11039">
+<author>btruong2</author>
+<date>2015-09-20T08:50:23.479243Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/jtmorri2/what_the_shell/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="10792">
+<author>jtmorri2</author>
+<date>2015-09-18T22:31:05.571781Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/log.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/log_test.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="10772">
+<author>jtmorri2</author>
+<date>2015-09-18T17:41:22.950508Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/pointers_gone_wild/grade_report.html</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/what_the_shell/Makefile</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/what_the_shell/vector.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/what_the_shell/vector_test.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="10755">
+<author>btruong2</author>
+<date>2015-09-18T06:04:01.121969Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/extreme_edge_cases/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="10622">
+<author>jtmorri2</author>
+<date>2015-09-17T23:18:17.295757Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/extreme_edge_cases/camelCaser.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/utilities_unleashed/Makefile</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/what_the_shell/vector.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/what_the_shell/vector.h</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/what_the_shell/vector_test.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="10373">
+<author>btruong2</author>
+<date>2015-09-17T06:04:49.878349Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/extreme_edge_cases/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="10226">
+<author>bschong2</author>
+<date>2015-09-17T05:02:34.114573Z</date>
+<paths>
+<path
+   kind="dir"
+   copyfrom-path="/_shared/code_review"
+   copyfrom-rev="10225"
+   action="A">/jtmorri2/code_review</path>
+</paths>
+<msg>Publishing MP to jtmorri2</msg>
+</logentry>
+<logentry
+   revision="9903">
+<author>btruong2</author>
+<date>2015-09-17T03:31:37.538653Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/extreme_edge_cases/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="9650">
+<author>btruong2</author>
+<date>2015-09-17T01:29:03.261097Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/extreme_edge_cases/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="9487">
+<author>jtmorri2</author>
+<date>2015-09-16T23:04:53.684619Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/extreme_edge_cases/basketcases.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/extreme_edge_cases/camelCaser.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/extreme_edge_cases/camelCaser_tests.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="8925">
+<author>emsauer2</author>
+<date>2015-09-16T05:30:04.670364Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/extreme_edge_cases/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="8340">
+<author>jtmorri2</author>
+<date>2015-09-15T00:39:21.980468Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/extreme_edge_cases/camelCaser.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/extreme_edge_cases/camelCaser_tests.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/extreme_edge_cases/camelCaser_tests.h</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="8112">
+<author>jtmorri2</author>
+<date>2015-09-14T21:15:01.192056Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/extreme_edge_cases/basketcases.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/extreme_edge_cases/basketcases_tests.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/extreme_edge_cases/basketcases_tests.h</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/extreme_edge_cases/camelCaser.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/extreme_edge_cases/camelCaser_tests.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="7839">
+<author>btruong2</author>
+<date>2015-09-14T10:21:50.074469Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/extreme_edge_cases/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="7838">
+<author>btruong2</author>
+<date>2015-09-14T10:20:44.733687Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/jtmorri2/extreme_edge_cases/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="7684">
+<author>bschong2</author>
+<date>2015-09-14T09:18:30.209796Z</date>
+<paths>
+<path
+   kind="dir"
+   copyfrom-path="/_shared/what_the_shell"
+   copyfrom-rev="7683"
+   action="A">/jtmorri2/what_the_shell</path>
+</paths>
+<msg>Publishing MP to jtmorri2</msg>
+</logentry>
+<logentry
+   revision="6996">
+<author>jtmorri2</author>
+<date>2015-09-13T02:18:03.326634Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/extreme_edge_cases/basketcases.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/extreme_edge_cases/basketcases.h</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/extreme_edge_cases/basketcases_tests.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="6836">
+<author>jtmorri2</author>
+<date>2015-09-12T20:46:02.209102Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/extreme_edge_cases/camelCaser.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/extreme_edge_cases/camelCaser.h</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/extreme_edge_cases/camelCaser_tests.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/extreme_edge_cases/camelCaser_tests.h</path>
+</paths>
+<msg>part one done....ish invalid fucking reads</msg>
+</logentry>
+<logentry
+   revision="6801">
+<author>jtmorri2</author>
+<date>2015-09-12T16:19:14.064853Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/extreme_edge_cases/camelCaser.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/extreme_edge_cases/camelCaser_tests.c</path>
+</paths>
+<msg>ItsAlive</msg>
+</logentry>
+<logentry
+   revision="6654">
+<author>jtmorri2</author>
+<date>2015-09-11T21:13:18.225655Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/extreme_edge_cases/camelCaser.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/extreme_edge_cases/camelCaser.h</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="6643">
+<author>jtmorri2</author>
+<date>2015-09-11T20:26:55.281464Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/extreme_edge_cases/camelCaser.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/extreme_edge_cases/camelCaser.h</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="6483">
+<author>jtmorri2</author>
+<date>2015-09-10T23:47:34.757828Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/utilities_unleashed/env.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="6478">
+<author>jtmorri2</author>
+<date>2015-09-10T23:35:30.579553Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/utilities_unleashed/env.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="6461">
+<author>jtmorri2</author>
+<date>2015-09-10T22:59:06.254248Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/utilities_unleashed/env.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/utilities_unleashed/time.c</path>
+</paths>
+<msg>wholly fuck finished the same day./time sleep 5./time sleep 5 u gots ta b shitten me britches rite bout now, ill tel u what</msg>
+</logentry>
+<logentry
+   revision="6292">
+<author>jtmorri2</author>
+<date>2015-09-10T18:52:44.891303Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/utilities_unleashed/env.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/utilities_unleashed/time.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="6140">
+<author>jtmorri2</author>
+<date>2015-09-10T15:51:30.931964Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/utilities_unleashed/time.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="6136">
+<author>jtmorri2</author>
+<date>2015-09-10T15:25:03.333562Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/utilities_unleashed/time.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="6135">
+<author>jtmorri2</author>
+<date>2015-09-10T15:20:25.840865Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/utilities_unleashed/Makefile</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/utilities_unleashed/time.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="5995">
+<author>bschong2</author>
+<date>2015-09-10T07:49:32.490011Z</date>
+<paths>
+<path
+   kind="dir"
+   copyfrom-path="/_shared/utilities_unleashed"
+   copyfrom-rev="5994"
+   action="A">/jtmorri2/utilities_unleashed</path>
+</paths>
+<msg>Publishing MP to jtmorri2</msg>
+</logentry>
+<logentry
+   revision="5874">
+<author>jtmorri2</author>
+<date>2015-09-10T04:59:15.951982Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="5859">
+<author>jtmorri2</author>
+<date>2015-09-10T04:54:52.402518Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="5840">
+<author>jtmorri2</author>
+<date>2015-09-10T04:48:06.470154Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="5834">
+<author>jtmorri2</author>
+<date>2015-09-10T04:44:14.674721Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="5829">
+<author>jtmorri2</author>
+<date>2015-09-10T04:42:15.340520Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.h</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="5173">
+<author>jtmorri2</author>
+<date>2015-09-09T16:03:43.784891Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/text_editor/editor.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/text_editor/editor.h</path>
+</paths>
+<msg>opiphony</msg>
+</logentry>
+<logentry
+   revision="5098">
+<author>btruong2</author>
+<date>2015-09-09T05:50:23.500812Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/pointers_gone_wild/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="5096">
+<author>btruong2</author>
+<date>2015-09-09T05:43:45.352609Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/pointers_gone_wild/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="5090">
+<author>btruong2</author>
+<date>2015-09-09T05:38:09.717262Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/pointers_gone_wild/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="5083">
+<author>jtmorri2</author>
+<date>2015-09-09T05:23:08.394036Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.h</path>
+</paths>
+<msg>opperational?</msg>
+</logentry>
+<logentry
+   revision="4583">
+<author>btruong2</author>
+<date>2015-09-08T06:33:09.809200Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/pointers_gone_wild/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="4552">
+<author>btruong2</author>
+<date>2015-09-08T05:35:03.308347Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/pointers_gone_wild/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="4395">
+<author>jtmorri2</author>
+<date>2015-09-08T03:50:25.198435Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/pointers_gone_wild/Makefile</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/pointers_gone_wild/part2-main.c</path>
+</paths>
+<msg>fml i suck</msg>
+</logentry>
+<logentry
+   revision="4376">
+<author>jtmorri2</author>
+<date>2015-09-08T03:32:40.650590Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/pointers_gone_wild/Makefile</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/pointers_gone_wild/part2-functions.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/pointers_gone_wild/part2-functions.h</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/pointers_gone_wild/part2-main.c</path>
+</paths>
+<msg>all done ...... i hope... cross my fingers.</msg>
+</logentry>
+<logentry
+   revision="4204">
+<author>btruong2</author>
+<date>2015-09-08T00:35:18.541687Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/pointers_gone_wild/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="4199">
+<author>btruong2</author>
+<date>2015-09-08T00:22:02.719272Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/pointers_gone_wild/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="4064">
+<author>jtmorri2</author>
+<date>2015-09-07T22:16:14.590965Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/pointers_gone_wild/part2-functions.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/pointers_gone_wild/part2-functions.h</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/pointers_gone_wild/part2-main.c</path>
+</paths>
+<msg>this may be the best i can do :(</msg>
+</logentry>
+<logentry
+   revision="3888">
+<author>jtmorri2</author>
+<date>2015-09-07T19:09:58.726189Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="3817">
+<author>btruong2</author>
+<date>2015-09-07T17:27:58.336881Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/pointers_gone_wild/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="3812">
+<author>btruong2</author>
+<date>2015-09-07T17:21:31.934111Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/pointers_gone_wild/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="3542">
+<author>bschong2</author>
+<date>2015-09-07T02:34:38.850745Z</date>
+<paths>
+<path
+   action="A"
+   kind="dir"
+   copyfrom-path="/_shared/extreme_edge_cases"
+   copyfrom-rev="3541">/jtmorri2/extreme_edge_cases</path>
+</paths>
+<msg>Publishing MP to jtmorri2</msg>
+</logentry>
+<logentry
+   revision="3446">
+<author>jtmorri2</author>
+<date>2015-09-07T01:50:45.240645Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/text_editor/editor.c</path>
+</paths>
+<msg>checked init get int and main</msg>
+</logentry>
+<logentry
+   revision="3412">
+<author>jtmorri2</author>
+<date>2015-09-07T00:13:04.523757Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/text_editor/editor.c</path>
+</paths>
+<msg>checked init get int and main</msg>
+</logentry>
+<logentry
+   revision="3338">
+<author>jtmorri2</author>
+<date>2015-09-06T21:57:50.632708Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/pointers_gone_wild/part1-functions.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/pointers_gone_wild/part2-functions.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/pointers_gone_wild/part2-main.c</path>
+</paths>
+<msg>stuff</msg>
+</logentry>
+<logentry
+   revision="3218">
+<author>jtmorri2</author>
+<date>2015-09-06T15:42:03.071774Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/pointers_gone_wild/part1-functions.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/text_editor/editor.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.h</path>
+</paths>
+<msg>stuff is done</msg>
+</logentry>
+<logentry
+   revision="3194">
+<author>btruong2</author>
+<date>2015-09-06T06:28:16.067235Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/pointers_gone_wild/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="3192">
+<author>btruong2</author>
+<date>2015-09-06T06:06:02.478462Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/pointers_gone_wild/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="3187">
+<author>btruong2</author>
+<date>2015-09-06T05:52:39.288786Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/jtmorri2/pointers_gone_wild/grade_report.html</path>
+</paths>
+</logentry>
+<logentry
+   revision="2920">
+<author>jtmorri2</author>
+<date>2015-09-04T19:56:35.690537Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.h</path>
+</paths>
+<msg>somthings happening</msg>
+</logentry>
+<logentry
+   revision="2899">
+<author>jtmorri2</author>
+<date>2015-09-04T17:31:18.053810Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.h</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="2844">
+<author>jtmorri2</author>
+<date>2015-09-04T03:52:52.421339Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="2842">
+<author>jtmorri2</author>
+<date>2015-09-04T03:50:09.322518Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/text_editor/editor.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="2839">
+<author>jtmorri2</author>
+<date>2015-09-04T03:48:11.780905Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="2836">
+<author>jtmorri2</author>
+<date>2015-09-04T03:46:07.099719Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/text_editor/editor.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="2831">
+<author>jtmorri2</author>
+<date>2015-09-04T03:38:38.825620Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/text_editor/editor.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="2829">
+<author>jtmorri2</author>
+<date>2015-09-04T03:32:14.329031Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/text_editor/editor.c</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="2827">
+<author>jtmorri2</author>
+<date>2015-09-04T03:22:49.540011Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/text_editor/editor.c</path>
+</paths>
+<msg>stuff</msg>
+</logentry>
+<logentry
+   revision="2822">
+<author>jtmorri2</author>
+<date>2015-09-04T03:06:03.007447Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/text_editor/editor.c</path>
+</paths>
+<msg>hi</msg>
+</logentry>
+<logentry
+   revision="2819">
+<author>jtmorri2</author>
+<date>2015-09-04T03:00:22.357681Z</date>
+<paths>
+<path
+   action="M"
+   kind="file">/jtmorri2/text_editor/editor.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.h</path>
+</paths>
+<msg>hi</msg>
+</logentry>
+<logentry
+   revision="2801">
+<author>jtmorri2</author>
+<date>2015-09-04T01:43:06.033088Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.c</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.h</path>
+</paths>
+<msg>stuff and things</msg>
+</logentry>
+<logentry
+   revision="2632">
+<author>emsauer2</author>
+<date>2015-09-03T21:08:31.780955Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/pointers_gone_wild/part1-main.c</path>
+</paths>
+<msg>Updated files to new version</msg>
+</logentry>
+<logentry
+   revision="2556">
+<author>jtmorri2</author>
+<date>2015-09-03T20:21:55.341963Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/text_editor/editor.h</path>
+</paths>
+<msg>fml and yours.... and your mothers</msg>
+</logentry>
+<logentry
+   revision="2494">
+<author>jtmorri2</author>
+<date>2015-09-03T17:25:45.093284Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/Makefile</path>
+<path
+   kind="file"
+   action="M">/jtmorri2/text_editor/editor.c</path>
+<path
+   action="M"
+   kind="file">/jtmorri2/text_editor/editor.h</path>
+</paths>
+<msg>i changed stuff</msg>
+</logentry>
+<logentry
+   revision="2293">
+<author>bschong2</author>
+<date>2015-09-03T03:41:16.439688Z</date>
+<paths>
+<path
+   action="A"
+   kind="dir"
+   copyfrom-path="/_shared/text_editor"
+   copyfrom-rev="2292">/jtmorri2/text_editor</path>
+</paths>
+<msg>Publishing MP to jtmorri2</msg>
+</logentry>
+<logentry
+   revision="1857">
+<author>bschong2</author>
+<date>2015-08-31T21:11:00.619986Z</date>
+<paths>
+<path
+   copyfrom-path="/_shared/pointers_gone_wild"
+   copyfrom-rev="1856"
+   action="A"
+   kind="dir">/jtmorri2/pointers_gone_wild</path>
+</paths>
+<msg>Publishing MP to jtmorri2</msg>
+</logentry>
+<logentry
+   revision="796">
+<author>jtmorri2</author>
+<date>2015-08-27T14:56:29.637086Z</date>
+<paths>
+<path
+   action="A"
+   kind="dir">/jtmorri2/Lab1</path>
+</paths>
+<msg>adding the Lab1 folder</msg>
+</logentry>
+<logentry
+   revision="560">
+<author>bschong2</author>
+<date>2015-08-27T05:56:26.571165Z</date>
+<paths>
+<path
+   action="A"
+   kind="file">/jtmorri2/vm_info.txt</path>
+</paths>
+<msg>adding vm_info.txt</msg>
+</logentry>
+<logentry
+   revision="83">
+<author>root</author>
+<date>2015-08-21T20:20:55.360525Z</date>
+<paths>
+<path
+   kind="dir"
+   action="A">/jtmorri2</path>
+</paths>
+<msg>created directory jtmorri2</msg>
+</logentry>
+</log>

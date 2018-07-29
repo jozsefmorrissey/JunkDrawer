@@ -1,0 +1,12 @@
+testMichiganStudent: program output matches expected output.
+testIllinoisStudent: program output matches expected output.
+testMichiganPhDStudent: program output matches expected output.
+testWisconsinStudent: program output matches expected output.
+testC: program output matches expected output.
+testA: program output matches expected output.
+testB: program output matches expected output.
+test1: program output matches expected output.
+test10: program output matches expected output.
+test12: program output matches expected output.
+test17: program output matches expected output.
+testBadInput: program output matches expected output.

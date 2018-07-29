@@ -1,0 +1,29 @@
+Grading revision r26588 by jtmorri2, dated 2015-03-15 17:31:49.000630588 -0500 CDT
+Monad Autograder
+Testing lab_huffman at 2015-03-16 00:28:59
+
+"Television won't be able to hold on to any market it captures after the first six months. People will soon get tired of staring at a plywood box every night." ~ Darryl Zanuck, 20th Century Fox, 1946
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+test_encoder_binary_4  . . . . [20 pts] - passed
+test_encoder_binary_8  . . . . [20 pts] - passed
+test_encoder_valgrind_2 (asan) [6 pts]  - passed
+test_encoder_writetree_4 . . . [2 pts]  - passed
+test_encoder_writetree_8 . . . [2 pts]  - passed
+test_decode_4  . . . . . . . . [20 pts] - passed
+test_decode_8  . . . . . . . . [20 pts] - passed
+test_decode_readtree_4 . . . . [2 pts]  - passed
+test_decode_readtree_8 . . . . [2 pts]  - passed
+test_the_works (asan)  . . . . [6 pts]  - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 100
+

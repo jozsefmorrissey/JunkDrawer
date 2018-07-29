@@ -1,0 +1,58 @@
+from __future__ import division
+import matplotlib.pyplot as plt
+import math
+import numpy as np
+import time as time
+import pylab
+
+
+
+def genD(n):
+	D = np.zeros((n,n))
+	for i in range (0, n):
+		D[i][i] = i + 1;
+	return D
+
+def lanIt(b, q, qk, A, n):
+	Tk = np.zeros((n,n))
+	E = np.zeros((n,1))
+	V = np.zeros((n,1))
+	for i in range (0, n):
+		u = np.dot(A, qk)
+		alpha = np.dot(np.transpose(qk), u)
+		u = u - b*q - alpha*qk
+		b = np.linalg.norm(u, 2)
+		if(b == 0): 
+			return
+		q = qk
+		qk = u/b
+		
+
+		Tk[i][i] = alpha
+		
+		if(i + 1 < n):
+			Tk[i+1][i] = b
+			Tk[i][i+1] = b
+		E, G = np.linalg.eig(Tk)
+		for j in range (0, n):
+			plt.plot(E[j], i+1, marker=".", linestyle = "none", color = "green") 
+		#print E
+
+
+	plt.show()
+
+
+n = 500
+q0 = np.zeros((n, 1))
+b0 = 0
+x0 = np.random.rand(n, 1)
+normX0 = np.linalg.norm(x0, 2);
+q1 = x0/normX0
+
+
+D = genD(n)
+B = np.random.rand(n,n)
+Q, R = np.linalg.qr(B)
+A = np.dot(Q, np.dot(D, np.transpose(Q)))
+E, G = np.linalg.eig(A)
+lanIt(b0, q0, q1, A, n)

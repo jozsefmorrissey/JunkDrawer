@@ -1,0 +1,8 @@
+Grading revision r10199 by tolar2, dated 2015-02-11 00:58:50.000000915 -0600 CST
+Monad Autograder
+Testing mp2 at 2015-02-12 00:30:09
+
+"It is practically impossible to teach good programming to students that have had a prior exposure to BASIC: as potential programmers they are mentally mutilated beyond hope of regeneration." ~ Edsger Dijkstra
+
+Setting up test environment...
+Error: /dev/shm/cs225student/autograder/temp/mp2/scene.h does not exist.

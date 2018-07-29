@@ -1,0 +1,43 @@
+1) What is a socket?
+A port that allowes communication with external programs.
+
+
+2) What is the difference between the domains AF_INET and AF_UNIX?
+They are different address families.
+
+
+3) What is the difference between SOCK_STREAM and SOCK_DGRAM?
+SOCK_STREAM is a tcp socket, while SOCK_DGRAM is a udp socket.
+
+
+4) Why is it important to clear all the values the addrinfo struct before using it in getaddrinfo?
+
+
+
+5) What are ai_family and ai_socktype?
+They are both member variables of the struct adrinfo.
+ai_family is the type of address family
+ai_socktype is the type of socket
+
+
+6) What does get addrinfo do?
+returns one or more addrinfo structs.
+
+
+7) What does connect do?
+Connects to a socket reffered to by the parameter addr
+
+
+8) What is setsockopt?
+Allows a port to be reused immediatly after a connection is terminated.
+
+
+9) What does bind do?
+Once a connection is made bind is used to assign it a unique addr.
+
+
+
+10) What does listen do?
+
+
+11) What does accept do?

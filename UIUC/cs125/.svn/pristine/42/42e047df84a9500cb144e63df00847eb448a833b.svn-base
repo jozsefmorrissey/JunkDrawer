@@ -1,0 +1,15 @@
+...............F..........
+Time: 0.036
+There was 1 failure:
+1) testInsertInCorrectPosition(LinkedListTest)junit.framework.AssertionFailedError
+	at LinkedListTest.testInsertInCorrectPosition(LinkedListTest.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at AutomaticScoreCheck.main(AutomaticScoreCheck.java:24)
+
+FAILURES!!!
+Tests run: 25,  Failures: 1,  Errors: 0
+
+24 passed out of 25
+Score=96

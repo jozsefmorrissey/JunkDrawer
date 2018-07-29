@@ -1,0 +1,12 @@
+October_12-Sunday-15_01_07.394,jtmorri2,Challenge4-Photoscoop,-1
+October_13-Monday-15_49_17.364,jtmorri2,Challenge4-Photoscoop,1
+October_13-Monday-19_18_06.165,jtmorri2,Challenge4-Photoscoop,1
+October_13-Monday-22_07_01.733,jtmorri2,Challenge4-Photoscoop,1
+October_20-Monday-22_44_31.901,jtmorri2,Challenge4-Photoscoop,1
+October_27-Monday-20_46_37.552,jtmorri2,Challenge4-Photoscoop,1
+October_29-Wednesday-10_05_53.398,jtmorri2,Challenge4-Photoscoop,1
+November_01-Saturday-15_10_53.494,jtmorri2,Challenge4-Photoscoop,1
+December_01-Monday-22_29_56.862,jtmorri2,Challenge4-Photoscoop,1
+December_09-Tuesday-13_19_02.678,jtmorri2,Challenge4-Photoscoop,1
+December_09-Tuesday-14_05_00.841,jtmorri2,Challenge4-Photoscoop,1
+December_11-Thursday-20_18_13.408,jtmorri2,Challenge4-Photoscoop,1

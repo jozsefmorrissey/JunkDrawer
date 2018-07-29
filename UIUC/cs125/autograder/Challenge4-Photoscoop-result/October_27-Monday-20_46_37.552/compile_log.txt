@@ -1,0 +1,8 @@
+    [javac] Compiling 19 source files to .
+    [javac] ./Effects.java:25: incompatible types
+    [javac] found   : java.lang.String
+    [javac] required: int
+    [javac] 		switch (cmd) {
+    [javac] 		        ^
+    [javac] 1 error
+    [javac] Compile failed; see the compiler error output for details.

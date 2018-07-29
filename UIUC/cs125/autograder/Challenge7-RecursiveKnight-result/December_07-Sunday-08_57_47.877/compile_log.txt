@@ -1,0 +1,1 @@
+    [javac] Compiling 30 source files to .

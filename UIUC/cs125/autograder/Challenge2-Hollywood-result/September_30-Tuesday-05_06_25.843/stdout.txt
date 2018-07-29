@@ -1,0 +1,51 @@
+....F.F.F.F.F.F.F
+Time: 0.102
+There were 7 failures:
+1) testHeaderFooter(MyScriptPrinterTest)junit.framework.AssertionFailedError: Review incorrect output on line2
+	at MyScriptPrinterTest.testHeaderFooter(MyScriptPrinterTest.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at AutomaticScoreCheck.main(AutomaticScoreCheck.java:22)
+2) testAuthorship(MyScriptPrinterTest)junit.framework.AssertionFailedError: Fix @authorship
+	at MyScriptPrinterTest.testAuthorship(MyScriptPrinterTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at AutomaticScoreCheck.main(AutomaticScoreCheck.java:22)
+3) testLineFormat(MyScriptPrinterTest)junit.framework.AssertionFailedError: Output format is incorrect
+	at MyScriptPrinterTest.testLineFormat(MyScriptPrinterTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at AutomaticScoreCheck.main(AutomaticScoreCheck.java:22)
+4) testLowercaseEntry(MyScriptPrinterTest)junit.framework.AssertionFailedError: Review incorrect output on line2
+	at MyScriptPrinterTest.testLowercaseEntry(MyScriptPrinterTest.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at AutomaticScoreCheck.main(AutomaticScoreCheck.java:22)
+5) testFindCaseInsensitive(FindScriptLineTest)junit.framework.AssertionFailedError: Review incorrect output on line 1
+	at FindScriptLineTest.testFindCaseInsensitive(FindScriptLineTest.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at AutomaticScoreCheck.main(AutomaticScoreCheck.java:22)
+6) testAuthorship(FindScriptLineTest)junit.framework.AssertionFailedError: Fix @authorship
+	at FindScriptLineTest.testAuthorship(FindScriptLineTest.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at AutomaticScoreCheck.main(AutomaticScoreCheck.java:22)
+7) testFind(FindScriptLineTest)junit.framework.AssertionFailedError: Review incorrect output on line 1
+	at FindScriptLineTest.testFind(FindScriptLineTest.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at AutomaticScoreCheck.main(AutomaticScoreCheck.java:22)
+
+FAILURES!!!
+Tests run: 10,  Failures: 7,  Errors: 0
+
+3 passed out of 10
+Score=30

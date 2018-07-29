@@ -1,0 +1,2 @@
+score=92
+max_possible_points=100

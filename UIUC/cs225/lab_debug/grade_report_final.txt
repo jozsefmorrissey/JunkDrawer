@@ -1,0 +1,24 @@
+Grading revision r5410 by jtmorri2, dated 2015-01-30 14:25:57.000192469 -0600 CST
+Monad Autograder
+Testing lab_debug at 2015-02-02 00:17:02
+
+"We know about as much about software quality problems as they knew about the Black Plague in the 1600s. We've seen the victims' agonies and helped burn the corpses. We don't know what causes it; we don't really know if there is only one disease. We just suffer -- and keep pouring our sewage into our water supply." ~ Tom Van Vleck
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+no_segfaults . . . [20 pts] - passed
+produces_out_png . [10 pts] - passed
+similar_sketch . . [30 pts] - passed
+complete_in_01_png [20 pts] - passed
+complete_in_02_png [20 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 100
+

@@ -1,0 +1,204 @@
+SurveyOutput_1_101_98: program output matches expected output.
+SurveyOutput_3_5_11: program output matches expected output.
+HeaderFooter: Expected 17 lines. Actual 214 lines.
+1. PASS > 'Which character's lines would you like? (NEO,MORPHEUS,ORACLE)'
+2. FAIL > '					NEO' Should be - 
+2.        'NEO's lines:'
+HeaderFooter: Program output above was incorrect on output line 2
+
+File MyScriptPrinter.java : @author comments at the beginning should list your netid
+Which character's lines would you like? (NEO,MORPHEUS,ORACLE)
+	INT.  ORACLE'S CHAMBERS (MATRIX) - DAY
+
+	It looks like a suburban tract house.
+
+	There is a lot of cozy furniture, a dining roon hutch
+	filled with china, shelves and tables crowded with
+	doilies, knick-knacks and ceramic brick-a-brack.
+
+	Neo follows the plastic carpet runner to the kitchen.
+
+	A WOMAN is huddled beside the oven, peering inside
+	through the cracked door.
+
+					NEO
+			Hello?
+
+					ORACLE (WOMAN)
+			I know.  You're Neo.  Be right
+			with you.
+
+					NEO
+			You're the Oracle?
+
+					ORACLE
+			Bingo.  I got to say I love seeing
+			you non-believers.  It's really a
+			relief.  All that pomp and
+			circumstances just plain tucker me
+			out.  Almost done.  Smell good,
+			don't they?
+
+					NEO
+			Yeah.
+
+					ORACLE
+			I'd ask you to sit down, but
+			you're not going to anyway.  And
+			don't worry about the vase.
+
+					NEO
+			What vase?
+
+	He turns to look around and his elbow knocks a VASE from
+	the table.  It BREAKS against the linoleum floor.
+
+					ORACLE
+			The vase.
+
+					NEO
+			Sorry.
+
+	She pulls out a tray of chocolate chip cookies and turns.
+	She is an older woman, wearing big oven mitts,
+	comfortable slacks and a print blouse.  She looks like
+	someone's grandma.
+
+					ORACLE
+			I said don't worry about it.  I'll
+			get one of my kids to fix it.
+
+					NEO
+			How did you know...?
+
+	She sets the cookie tray on a wooden hot-pad.
+
+					ORACLE
+			What's really going to bake your
+			noodle later on is, would you
+			still have broken it if I hadn't
+			said anything.
+
+	Smiling, she lights a cigarette.
+
+					ORACLE
+			You're cuter than I thought.  I
+			see why she likes you.
+
+					NEO
+			Who?
+
+					ORACLE
+			Not too bright, though.
+
+	She winks.
+
+					ORACLE
+			You know why Morpheus brought you
+			to see me?
+
+					NEO
+			I think so.
+
+					ORACLE
+			So? What do you think?  You think
+			you're the one?
+
+					NEO
+			I don't know.
+
+	She gestures to a wooden plaque, the kind every grandma
+	has, except that the words are in Latin.
+
+					ORACLE
+			You know what that means?  It's
+			Latin.  Means, 'Know thyself.'
+
+	She puts her cigarette down.
+
+					ORACLE
+			Well, let's have a look at you.
+
+	She widens his eyes, checks his ears, then feels the
+	glands in his neck.
+
+					ORACLE
+			Open your mouth.  Say, 'ahhh.'
+
+	She nods then looks at his palms.
+
+					ORACLE
+			Hmmm.  You sure got the gift, but
+			it's tricky.  I'd say the bad news
+			is, you're not the one.  Still got
+			a lot to learn.  Maybe next life.
+
+					NEO
+			What's the good news?
+
+					ORACLE
+			Same as the bad news, you're not
+			the one.
+
+					NEO
+			Is that it, then?
+
+					ORACLE
+			No.  Here.
+
+	She picks up the tray of cooling cookies.
+
+					ORACLE
+			You better take a cookie.  Got a
+			big day ahead of you.
+
+	He eyes her, then takes a cookie.
+
+					ORACLE
+			Make a believer out of you yet.
+
+
+	INT.  ANTECHAMBER (MATRIX) - DAY
+
+	Morpheus rises from a bench as the Priestess escorts Neo
+	out.  When they are alone, Morpheus puts his hand on
+	Neo's shoulder.
+
+					MORPHEUS
+			You don't have to tell me
+			anything, Neo, because I already
+			know what she said.
+
+					NEO
+			You do?
+
+					MORPHEUS
+			I brought you so that you could
+			hear it for yourself.  I knew it
+			would help.
+
+	Neo finishes his cookie.
+
+					MORPHEUS
+			No one will ever ask you because
+			it is a gift from her.  It is for
+			you and you alone.
+LineFormat: COULD NOT FIND ORACLE:"No.  Here." in the output above
+LowercaseEntry: Expected 17 lines. Actual 1 lines.
+1. PASS > 'Which character's lines would you like? (NEO,MORPHEUS,ORACLE)'
+LowercaseEntry: Program output above was incorrect on output line 2
+LowercaseEntry: ... Missing line #2 : NEO's lines:
+
+FindCaseInsensitive: Expected 16 lines. Actual 1 lines.
+1. FAIL > '' Should be - 
+1.        'Please enter the word(s) to search for'
+FindCaseInsensitive: Program output above was incorrect on output line 1
+FindCaseInsensitive: ... Missing line #2 : Searching for 'Spoon'
+
+File FindScriptLine.java : @author comments at the beginning should list your netid
+Find: Expected 5 lines. Actual 1 lines.
+1. FAIL > '' Should be - 
+1.        'Please enter the word(s) to search for'
+Find: Program output above was incorrect on output line 1
+Find: ... Missing line #2 : Searching for 'a cookie'
+

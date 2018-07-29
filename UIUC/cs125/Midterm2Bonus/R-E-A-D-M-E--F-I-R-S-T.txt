@@ -1,0 +1,6 @@
+Midterm II 5% bonus - A quick hello to shells, C++ and makefiles.
+
+To earn an extra 5% to your Midterm2 score, complete this bonus project during this week's section.
+
+* To earn bonus you must *COMMIT* your changes back to subversion.
+

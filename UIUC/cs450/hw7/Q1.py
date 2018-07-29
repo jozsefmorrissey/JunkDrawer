@@ -1,0 +1,104 @@
+from __future__ import division
+
+import math
+import numpy as np
+import time as time
+import matplotlib.pyplot as plt
+
+import scipy as sc
+from scipy import optimize
+from pdb import set_trace as bp
+
+
+def partAeq(y):
+	if(y==0):
+		return 1;
+	return (1 - math.exp(-y))/y
+
+
+def partBeq(y):
+	if(y==1):
+		return 0;
+	if(y==0):
+		return 1;
+	return (1 - math.exp(-y*math.sqrt(1-(y**2))))/y
+
+
+def trapizoid(a,fa, b, fb):
+	return (b-a)*(fa+fb)/2
+
+def trap_approx(points, n):
+	pyramidA = np.zeros((n))
+	pyramidB = np.zeros((n))
+	for i in range(0, n):
+		pyramidA[i] = trapizoid(points[0][i], points[1][i], points[0][i+1], points[1][i+1])
+		pyramidB[i] = trapizoid(points[0][i], points[2][i], points[0][i+1], points[2][i+1])
+	return pyramidA, pyramidB
+
+def suum(p, n):
+	ret = 0
+	for i in range(0,n):
+		ret += p[i]
+	return ret
+
+def diag_sum(p, n):
+	ret = 0
+	for i in range(0, n):
+		ret += p[i][i]
+	return ret
+
+def rich(p, n):
+	for j in range (1, n):
+		for k in range (j,n+1):
+			p[k][j] = ((4.0**j)*p[k][j-1]-p[k-1][j-1])/((4.0**j)-1)
+
+	return p
+	
+
+
+#print "why wont you work"
+#print partAeq(0.000000000000001)
+#print partBeq(0.000000000000001)
+
+M = 20 #With M=24 it takes about 5 minuts to run M=18 is quick and accurate
+
+ans2 = 0.7965995992970531342836758655
+
+sizes = [2, 3, 5, 9, 17, 33, 65, 129, 257]
+rich_triangls = np.zeros((2, M, M-1))
+n = 2
+for j in range (0, M):
+
+	start = 0
+	if(j > 0):
+		n = (n-1)*2 + 1
+	step = 1/(n-1)
+	points = np.zeros((3, n))
+	for i in range (0, n):
+		points[0][i] = step*i
+		points[1][i] = partAeq(points[0][i])
+		points[2][i] = partBeq(points[0][i])
+
+	#print points
+	pA, pB = trap_approx(points, n-1)
+	rich_triangls[0][j][0] = suum(pA, n-1)
+	rich_triangls[1][j][0] = suum(pB, n-1)
+	#print "PA\n", pA
+	#print "RICH"
+	#print rich(pA, n-1) 
+
+
+py2 = rich(rich_triangls[0], M-1)
+py1 = rich(rich_triangls[1], M-1)
+
+print "Part A"
+print "Value: ", py2[-1,-1]
+print "Error: ", py2[-1,-1]-py2[-2,-2]
+
+print "Part B"
+print "Value: ", py1[-1,-1]
+print "Error: ", py1[-1,-1]-py1[-2,-2]
+
+
+
+

@@ -1,0 +1,33 @@
+Grading revision r20520 by jtmorri2, dated 2015-03-01 20:29:18.000533166 -0600 CST
+Monad Autograder
+Testing lab_quacks at 2015-03-02 00:29:59
+
+"At least for a while, in your heart of hearts you'll be confident only that the university will soon enough discover its error in awarding you the PhD, and at some point will brand you (in public no doubt) the fraud you know you are. This too will pass as you come to realize that students are extremely gullible and many of your colleagues are even greater frauds than you." ~ Berkeley PhD Advice
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+sumDigits_762  . . . [3 pts]  - passed
+sumDigits_0  . . . . [2 pts]  - passed
+sumDigits_2  . . . . [2 pts]  - passed
+sumDigits_1024 . . . [3 pts]  - passed
+triangle_0 . . . . . [2 pts]  - passed
+triangle_1 . . . . . [2 pts]  - passed
+triangle_5 . . . . . [3 pts]  - passed
+triangle_10  . . . . [3 pts]  - passed
+sum_136  . . . . . . [20 pts] - passed
+sum_floats . . . . . [20 pts] - passed
+scramble_17  . . . . [20 pts] - passed
+scramble_10  . . . . [20 pts] - passed
+verifySame_result  . [10 pts] - passed
+verifySame_no_modify [15 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 125
+

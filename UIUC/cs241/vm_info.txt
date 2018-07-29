@@ -1,0 +1,11 @@
+
+Hello Student with Netid jtmorri2!
+
+We are pleased to tell you that your VM for CS 241 Fall 2015 is ready!
+We will be using this VM in every part of the course, so please become familiar with it. This machine will have all the things you will need to develop on it and you will have full sudo access to it! The hostnane is
+fa15-cs241-055.cs.illinois.edu
+and you can log in with your netid as the user and the password is your AD password. This means you can go into a terminal right now and do
+'ssh jtmorri2@fa15-cs241-055.cs.illinois.edu'
+to check it out! Do not worry about this too much, since we will help you set things up in Thursday's Lab.
+
+241 Course Staff :)

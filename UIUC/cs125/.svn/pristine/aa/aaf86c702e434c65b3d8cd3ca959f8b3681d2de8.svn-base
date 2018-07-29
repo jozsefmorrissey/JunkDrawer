@@ -1,0 +1,9 @@
+File PixelEffects.java : @author should include your netid
+File RGBUtilities.java : @author should include your netid
+File Effects.java : @author should include your netid
+ListAll: Expected 3 lines. Actual 1 lines.
+1. FAIL > '0. AA8077' Should be - 
+1.        '1. AA8077'
+ListAll: Program output above was incorrect on output line 1
+ListAll: ... Missing line #2 : 2. BB
+
